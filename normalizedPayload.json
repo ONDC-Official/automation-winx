@@ -1,0 +1,317 @@
+{
+    "context": {
+        "action": "on_init",
+        "bap_id": "dev-automation.ondc.org",
+        "bap_uri": "http://localhost:6959/api-service/ONDC:TRV13/2.0.0/buyer",
+        "domain": "ONDC:TRV13",
+        "location": {
+            "city": {
+                "code": "std:011",
+                "name": null
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "message_id": "edffb72f-677e-4e1a-953c-2d50db7fa1dd",
+        "timestamp": "2025-08-26T08:40:43.077Z",
+        "transaction_id": "7372777e-0e35-4a2c-a746-b865d07c8c61",
+        "ttl": "PT30S",
+        "version": "2.0.0",
+        "bpp_uri": "http://localhost:6959/api-service/ONDC:TRV13/2.0.0/seller",
+        "bpp_id": "dev-automation.ondc.org"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "P1"
+            },
+            "items": [
+                {
+                    "id": "Accommodation-1",
+                    "location_ids": [
+                        "L1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "add_ons": [
+                        {
+                            "id": "full-board"
+                        }
+                    ]
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "3125"
+                },
+                "breakup": [
+                    {
+                        "item": {
+                            "id": "Accommodation-1",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": null
+                            },
+                            "add_ons": [
+                                {
+                                    "id": "full-board",
+                                    "price": {
+                                        "currency": "INR",
+                                        "value": "500.00"
+                                    }
+                                }
+                            ]
+                        },
+                        "title": "Deluxe Room accommodation with all meals included (breakfast, lunch, and dinner)",
+                        "price": {
+                            "currency": "INR",
+                            "value": "12.22"
+                        }
+                    },
+                    {
+                        "title": "Service Tax @ 9%",
+                        "price": {
+                            "currency": "INR",
+                            "value": "225"
+                        },
+                        "item": null
+                    },
+                    {
+                        "title": "GST @ 12%",
+                        "price": {
+                            "currency": "INR",
+                            "value": "400"
+                        },
+                        "item": null
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payments": [
+                {
+                    "id": "pymnt-3",
+                    "type": "PART-PAYMENT",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "LINKED-PAYMENTS",
+                                "name": null
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "pymnt-4",
+                                        "name": null
+                                    },
+                                    "value": "1"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "pymnt-5",
+                                        "name": null
+                                    },
+                                    "value": "2"
+                                }
+                            ]
+                        }
+                    ],
+                    "status": "NOT-PAID",
+                    "params": null,
+                    "collected_by": null
+                },
+                {
+                    "id": "pymnt-4",
+                    "type": "PRE-ORDER",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "ADV-DEPOSIT",
+                                "name": null
+                            }
+                        }
+                    ],
+                    "params": {
+                        "currency": "INR",
+                        "amount": "2000.00",
+                        "bank_code": null,
+                        "bank_account_number": null,
+                        "virtual_payment_address": null
+                    },
+                    "collected_by": "BAP",
+                    "status": "NOT-PAID"
+                },
+                {
+                    "id": "pymnt-5",
+                    "type": "ON-FULFILLMENT",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "FINAL-PAYMENT",
+                                "name": null
+                            }
+                        }
+                    ],
+                    "params": {
+                        "amount": "1025.00",
+                        "currency": "INR",
+                        "bank_code": "Bank Code of Buyer App",
+                        "bank_account_number": "Bank Account Number of Buyer App",
+                        "virtual_payment_address": "VPA of Buyer App"
+                    },
+                    "collected_by": "BPP",
+                    "status": "NOT-PAID"
+                }
+            ],
+            "billing": {
+                "name": "Sandeep S",
+                "address": "Dwarka, Delhi-110075",
+                "state": {
+                    "name": "Delhi"
+                },
+                "city": {
+                    "name": "Delhi",
+                    "code": null
+                },
+                "organization": {
+                    "descriptor": {
+                        "name": "ONDC",
+                        "code": null
+                    },
+                    "address": "ONDC, Delhi-110049"
+                },
+                "email": "email@ondc.org",
+                "phone": "1704380085",
+                "tax_id": "GSTIN1234567890"
+            },
+            "fulfillments": [
+                {
+                    "id": "customer-1",
+                    "customer": {
+                        "person": {
+                            "name": "Sandeep S",
+                            "age": "25",
+                            "dob": "2023-12-20",
+                            "gender": "M",
+                            "creds": [
+                                {
+                                    "id": "AADHAAR_NO_123",
+                                    "type": "AADHAAR"
+                                }
+                            ]
+                        },
+                        "contact": {
+                            "phone": "1704380085",
+                            "email": "email@ondc.org"
+                        }
+                    }
+                }
+            ],
+            "tags": [
+                {
+                    "descriptor": {
+                        "code": "BAP_TERMS",
+                        "name": null
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "STATIC_TERMS",
+                                "name": null
+                            },
+                            "value": "https://static_terms.com"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "STATIC_TERMS_NEW",
+                                "name": null
+                            },
+                            "value": "https://github.com/ONDC-Official/static-terms//buyerNP_BNP/1.0/tc.pdf"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "EFFECTIVE_DATE",
+                                "name": null
+                            },
+                            "value": "2024-01-01T00:00:00.000Z"
+                        }
+                    ]
+                },
+                {
+                    "descriptor": {
+                        "code": "BUYER_FINDER_FEES",
+                        "name": null
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "BUYER_FINDER_FEES_PERCENTAGE",
+                                "name": null
+                            },
+                            "value": "3"
+                        }
+                    ]
+                },
+                {
+                    "descriptor": {
+                        "code": "BPP_TERMS",
+                        "name": null
+                    },
+                    "list": [
+                        {
+                            "descriptor": {
+                                "code": "MAX_LIABILITY",
+                                "name": null
+                            },
+                            "value": "2"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "MAX_LIABILITY_CAP",
+                                "name": null
+                            },
+                            "value": "1000.00"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "MANDATORY_ARBITRATION",
+                                "name": null
+                            },
+                            "value": "false"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "COURT_JURISDICTION",
+                                "name": null
+                            },
+                            "value": "New Delhi"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "DELAY_INTEREST",
+                                "name": null
+                            },
+                            "value": "New Delhi"
+                        },
+                        {
+                            "descriptor": {
+                                "code": "TAX_NUMBER",
+                                "name": null
+                            },
+                            "value": "GST_NUMBER_SELLERNP"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
