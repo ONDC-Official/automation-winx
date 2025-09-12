@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { TestResults, TestResult } from "../../types/operation-types";
+import { TestResults, TestResult } from "../types/operation-types";
 
 // Schema for supported actions (index.yaml)
 const SupportedActionsSchema = z.object({

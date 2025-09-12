@@ -4,17 +4,20 @@
 import { runProtocolFlows } from "./workbench-runner";
 import { createApiService } from "./createApiService";
 import reporter from "reporter";
-import { runConfigValidations } from "./runFlowSchemaValidations";
+import { runConfigValidations } from "./services/runFlowSchemaValidations";
 import logger from "@ondc/automation-logger";
 import { writeFileSync } from "fs";
-const runnerConfig = {
-	createApiService: true,
+
+export const runnerConfig = {
+	createApiService: false,
 	runFlows: true,
 	runConfigValidations: false,
+	runApiService: true,
 };
 
 async function start() {
 	reporter.start("workbench-testing");
+	createApiService;
 	try {
 		runnerConfig.createApiService && (await createApiService());
 		runnerConfig.runConfigValidations && (await runConfigValidations());
@@ -32,5 +35,4 @@ async function start() {
 }
 
 start();
-
 // finally create a report folder which contains all ondc-logs which will act as a artifact for workflow

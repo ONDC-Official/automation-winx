@@ -1,18 +1,18 @@
 {
   "reportId": "workbench-testing",
-  "errors": 3,
+  "errors": 6,
   "warnings": 0,
-  "total": 3,
-  "firstAt": "2025-09-11T19:29:06.184Z",
-  "lastAt": "2025-09-11T19:29:06.579Z",
+  "total": 6,
+  "firstAt": "2025-09-12T07:16:35.877Z",
+  "lastAt": "2025-09-12T07:16:36.318Z",
   "complete": {
     "id": "workbench-testing",
-    "startedAt": "2025-09-11T19:28:55.311Z",
+    "startedAt": "2025-09-12T07:16:31.385Z",
     "items": [
       {
         "severity": "error",
         "message": "L1 Validation failed for action on_search_incremental_pull_1",
-        "at": "2025-09-11T19:29:06.184Z",
+        "at": "2025-09-12T07:16:35.877Z",
         "meta": {
           "errors": [
             {
@@ -28,12 +28,20 @@
               "description": "- **condition ENUM_MESSAGE_PROVIDERS_CATRGORY_CODE**: every element of $.message.catalog.providers[*].categories[*].descriptor.code must be in [\"CULTURE_HERITAGE\"]\n\n\t> Note: **Condition ENUM_MESSAGE_PROVIDERS_CATRGORY_CODE** can be skipped if the following conditions are met:\n\t>\n\t> - **condition B**: $.message.catalog.providers[*].categories[*].parent_category_id must be present in the payload"
             }
           ]
+        }
+      },
+      {
+        "severity": "error",
+        "message": "Context Validations failed",
+        "at": "2025-09-12T07:16:35.878Z",
+        "meta": {
+          "error": "Invalid timestamp in context should be greater than 2025-09-12T07:11:13.790Z of last search action but got 2025-09-12T07:09:23.394Z"
         }
       },
       {
         "severity": "error",
         "message": "L1 Validation failed for action on_search_incremental_pull_2",
-        "at": "2025-09-11T19:29:06.409Z",
+        "at": "2025-09-12T07:16:36.115Z",
         "meta": {
           "errors": [
             {
@@ -53,8 +61,16 @@
       },
       {
         "severity": "error",
+        "message": "Context Validations failed",
+        "at": "2025-09-12T07:16:36.115Z",
+        "meta": {
+          "error": "Transaction history already has a failed response"
+        }
+      },
+      {
+        "severity": "error",
         "message": "L1 Validation failed for action on_search_incremental_pull_3",
-        "at": "2025-09-11T19:29:06.579Z",
+        "at": "2025-09-12T07:16:36.317Z",
         "meta": {
           "errors": [
             {
@@ -70,6 +86,14 @@
               "description": "- **condition ENUM_MESSAGE_PROVIDERS_CATRGORY_CODE**: every element of $.message.catalog.providers[*].categories[*].descriptor.code must be in [\"CULTURE_HERITAGE\"]\n\n\t> Note: **Condition ENUM_MESSAGE_PROVIDERS_CATRGORY_CODE** can be skipped if the following conditions are met:\n\t>\n\t> - **condition B**: $.message.catalog.providers[*].categories[*].parent_category_id must be present in the payload"
             }
           ]
+        }
+      },
+      {
+        "severity": "error",
+        "message": "Context Validations failed",
+        "at": "2025-09-12T07:16:36.318Z",
+        "meta": {
+          "error": "Transaction history already has a failed response"
         }
       }
     ],
@@ -91,9 +115,9 @@
                   "code": "IND"
                 }
               },
-              "message_id": "f6c64d54-05e8-476d-a97f-a580b90b348b",
-              "timestamp": "2025-09-11T19:29:00.551Z",
-              "transaction_id": "4574d17c-9333-4583-9f9a-4503cabdb5db",
+              "message_id": "60f11f6b-d252-4dab-8648-088129f84cdf",
+              "timestamp": "2025-09-12T07:11:13.790Z",
+              "transaction_id": "db2df11e-c54b-4a0d-a849-a79335135e11",
               "ttl": "PT30S",
               "version": "2.0.0",
               "bpp_uri": "https://workbench-auto-runner/transport/2.0.0/seller"
@@ -111,13 +135,13 @@
                       "type": "START",
                       "location": {
                         "city": {
-                          "code": "std:080"
+                          "code": "std:040"
                         }
                       },
                       "time": {
                         "range": {
-                          "start": "2025-09-11T19:29:00.551Z",
-                          "end": "2025-09-13T19:29:00.551Z"
+                          "start": "2025-09-12T07:16:31.395Z",
+                          "end": "2025-09-14T07:16:31.395Z"
                         }
                       }
                     }
@@ -190,7 +214,7 @@
             }
           },
           "sessionData": {
-            "transaction_id": "4574d17c-9333-4583-9f9a-4503cabdb5db",
+            "transaction_id": "db2df11e-c54b-4a0d-a849-a79335135e11",
             "message_id": null,
             "last_action": null,
             "mock_type": null,
@@ -257,9 +281,9 @@
                   "code": "IND"
                 }
               },
-              "message_id": "f6c64d54-05e8-476d-a97f-a580b90b348b",
-              "timestamp": "2025-09-11T19:29:05.940Z",
-              "transaction_id": "4574d17c-9333-4583-9f9a-4503cabdb5db",
+              "message_id": "60f11f6b-d252-4dab-8648-088129f84cdf",
+              "timestamp": "2025-09-12T07:09:23.394Z",
+              "transaction_id": "db2df11e-c54b-4a0d-a849-a79335135e11",
               "ttl": "PT30S",
               "version": "2.0.0",
               "bpp_id": "dev-automation.ondc.org",
@@ -316,8 +340,8 @@
                     ],
                     "time": {
                       "range": {
-                        "start": "2025-09-11T19:29:00.551Z",
-                        "end": "2025-09-13T19:29:00.551Z"
+                        "start": "2025-09-12T07:16:31.395Z",
+                        "end": "2025-09-14T07:16:31.395Z"
                       }
                     },
                     "locations": [
@@ -439,8 +463,8 @@
             }
           },
           "sessionData": {
-            "transaction_id": "4574d17c-9333-4583-9f9a-4503cabdb5db",
-            "message_id": "f6c64d54-05e8-476d-a97f-a580b90b348b",
+            "transaction_id": "db2df11e-c54b-4a0d-a849-a79335135e11",
+            "message_id": "60f11f6b-d252-4dab-8648-088129f84cdf",
             "last_action": null,
             "mock_type": null,
             "city_code": "std:080",
@@ -539,8 +563,8 @@
                 ]
               }
             ],
-            "start_time": "2025-09-11T19:29:00.551Z",
-            "end_time": "2025-09-13T19:29:00.551Z",
+            "start_time": "2025-09-12T07:16:31.395Z",
+            "end_time": "2025-09-14T07:16:31.395Z",
             "vehicle_category": "SITE",
             "user_inputs": {}
           }
@@ -561,9 +585,9 @@
                   "code": "IND"
                 }
               },
-              "message_id": "20c98ddf-f6b8-4b25-bd9d-0816b87c430e",
-              "timestamp": "2025-09-11T19:29:06.188Z",
-              "transaction_id": "4574d17c-9333-4583-9f9a-4503cabdb5db",
+              "message_id": "11cc3439-ed69-4b08-9eb0-7ef57969cc8d",
+              "timestamp": "2025-09-12T07:11:05.561Z",
+              "transaction_id": "db2df11e-c54b-4a0d-a849-a79335135e11",
               "ttl": "PT30S",
               "version": "2.0.0",
               "bpp_id": "dev-automation.ondc.org",
@@ -619,8 +643,8 @@
                     ],
                     "time": {
                       "range": {
-                        "start": "2025-09-11T19:29:00.551Z",
-                        "end": "2025-09-13T19:29:00.551Z"
+                        "start": "2025-09-12T07:16:31.395Z",
+                        "end": "2025-09-14T07:16:31.395Z"
                       }
                     },
                     "locations": [
@@ -689,8 +713,8 @@
                           "label": "VALIDITY",
                           "duration": "P2D",
                           "range": {
-                            "start": "2025-09-11T19:29:00.551Z",
-                            "end": "2025-09-13T19:29:00.551Z"
+                            "start": "2025-09-12T07:16:31.395Z",
+                            "end": "2025-09-14T07:16:31.395Z"
                           }
                         },
                         "fulfillment_ids": [
@@ -793,8 +817,8 @@
                           "label": "VALIDITY",
                           "duration": "P2D",
                           "range": {
-                            "start": "2025-09-11T19:29:00.551Z",
-                            "end": "2025-09-13T19:29:00.551Z"
+                            "start": "2025-09-12T07:16:31.395Z",
+                            "end": "2025-09-14T07:16:31.395Z"
                           }
                         },
                         "fulfillment_ids": [
@@ -890,8 +914,8 @@
                           "label": "VALIDITY",
                           "duration": "P2D",
                           "range": {
-                            "start": "2025-09-11T19:29:00.551Z",
-                            "end": "2025-09-13T19:29:00.551Z"
+                            "start": "2025-09-12T07:16:31.395Z",
+                            "end": "2025-09-14T07:16:31.395Z"
                           }
                         },
                         "fulfillment_ids": [
@@ -986,8 +1010,8 @@
                           "label": "VALIDITY",
                           "duration": "P2D",
                           "range": {
-                            "start": "2025-09-11T19:29:00.551Z",
-                            "end": "2025-09-13T19:29:00.551Z"
+                            "start": "2025-09-12T07:16:31.395Z",
+                            "end": "2025-09-14T07:16:31.395Z"
                           }
                         },
                         "fulfillment_ids": [
@@ -1135,8 +1159,8 @@
                           "label": "VALIDITY",
                           "duration": "P2D",
                           "range": {
-                            "start": "2025-09-11T19:29:00.551Z",
-                            "end": "2025-09-13T19:29:00.551Z"
+                            "start": "2025-09-12T07:16:31.395Z",
+                            "end": "2025-09-14T07:16:31.395Z"
                           }
                         },
                         "fulfillment_ids": [
@@ -1263,8 +1287,8 @@
                         },
                         "time": {
                           "range": {
-                            "start": "2025-09-11T19:29:00.551Z",
-                            "end": "2025-09-13T19:29:00.551Z"
+                            "start": "2025-09-12T07:16:31.395Z",
+                            "end": "2025-09-14T07:16:31.395Z"
                           }
                         }
                       }
@@ -1283,7 +1307,7 @@
                               }
                             },
                             "time": {
-                              "timestamp": "2025-09-11T19:29:00.551Z"
+                              "timestamp": "2025-09-12T07:16:31.395Z"
                             }
                           }
                         ],
@@ -1313,8 +1337,8 @@
                             },
                             "time": {
                               "range": {
-                                "start": "2025-09-11T19:29:00.551Z",
-                                "end": "2025-09-13T19:29:00.551Z"
+                                "start": "2025-09-12T07:16:31.395Z",
+                                "end": "2025-09-14T07:16:31.395Z"
                               }
                             }
                           }
@@ -1417,8 +1441,8 @@
             }
           },
           "sessionData": {
-            "transaction_id": "4574d17c-9333-4583-9f9a-4503cabdb5db",
-            "message_id": "f6c64d54-05e8-476d-a97f-a580b90b348b",
+            "transaction_id": "db2df11e-c54b-4a0d-a849-a79335135e11",
+            "message_id": "60f11f6b-d252-4dab-8648-088129f84cdf",
             "last_action": null,
             "mock_type": null,
             "city_code": "std:080",
@@ -1517,8 +1541,8 @@
                 ]
               }
             ],
-            "start_time": "2025-09-11T19:29:00.551Z",
-            "end_time": "2025-09-13T19:29:00.551Z",
+            "start_time": "2025-09-12T07:16:31.395Z",
+            "end_time": "2025-09-14T07:16:31.395Z",
             "vehicle_category": "SITE",
             "user_inputs": {}
           }
@@ -1539,9 +1563,9 @@
                   "code": "IND"
                 }
               },
-              "message_id": "21bbe030-0f8a-4e30-a419-0b3836f6a255",
-              "timestamp": "2025-09-11T19:29:06.413Z",
-              "transaction_id": "4574d17c-9333-4583-9f9a-4503cabdb5db",
+              "message_id": "f88254c9-d7af-4c7b-b387-bf782c6df01f",
+              "timestamp": "2025-09-12T07:15:24.686Z",
+              "transaction_id": "db2df11e-c54b-4a0d-a849-a79335135e11",
               "ttl": "PT30S",
               "version": "2.0.0",
               "bpp_id": "dev-automation.ondc.org",
@@ -1597,8 +1621,8 @@
                     ],
                     "time": {
                       "range": {
-                        "start": "2025-09-11T19:29:00.551Z",
-                        "end": "2025-09-13T19:29:00.551Z"
+                        "start": "2025-09-12T07:16:31.395Z",
+                        "end": "2025-09-14T07:16:31.395Z"
                       }
                     },
                     "locations": [
@@ -1667,8 +1691,8 @@
                           "label": "VALIDITY",
                           "duration": "P2D",
                           "range": {
-                            "start": "2025-09-11T19:29:00.551Z",
-                            "end": "2025-09-13T19:29:00.551Z"
+                            "start": "2025-09-12T07:16:31.395Z",
+                            "end": "2025-09-14T07:16:31.395Z"
                           }
                         },
                         "fulfillment_ids": [
@@ -1771,8 +1795,8 @@
                           "label": "VALIDITY",
                           "duration": "P2D",
                           "range": {
-                            "start": "2025-09-11T19:29:00.551Z",
-                            "end": "2025-09-13T19:29:00.551Z"
+                            "start": "2025-09-12T07:16:31.395Z",
+                            "end": "2025-09-14T07:16:31.395Z"
                           }
                         },
                         "fulfillment_ids": [
@@ -1868,8 +1892,8 @@
                           "label": "VALIDITY",
                           "duration": "P2D",
                           "range": {
-                            "start": "2025-09-11T19:29:00.551Z",
-                            "end": "2025-09-13T19:29:00.551Z"
+                            "start": "2025-09-12T07:16:31.395Z",
+                            "end": "2025-09-14T07:16:31.395Z"
                           }
                         },
                         "fulfillment_ids": [
@@ -1964,8 +1988,8 @@
                           "label": "VALIDITY",
                           "duration": "P2D",
                           "range": {
-                            "start": "2025-09-11T19:29:00.551Z",
-                            "end": "2025-09-13T19:29:00.551Z"
+                            "start": "2025-09-12T07:16:31.395Z",
+                            "end": "2025-09-14T07:16:31.395Z"
                           }
                         },
                         "fulfillment_ids": [
@@ -2113,8 +2137,8 @@
                           "label": "VALIDITY",
                           "duration": "P2D",
                           "range": {
-                            "start": "2025-09-11T19:29:00.551Z",
-                            "end": "2025-09-13T19:29:00.551Z"
+                            "start": "2025-09-12T07:16:31.395Z",
+                            "end": "2025-09-14T07:16:31.395Z"
                           }
                         },
                         "fulfillment_ids": [
@@ -2241,8 +2265,8 @@
                         },
                         "time": {
                           "range": {
-                            "start": "2025-09-11T19:29:00.551Z",
-                            "end": "2025-09-13T19:29:00.551Z"
+                            "start": "2025-09-12T07:16:31.395Z",
+                            "end": "2025-09-14T07:16:31.395Z"
                           }
                         }
                       }
@@ -2261,7 +2285,7 @@
                               }
                             },
                             "time": {
-                              "timestamp": "2025-09-11T19:29:00.551Z"
+                              "timestamp": "2025-09-12T07:16:31.395Z"
                             }
                           }
                         ],
@@ -2291,8 +2315,8 @@
                             },
                             "time": {
                               "range": {
-                                "start": "2025-09-11T19:29:00.551Z",
-                                "end": "2025-09-13T19:29:00.551Z"
+                                "start": "2025-09-12T07:16:31.395Z",
+                                "end": "2025-09-14T07:16:31.395Z"
                               }
                             }
                           }
@@ -2395,8 +2419,8 @@
             }
           },
           "sessionData": {
-            "transaction_id": "4574d17c-9333-4583-9f9a-4503cabdb5db",
-            "message_id": "20c98ddf-f6b8-4b25-bd9d-0816b87c430e",
+            "transaction_id": "db2df11e-c54b-4a0d-a849-a79335135e11",
+            "message_id": "11cc3439-ed69-4b08-9eb0-7ef57969cc8d",
             "last_action": null,
             "mock_type": null,
             "city_code": "std:080",
@@ -2423,7 +2447,7 @@
                       }
                     },
                     "time": {
-                      "timestamp": "2025-09-11T19:29:00.551Z"
+                      "timestamp": "2025-09-12T07:16:31.395Z"
                     }
                   }
                 ],
@@ -2453,8 +2477,8 @@
                     },
                     "time": {
                       "range": {
-                        "start": "2025-09-11T19:29:00.551Z",
-                        "end": "2025-09-13T19:29:00.551Z"
+                        "start": "2025-09-12T07:16:31.395Z",
+                        "end": "2025-09-14T07:16:31.395Z"
                       }
                     }
                   }
@@ -2502,8 +2526,8 @@
                   "label": "VALIDITY",
                   "duration": "P2D",
                   "range": {
-                    "start": "2025-09-11T19:29:00.551Z",
-                    "end": "2025-09-13T19:29:00.551Z"
+                    "start": "2025-09-12T07:16:31.395Z",
+                    "end": "2025-09-14T07:16:31.395Z"
                   }
                 },
                 "fulfillment_ids": [
@@ -2606,8 +2630,8 @@
                   "label": "VALIDITY",
                   "duration": "P2D",
                   "range": {
-                    "start": "2025-09-11T19:29:00.551Z",
-                    "end": "2025-09-13T19:29:00.551Z"
+                    "start": "2025-09-12T07:16:31.395Z",
+                    "end": "2025-09-14T07:16:31.395Z"
                   }
                 },
                 "fulfillment_ids": [
@@ -2703,8 +2727,8 @@
                   "label": "VALIDITY",
                   "duration": "P2D",
                   "range": {
-                    "start": "2025-09-11T19:29:00.551Z",
-                    "end": "2025-09-13T19:29:00.551Z"
+                    "start": "2025-09-12T07:16:31.395Z",
+                    "end": "2025-09-14T07:16:31.395Z"
                   }
                 },
                 "fulfillment_ids": [
@@ -2799,8 +2823,8 @@
                   "label": "VALIDITY",
                   "duration": "P2D",
                   "range": {
-                    "start": "2025-09-11T19:29:00.551Z",
-                    "end": "2025-09-13T19:29:00.551Z"
+                    "start": "2025-09-12T07:16:31.395Z",
+                    "end": "2025-09-14T07:16:31.395Z"
                   }
                 },
                 "fulfillment_ids": [
@@ -2948,8 +2972,8 @@
                   "label": "VALIDITY",
                   "duration": "P2D",
                   "range": {
-                    "start": "2025-09-11T19:29:00.551Z",
-                    "end": "2025-09-13T19:29:00.551Z"
+                    "start": "2025-09-12T07:16:31.395Z",
+                    "end": "2025-09-14T07:16:31.395Z"
                   }
                 },
                 "fulfillment_ids": [
@@ -3076,8 +3100,8 @@
                 },
                 "time": {
                   "range": {
-                    "start": "2025-09-11T19:29:00.551Z",
-                    "end": "2025-09-13T19:29:00.551Z"
+                    "start": "2025-09-12T07:16:31.395Z",
+                    "end": "2025-09-14T07:16:31.395Z"
                   }
                 }
               }
@@ -3162,8 +3186,8 @@
                 ]
               }
             ],
-            "start_time": "2025-09-11T19:29:00.551Z",
-            "end_time": "2025-09-13T19:29:00.551Z",
+            "start_time": "2025-09-12T07:16:31.395Z",
+            "end_time": "2025-09-14T07:16:31.395Z",
             "vehicle_category": "SITE",
             "item": {
               "id": "I0",
@@ -3190,8 +3214,8 @@
                 "label": "VALIDITY",
                 "duration": "P2D",
                 "range": {
-                  "start": "2025-09-11T19:29:00.551Z",
-                  "end": "2025-09-13T19:29:00.551Z"
+                  "start": "2025-09-12T07:16:31.395Z",
+                  "end": "2025-09-14T07:16:31.395Z"
                 }
               },
               "fulfillment_ids": [
@@ -3265,29 +3289,51 @@
       "test-session-id": [
         {
           "data": "{\"transactionIds\":[],\"flowMap\":{},\"npType\":\"BAP\",\"domain\":\"transport\",\"version\":\"2.0.0\",\"subscriberUrl\":\"https://workbench-auto-runner.com\",\"usecaseId\":\"TRV14\",\"env\":\"STAGING\",\"flowConfigs\":{\"incremental_pull_journey\":{\"id\":\"incremental_pull_journey\",\"description\":\"Incremental Pull flow with repeated on_search steps\",\"sequence\":[{\"key\":\"search_incremental_pull\",\"type\":\"search\",\"unsolicited\":false,\"pair\":\"on_search_incremental_pull_1\",\"owner\":\"BAP\",\"expect\":true,\"input\":[{\"name\":\"city_code\",\"label\":\"Enter city code\",\"type\":\"text\",\"payloadField\":\"$.message.intent.fulfillment.stops[?(@.type=='START')].location.city.code\"}]},{\"key\":\"on_search_incremental_pull_1\",\"type\":\"on_search\",\"unsolicited\":false,\"pair\":null,\"owner\":\"BPP\",\"expect\":false},{\"key\":\"on_search_incremental_pull_2\",\"type\":\"on_search\",\"unsolicited\":true,\"pair\":null,\"owner\":\"BPP\",\"expect\":false},{\"key\":\"on_search_incremental_pull_3\",\"type\":\"on_search\",\"unsolicited\":true,\"pair\":null,\"owner\":\"BPP\",\"expect\":false}]}}}",
-          "timestamp": "2025-09-11T19:29:00.543Z"
+          "timestamp": "2025-09-12T07:16:31.388Z"
         },
         {
-          "data": "{\"transactionIds\":[],\"flowMap\":{\"incremental_pull_journey\":\"4574d17c-9333-4583-9f9a-4503cabdb5db\"},\"npType\":\"BAP\",\"domain\":\"transport\",\"version\":\"2.0.0\",\"subscriberUrl\":\"https://workbench-auto-runner.com\",\"usecaseId\":\"TRV14\",\"env\":\"STAGING\",\"flowConfigs\":{\"incremental_pull_journey\":{\"id\":\"incremental_pull_journey\",\"description\":\"Incremental Pull flow with repeated on_search steps\",\"sequence\":[{\"key\":\"search_incremental_pull\",\"type\":\"search\",\"unsolicited\":false,\"pair\":\"on_search_incremental_pull_1\",\"owner\":\"BAP\",\"expect\":true,\"input\":[{\"name\":\"city_code\",\"label\":\"Enter city code\",\"type\":\"text\",\"payloadField\":\"$.message.intent.fulfillment.stops[?(@.type=='START')].location.city.code\"}]},{\"key\":\"on_search_incremental_pull_1\",\"type\":\"on_search\",\"unsolicited\":false,\"pair\":null,\"owner\":\"BPP\",\"expect\":false},{\"key\":\"on_search_incremental_pull_2\",\"type\":\"on_search\",\"unsolicited\":true,\"pair\":null,\"owner\":\"BPP\",\"expect\":false},{\"key\":\"on_search_incremental_pull_3\",\"type\":\"on_search\",\"unsolicited\":true,\"pair\":null,\"owner\":\"BPP\",\"expect\":false}]}}}",
-          "timestamp": "2025-09-11T19:29:00.545Z"
+          "data": "{\"transactionIds\":[],\"flowMap\":{\"incremental_pull_journey\":\"db2df11e-c54b-4a0d-a849-a79335135e11\"},\"npType\":\"BAP\",\"domain\":\"transport\",\"version\":\"2.0.0\",\"subscriberUrl\":\"https://workbench-auto-runner.com\",\"usecaseId\":\"TRV14\",\"env\":\"STAGING\",\"flowConfigs\":{\"incremental_pull_journey\":{\"id\":\"incremental_pull_journey\",\"description\":\"Incremental Pull flow with repeated on_search steps\",\"sequence\":[{\"key\":\"search_incremental_pull\",\"type\":\"search\",\"unsolicited\":false,\"pair\":\"on_search_incremental_pull_1\",\"owner\":\"BAP\",\"expect\":true,\"input\":[{\"name\":\"city_code\",\"label\":\"Enter city code\",\"type\":\"text\",\"payloadField\":\"$.message.intent.fulfillment.stops[?(@.type=='START')].location.city.code\"}]},{\"key\":\"on_search_incremental_pull_1\",\"type\":\"on_search\",\"unsolicited\":false,\"pair\":null,\"owner\":\"BPP\",\"expect\":false},{\"key\":\"on_search_incremental_pull_2\",\"type\":\"on_search\",\"unsolicited\":true,\"pair\":null,\"owner\":\"BPP\",\"expect\":false},{\"key\":\"on_search_incremental_pull_3\",\"type\":\"on_search\",\"unsolicited\":true,\"pair\":null,\"owner\":\"BPP\",\"expect\":false}]}}}",
+          "timestamp": "2025-09-12T07:16:31.389Z"
         }
       ],
-      "4574d17c-9333-4583-9f9a-4503cabdb5db": [
+      "db2df11e-c54b-4a0d-a849-a79335135e11::https://workbench-auto-runner.com": [
         {
-          "data": "{\"transaction_id\":\"4574d17c-9333-4583-9f9a-4503cabdb5db\",\"message_id\":\"f6c64d54-05e8-476d-a97f-a580b90b348b\",\"last_action\":null,\"mock_type\":null,\"city_code\":\"std:080\",\"bap_id\":\"dev-automation.ondc.org\",\"bap_uri\":\"https://dev-automation.ondc.org/buyer\",\"bpp_id\":\"dev-automation.ondc.org\",\"bpp_uri\":\"https://dev-automation.ondc.org/seller\",\"start_location\":null,\"intermediate_location\":null,\"end_location\":null,\"buyer_app_fee\":null,\"vehicle_type\":null,\"fulfillments\":[],\"category_ids\":[],\"provider_id\":null,\"fulfillment_ids\":[],\"item_ids\":[],\"items\":[],\"selected_items\":[],\"selected_item_id\":null,\"billing\":{},\"payments\":[],\"updated_payments\":[],\"order_id\":null,\"status\":null,\"quote\":null,\"ref_id\":null,\"ttl\":null,\"usecaseId\":null,\"stops\":[],\"update_stop\":[],\"update_quote\":[],\"selected_fulfillments\":[],\"bap_items\":[],\"collected_by\":\"BAP\",\"updated_price\":null,\"selected_add_ons\":[],\"created_at\":null,\"cancellation_reason_id\":null,\"cancellation_quote\":[],\"selected_fulfillment_id\":null,\"tags\":[{\"descriptor\":{\"code\":\"BAP_TERMS\",\"name\":\"BAP Terms of Engagement\"},\"display\":false,\"list\":[{\"descriptor\":{\"code\":\"BUYER_FINDER_FEES_PERCENTAGE\"},\"value\":\"1\"},{\"descriptor\":{\"code\":\"BUYER_FINDER_FEES_TYPE\"},\"value\":\"percent\"},{\"descriptor\":{\"code\":\"STATIC_TERMS\"},\"value\":\"https://api.example-bap.com/booking/terms\"},{\"descriptor\":{\"code\":\"SETTLEMENT_BASIS\"},\"value\":\"https://api.example-bap.com/booking/terms\"},{\"descriptor\":{\"code\":\"SETTLEMENT_WINDOW\"},\"value\":\"P30D\"}]},{\"descriptor\":{\"code\":\"INCREMENTAL_PULL\",\"name\":\"Incremental Pull\"},\"display\":false,\"list\":[{\"descriptor\":{\"code\":\"REGISTER\",\"name\":\"Register\"},\"value\":\"true\"}]}],\"start_time\":\"2025-09-11T19:29:00.551Z\",\"end_time\":\"2025-09-13T19:29:00.551Z\",\"vehicle_category\":\"SITE\"}",
-          "timestamp": "2025-09-11T19:29:05.937Z"
+          "data": "{\"latestAction\":\"\",\"subscriberType\":\"BAP\",\"latestTimestamp\":\"1970-01-01T00:00:00.000Z\",\"type\":\"manual\",\"messageIds\":[],\"apiList\":[],\"referenceData\":{}}",
+          "timestamp": "2025-09-12T07:16:35.648Z"
         },
         {
-          "data": "{\"transaction_id\":\"4574d17c-9333-4583-9f9a-4503cabdb5db\",\"message_id\":\"f6c64d54-05e8-476d-a97f-a580b90b348b\",\"last_action\":null,\"mock_type\":null,\"city_code\":\"std:080\",\"bap_id\":\"dev-automation.ondc.org\",\"bap_uri\":\"https://dev-automation.ondc.org/buyer\",\"bpp_id\":\"dev-automation.ondc.org\",\"bpp_uri\":\"https://dev-automation.ondc.org/seller\",\"start_location\":null,\"intermediate_location\":null,\"end_location\":null,\"buyer_app_fee\":null,\"vehicle_type\":null,\"fulfillments\":[],\"category_ids\":[],\"provider_id\":\"P1\",\"fulfillment_ids\":[],\"item_ids\":[],\"items\":[],\"selected_items\":[],\"selected_item_id\":null,\"billing\":{},\"payments\":[],\"updated_payments\":[],\"order_id\":null,\"status\":null,\"quote\":null,\"ref_id\":null,\"ttl\":null,\"usecaseId\":null,\"stops\":[],\"update_stop\":[],\"update_quote\":[],\"selected_fulfillments\":[],\"bap_items\":[],\"collected_by\":\"BAP\",\"updated_price\":null,\"selected_add_ons\":[],\"created_at\":null,\"cancellation_reason_id\":null,\"cancellation_quote\":[],\"selected_fulfillment_id\":null,\"tags\":[{\"descriptor\":{\"code\":\"BAP_TERMS\",\"name\":\"BAP Terms of Engagement\"},\"display\":false,\"list\":[{\"descriptor\":{\"code\":\"BUYER_FINDER_FEES_PERCENTAGE\"},\"value\":\"1\"},{\"descriptor\":{\"code\":\"BUYER_FINDER_FEES_TYPE\"},\"value\":\"percent\"},{\"descriptor\":{\"code\":\"STATIC_TERMS\"},\"value\":\"https://api.example-bap.com/booking/terms\"},{\"descriptor\":{\"code\":\"SETTLEMENT_BASIS\"},\"value\":\"https://api.example-bap.com/booking/terms\"},{\"descriptor\":{\"code\":\"SETTLEMENT_WINDOW\"},\"value\":\"P30D\"}]},{\"descriptor\":{\"code\":\"INCREMENTAL_PULL\",\"name\":\"Incremental Pull\"},\"display\":false,\"list\":[{\"descriptor\":{\"code\":\"REGISTER\",\"name\":\"Register\"},\"value\":\"true\"}]}],\"start_time\":\"2025-09-11T19:29:00.551Z\",\"end_time\":\"2025-09-13T19:29:00.551Z\",\"vehicle_category\":\"SITE\"}",
-          "timestamp": "2025-09-11T19:29:06.185Z"
+          "data": "{\"latestAction\":\"search\",\"subscriberType\":\"BAP\",\"latestTimestamp\":\"2025-09-12T07:11:13.790Z\",\"type\":\"manual\",\"messageIds\":[],\"apiList\":[{\"entryType\":\"API\",\"action\":\"search\",\"messageId\":\"60f11f6b-d252-4dab-8648-088129f84cdf\",\"payloadId\":\"db18cee4-83ac-44f2-afb9-9f113ec518a6\",\"response\":{\"message\":\"STUB API RESPONSE FOR AUTO RUNNER\"},\"timestamp\":\"2025-09-12T07:11:13.790Z\"}],\"referenceData\":{}}",
+          "timestamp": "2025-09-12T07:16:35.651Z"
         },
         {
-          "data": "{\"transaction_id\":\"4574d17c-9333-4583-9f9a-4503cabdb5db\",\"message_id\":\"20c98ddf-f6b8-4b25-bd9d-0816b87c430e\",\"last_action\":null,\"mock_type\":null,\"city_code\":\"std:080\",\"bap_id\":\"dev-automation.ondc.org\",\"bap_uri\":\"https://dev-automation.ondc.org/buyer\",\"bpp_id\":\"dev-automation.ondc.org\",\"bpp_uri\":\"https://dev-automation.ondc.org/seller\",\"start_location\":null,\"intermediate_location\":null,\"end_location\":null,\"buyer_app_fee\":null,\"vehicle_type\":null,\"fulfillments\":[{\"id\":\"F1\",\"type\":\"VISIT\",\"stops\":[{\"type\":\"START\",\"instructions\":{\"additional_desc\":{\"url\":\"https://api.unreserved-entry-pass.com/sites/additional-info\",\"content_type\":\"text/plain\"}},\"time\":{\"timestamp\":\"2025-09-11T19:29:00.551Z\"}}],\"agent\":{\"organization\":{\"contact\":{\"phone\":\"+91-9999999999\",\"email\":\"john.doe@example.com\"}}},\"vehicle\":{\"category\":\"SITE\"}},{\"id\":\"F2\",\"type\":\"VISIT\",\"stops\":[{\"type\":\"START\",\"instructions\":{\"additional_desc\":{\"url\":\"https://api.unreserved-entry-pass.com/sites/additional-info\",\"content_type\":\"text/plain\"}},\"time\":{\"range\":{\"start\":\"2025-09-11T19:29:00.551Z\",\"end\":\"2025-09-13T19:29:00.551Z\"}}}],\"agent\":{\"organization\":{\"contact\":{\"phone\":\"+91-9999999999\",\"email\":\"john.doe@example.com\"}}},\"vehicle\":{\"category\":\"SITE\"}}],\"category_ids\":[],\"provider_id\":\"P1\",\"fulfillment_ids\":[],\"item_ids\":[],\"items\":[{\"id\":\"I0\",\"descriptor\":{\"name\":\"Parent Item for Culture & Heritage\",\"code\":\"ABSTRACT\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C2\"],\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-11T19:29:00.551Z\",\"end\":\"2025-09-13T19:29:00.551Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"cancellation_terms\":[{\"cancellation_fee\":{\"percentage\":\"10\"},\"fulfillment_state\":{\"descriptor\":{\"code\":\"CONFIRMED\"}},\"cancel_by\":{\"label\":\"DURATION\",\"duration\":\"PT1H30M\"},\"cancellation_eligible\":true},{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass.com/beckn/tnc.html\"},\"cancellation_eligible\":true}],\"replacement_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass/beckn/replacement.html\"}}],\"tags\":[{\"descriptor\":{\"code\":\"INCLUSIONS\"},\"list\":[{\"value\":\"water\"}]},{\"descriptor\":{\"code\":\"EXCLUSIONS\"},\"list\":[{\"value\":\"out side food\"},{\"value\":\"photography\"}]}]},{\"id\":\"I1\",\"descriptor\":{\"name\":\"Adult-Ticket Culture & Heritage Item\",\"code\":\"ENTRY_PASS\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"parent_item_id\":\"I0\",\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C2\"],\"price\":{\"currency\":\"INR\",\"value\":\"350\"},\"quantity\":{\"maximum\":{\"count\":6},\"minimum\":{\"count\":1}},\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-11T19:29:00.551Z\",\"end\":\"2025-09-13T19:29:00.551Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"add_ons\":[{\"id\":\"A1\",\"descriptor\":{\"name\":\"Audio Assistance\"},\"quantity\":{\"available\":{\"count\":1}},\"price\":{\"value\":\"100\",\"currency\":\"INR\"}}],\"tags\":[{\"descriptor\":{\"code\":\"FARE_POLICY\"},\"list\":[{\"descriptor\":{\"code\":\"MIN_AGE\"},\"value\":\"18\"},{\"descriptor\":{\"code\":\"MAX_AGE\"},\"value\":\"70\"},{\"descriptor\":{\"code\":\"GENDER\"},\"value\":\"MALE\"},{\"descriptor\":{\"code\":\"NATIONALITY\"},\"value\":\"INDIAN\"}]}]},{\"id\":\"I2\",\"descriptor\":{\"name\":\"Child-Ticket Culture & Heritage Item\",\"code\":\"ENTRY_PASS\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"parent_item_id\":\"I0\",\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C2\"],\"price\":{\"currency\":\"INR\",\"value\":\"150\"},\"quantity\":{\"maximum\":{\"count\":4},\"minimum\":{\"count\":1}},\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-11T19:29:00.551Z\",\"end\":\"2025-09-13T19:29:00.551Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"add_ons\":[{\"id\":\"A1\",\"descriptor\":{\"name\":\"Audio Assistance\"},\"quantity\":{\"available\":{\"count\":1}},\"price\":{\"value\":\"100\",\"currency\":\"INR\"}}],\"tags\":[{\"descriptor\":{\"code\":\"FARE_POLICY\"},\"list\":[{\"descriptor\":{\"code\":\"MIN_AGE\"},\"value\":\"1\"},{\"descriptor\":{\"code\":\"MAX_AGE\"},\"value\":\"70\"},{\"descriptor\":{\"code\":\"GENDER\"},\"value\":\"MALE\"},{\"descriptor\":{\"code\":\"NATIONALITY\"},\"value\":\"INDIAN\"}]}]},{\"id\":\"I3\",\"descriptor\":{\"name\":\"Adult-Ticket Culture & Heritage Item\",\"code\":\"ENTRY_PASS\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C3\"],\"price\":{\"currency\":\"INR\",\"value\":\"400\"},\"quantity\":{\"maximum\":{\"count\":6},\"minimum\":{\"count\":1}},\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-11T19:29:00.551Z\",\"end\":\"2025-09-13T19:29:00.551Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"add_ons\":[{\"id\":\"A1\",\"descriptor\":{\"name\":\"Audio Assistance\"},\"quantity\":{\"available\":{\"count\":1}},\"price\":{\"value\":\"100\",\"currency\":\"INR\"}}],\"cancellation_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass.com/beckn/tnc.html\"},\"cancellation_eligible\":true},{\"cancellation_fee\":{\"percentage\":\"10\"},\"cancel_by\":{\"label\":\"TIMESTAMP\",\"timestamp\":\"2024-07-26T04:43:16.000Z\"},\"cancellation_eligible\":true}],\"replacement_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass/beckn/replacement.html\"}}],\"tags\":[{\"descriptor\":{\"code\":\"FARE_POLICY\"},\"list\":[{\"descriptor\":{\"code\":\"MIN_AGE\"},\"value\":\"18\"},{\"descriptor\":{\"code\":\"MAX_AGE\"},\"value\":\"70\"},{\"descriptor\":{\"code\":\"GENDER\"},\"value\":\"MALE\"},{\"descriptor\":{\"code\":\"NATIONALITY\"},\"value\":\"INDIAN\"}]},{\"descriptor\":{\"code\":\"INCLUSIONS\"},\"list\":[{\"value\":\"water\"},{\"value\":\"guide_tour\"}]},{\"descriptor\":{\"code\":\"EXCLUSIONS\"},\"list\":[{\"value\":\"out side food\"},{\"value\":\"photography\"}]}]},{\"id\":\"I4\",\"descriptor\":{\"name\":\"Child-Ticket Culture & Heritage Item\",\"code\":\"ENTRY_PASS\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C3\"],\"price\":{\"currency\":\"INR\",\"value\":\"250\"},\"quantity\":{\"maximum\":{\"count\":4},\"minimum\":{\"count\":1}},\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-11T19:29:00.551Z\",\"end\":\"2025-09-13T19:29:00.551Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"add_ons\":[{\"id\":\"A1\",\"descriptor\":{\"name\":\"Audio Assistance\"},\"quantity\":{\"available\":{\"count\":1}},\"price\":{\"value\":\"100\",\"currency\":\"INR\"}}],\"cancellation_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass.com/beckn/tnc.html\"},\"cancellation_eligible\":true}],\"replacement_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass/beckn/replacement.html\"}}],\"tags\":[{\"descriptor\":{\"code\":\"FARE_POLICY\"},\"list\":[{\"descriptor\":{\"code\":\"MIN_AGE\"},\"value\":\"1\"},{\"descriptor\":{\"code\":\"MAX_AGE\"},\"value\":\"70\"},{\"descriptor\":{\"code\":\"GENDER\"},\"value\":\"MALE\"},{\"descriptor\":{\"code\":\"NATIONALITY\"},\"value\":\"INDIAN\"}]},{\"descriptor\":{\"code\":\"INCLUSIONS\"},\"list\":[{\"value\":\"water\"},{\"value\":\"guide_tour\"}]},{\"descriptor\":{\"code\":\"EXCLUSIONS\"},\"list\":[{\"value\":\"out side food\"},{\"value\":\"photography\"}]}]},{\"id\":\"I5\",\"descriptor\":{\"name\":\"Add on item\",\"code\":\"ADD_ON\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"price\":{\"currency\":\"INR\",\"value\":\"100\"},\"quantity\":{\"maximum\":{\"count\":3},\"minimum\":{\"count\":1}},\"time\":{\"range\":{\"start\":\"2025-09-11T19:29:00.551Z\",\"end\":\"2025-09-13T19:29:00.551Z\"}}}],\"selected_items\":[],\"selected_item_id\":null,\"billing\":{},\"payments\":[],\"updated_payments\":[],\"order_id\":null,\"status\":null,\"quote\":null,\"ref_id\":null,\"ttl\":null,\"usecaseId\":null,\"stops\":[],\"update_stop\":[],\"update_quote\":[],\"selected_fulfillments\":[],\"bap_items\":[],\"collected_by\":\"BAP\",\"updated_price\":null,\"selected_add_ons\":[],\"created_at\":null,\"cancellation_reason_id\":null,\"cancellation_quote\":[],\"selected_fulfillment_id\":null,\"tags\":[{\"descriptor\":{\"code\":\"BAP_TERMS\",\"name\":\"BAP Terms of Engagement\"},\"display\":false,\"list\":[{\"descriptor\":{\"code\":\"BUYER_FINDER_FEES_PERCENTAGE\"},\"value\":\"1\"},{\"descriptor\":{\"code\":\"BUYER_FINDER_FEES_TYPE\"},\"value\":\"percent\"},{\"descriptor\":{\"code\":\"STATIC_TERMS\"},\"value\":\"https://api.example-bap.com/booking/terms\"},{\"descriptor\":{\"code\":\"SETTLEMENT_BASIS\"},\"value\":\"https://api.example-bap.com/booking/terms\"},{\"descriptor\":{\"code\":\"SETTLEMENT_WINDOW\"},\"value\":\"P30D\"}]},{\"descriptor\":{\"code\":\"INCREMENTAL_PULL\",\"name\":\"Incremental Pull\"},\"display\":false,\"list\":[{\"descriptor\":{\"code\":\"REGISTER\",\"name\":\"Register\"},\"value\":\"true\"}]}],\"start_time\":\"2025-09-11T19:29:00.551Z\",\"end_time\":\"2025-09-13T19:29:00.551Z\",\"vehicle_category\":\"SITE\",\"item\":{\"id\":\"I0\",\"descriptor\":{\"name\":\"Parent Item for Culture & Heritage\",\"code\":\"ABSTRACT\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C2\"],\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-11T19:29:00.551Z\",\"end\":\"2025-09-13T19:29:00.551Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"cancellation_terms\":[{\"cancellation_fee\":{\"percentage\":\"10\"},\"fulfillment_state\":{\"descriptor\":{\"code\":\"CONFIRMED\"}},\"cancel_by\":{\"label\":\"DURATION\",\"duration\":\"PT1H30M\"},\"cancellation_eligible\":true},{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass.com/beckn/tnc.html\"},\"cancellation_eligible\":true}],\"replacement_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass/beckn/replacement.html\"}}],\"tags\":[{\"descriptor\":{\"code\":\"INCLUSIONS\"},\"list\":[{\"value\":\"water\"}]},{\"descriptor\":{\"code\":\"EXCLUSIONS\"},\"list\":[{\"value\":\"out side food\"},{\"value\":\"photography\"}]}]}}",
-          "timestamp": "2025-09-11T19:29:06.411Z"
+          "data": "{\"latestAction\":\"on_search\",\"subscriberType\":\"BAP\",\"latestTimestamp\":\"2025-09-12T07:09:23.394Z\",\"type\":\"manual\",\"messageIds\":[],\"apiList\":[{\"entryType\":\"API\",\"action\":\"search\",\"messageId\":\"60f11f6b-d252-4dab-8648-088129f84cdf\",\"payloadId\":\"db18cee4-83ac-44f2-afb9-9f113ec518a6\",\"response\":{\"message\":\"STUB API RESPONSE FOR AUTO RUNNER\"},\"timestamp\":\"2025-09-12T07:11:13.790Z\"},{\"entryType\":\"API\",\"action\":\"on_search\",\"messageId\":\"60f11f6b-d252-4dab-8648-088129f84cdf\",\"payloadId\":\"634377fc-7c3c-4294-9b31-8de3b49b6685\",\"response\":{\"message\":\"STUB API RESPONSE FOR AUTO RUNNER\"},\"timestamp\":\"2025-09-12T07:09:23.394Z\"}],\"referenceData\":{}}",
+          "timestamp": "2025-09-12T07:16:35.878Z"
         },
         {
-          "data": "{\"transaction_id\":\"4574d17c-9333-4583-9f9a-4503cabdb5db\",\"message_id\":\"21bbe030-0f8a-4e30-a419-0b3836f6a255\",\"last_action\":null,\"mock_type\":null,\"city_code\":\"std:080\",\"bap_id\":\"dev-automation.ondc.org\",\"bap_uri\":\"https://dev-automation.ondc.org/buyer\",\"bpp_id\":\"dev-automation.ondc.org\",\"bpp_uri\":\"https://dev-automation.ondc.org/seller\",\"start_location\":null,\"intermediate_location\":null,\"end_location\":null,\"buyer_app_fee\":null,\"vehicle_type\":null,\"fulfillments\":[{\"id\":\"F1\",\"type\":\"VISIT\",\"stops\":[{\"type\":\"START\",\"instructions\":{\"additional_desc\":{\"url\":\"https://api.unreserved-entry-pass.com/sites/additional-info\",\"content_type\":\"text/plain\"}},\"time\":{\"timestamp\":\"2025-09-11T19:29:00.551Z\"}}],\"agent\":{\"organization\":{\"contact\":{\"phone\":\"+91-9999999999\",\"email\":\"john.doe@example.com\"}}},\"vehicle\":{\"category\":\"SITE\"}},{\"id\":\"F2\",\"type\":\"VISIT\",\"stops\":[{\"type\":\"START\",\"instructions\":{\"additional_desc\":{\"url\":\"https://api.unreserved-entry-pass.com/sites/additional-info\",\"content_type\":\"text/plain\"}},\"time\":{\"range\":{\"start\":\"2025-09-11T19:29:00.551Z\",\"end\":\"2025-09-13T19:29:00.551Z\"}}}],\"agent\":{\"organization\":{\"contact\":{\"phone\":\"+91-9999999999\",\"email\":\"john.doe@example.com\"}}},\"vehicle\":{\"category\":\"SITE\"}}],\"category_ids\":[],\"provider_id\":\"P1\",\"fulfillment_ids\":[],\"item_ids\":[],\"items\":[{\"id\":\"I0\",\"descriptor\":{\"name\":\"Parent Item for Culture & Heritage\",\"code\":\"ABSTRACT\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C2\"],\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-11T19:29:00.551Z\",\"end\":\"2025-09-13T19:29:00.551Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"cancellation_terms\":[{\"cancellation_fee\":{\"percentage\":\"10\"},\"fulfillment_state\":{\"descriptor\":{\"code\":\"CONFIRMED\"}},\"cancel_by\":{\"label\":\"DURATION\",\"duration\":\"PT1H30M\"},\"cancellation_eligible\":true},{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass.com/beckn/tnc.html\"},\"cancellation_eligible\":true}],\"replacement_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass/beckn/replacement.html\"}}],\"tags\":[{\"descriptor\":{\"code\":\"INCLUSIONS\"},\"list\":[{\"value\":\"water\"}]},{\"descriptor\":{\"code\":\"EXCLUSIONS\"},\"list\":[{\"value\":\"out side food\"},{\"value\":\"photography\"}]}]},{\"id\":\"I1\",\"descriptor\":{\"name\":\"Adult-Ticket Culture & Heritage Item\",\"code\":\"ENTRY_PASS\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"parent_item_id\":\"I0\",\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C2\"],\"price\":{\"currency\":\"INR\",\"value\":\"350\"},\"quantity\":{\"maximum\":{\"count\":6},\"minimum\":{\"count\":1}},\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-11T19:29:00.551Z\",\"end\":\"2025-09-13T19:29:00.551Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"add_ons\":[{\"id\":\"A1\",\"descriptor\":{\"name\":\"Audio Assistance\"},\"quantity\":{\"available\":{\"count\":1}},\"price\":{\"value\":\"100\",\"currency\":\"INR\"}}],\"tags\":[{\"descriptor\":{\"code\":\"FARE_POLICY\"},\"list\":[{\"descriptor\":{\"code\":\"MIN_AGE\"},\"value\":\"18\"},{\"descriptor\":{\"code\":\"MAX_AGE\"},\"value\":\"70\"},{\"descriptor\":{\"code\":\"GENDER\"},\"value\":\"MALE\"},{\"descriptor\":{\"code\":\"NATIONALITY\"},\"value\":\"INDIAN\"}]}]},{\"id\":\"I2\",\"descriptor\":{\"name\":\"Child-Ticket Culture & Heritage Item\",\"code\":\"ENTRY_PASS\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"parent_item_id\":\"I0\",\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C2\"],\"price\":{\"currency\":\"INR\",\"value\":\"150\"},\"quantity\":{\"maximum\":{\"count\":4},\"minimum\":{\"count\":1}},\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-11T19:29:00.551Z\",\"end\":\"2025-09-13T19:29:00.551Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"add_ons\":[{\"id\":\"A1\",\"descriptor\":{\"name\":\"Audio Assistance\"},\"quantity\":{\"available\":{\"count\":1}},\"price\":{\"value\":\"100\",\"currency\":\"INR\"}}],\"tags\":[{\"descriptor\":{\"code\":\"FARE_POLICY\"},\"list\":[{\"descriptor\":{\"code\":\"MIN_AGE\"},\"value\":\"1\"},{\"descriptor\":{\"code\":\"MAX_AGE\"},\"value\":\"70\"},{\"descriptor\":{\"code\":\"GENDER\"},\"value\":\"MALE\"},{\"descriptor\":{\"code\":\"NATIONALITY\"},\"value\":\"INDIAN\"}]}]},{\"id\":\"I3\",\"descriptor\":{\"name\":\"Adult-Ticket Culture & Heritage Item\",\"code\":\"ENTRY_PASS\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C3\"],\"price\":{\"currency\":\"INR\",\"value\":\"400\"},\"quantity\":{\"maximum\":{\"count\":6},\"minimum\":{\"count\":1}},\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-11T19:29:00.551Z\",\"end\":\"2025-09-13T19:29:00.551Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"add_ons\":[{\"id\":\"A1\",\"descriptor\":{\"name\":\"Audio Assistance\"},\"quantity\":{\"available\":{\"count\":1}},\"price\":{\"value\":\"100\",\"currency\":\"INR\"}}],\"cancellation_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass.com/beckn/tnc.html\"},\"cancellation_eligible\":true},{\"cancellation_fee\":{\"percentage\":\"10\"},\"cancel_by\":{\"label\":\"TIMESTAMP\",\"timestamp\":\"2024-07-26T04:43:16.000Z\"},\"cancellation_eligible\":true}],\"replacement_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass/beckn/replacement.html\"}}],\"tags\":[{\"descriptor\":{\"code\":\"FARE_POLICY\"},\"list\":[{\"descriptor\":{\"code\":\"MIN_AGE\"},\"value\":\"18\"},{\"descriptor\":{\"code\":\"MAX_AGE\"},\"value\":\"70\"},{\"descriptor\":{\"code\":\"GENDER\"},\"value\":\"MALE\"},{\"descriptor\":{\"code\":\"NATIONALITY\"},\"value\":\"INDIAN\"}]},{\"descriptor\":{\"code\":\"INCLUSIONS\"},\"list\":[{\"value\":\"water\"},{\"value\":\"guide_tour\"}]},{\"descriptor\":{\"code\":\"EXCLUSIONS\"},\"list\":[{\"value\":\"out side food\"},{\"value\":\"photography\"}]}]},{\"id\":\"I4\",\"descriptor\":{\"name\":\"Child-Ticket Culture & Heritage Item\",\"code\":\"ENTRY_PASS\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C3\"],\"price\":{\"currency\":\"INR\",\"value\":\"250\"},\"quantity\":{\"maximum\":{\"count\":4},\"minimum\":{\"count\":1}},\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-11T19:29:00.551Z\",\"end\":\"2025-09-13T19:29:00.551Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"add_ons\":[{\"id\":\"A1\",\"descriptor\":{\"name\":\"Audio Assistance\"},\"quantity\":{\"available\":{\"count\":1}},\"price\":{\"value\":\"100\",\"currency\":\"INR\"}}],\"cancellation_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass.com/beckn/tnc.html\"},\"cancellation_eligible\":true}],\"replacement_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass/beckn/replacement.html\"}}],\"tags\":[{\"descriptor\":{\"code\":\"FARE_POLICY\"},\"list\":[{\"descriptor\":{\"code\":\"MIN_AGE\"},\"value\":\"1\"},{\"descriptor\":{\"code\":\"MAX_AGE\"},\"value\":\"70\"},{\"descriptor\":{\"code\":\"GENDER\"},\"value\":\"MALE\"},{\"descriptor\":{\"code\":\"NATIONALITY\"},\"value\":\"INDIAN\"}]},{\"descriptor\":{\"code\":\"INCLUSIONS\"},\"list\":[{\"value\":\"water\"},{\"value\":\"guide_tour\"}]},{\"descriptor\":{\"code\":\"EXCLUSIONS\"},\"list\":[{\"value\":\"out side food\"},{\"value\":\"photography\"}]}]},{\"id\":\"I5\",\"descriptor\":{\"name\":\"Add on item\",\"code\":\"ADD_ON\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"price\":{\"currency\":\"INR\",\"value\":\"100\"},\"quantity\":{\"maximum\":{\"count\":3},\"minimum\":{\"count\":1}},\"time\":{\"range\":{\"start\":\"2025-09-11T19:29:00.551Z\",\"end\":\"2025-09-13T19:29:00.551Z\"}}}],\"selected_items\":[],\"selected_item_id\":null,\"billing\":{},\"payments\":[],\"updated_payments\":[],\"order_id\":null,\"status\":null,\"quote\":null,\"ref_id\":null,\"ttl\":null,\"usecaseId\":null,\"stops\":[],\"update_stop\":[],\"update_quote\":[],\"selected_fulfillments\":[],\"bap_items\":[],\"collected_by\":\"BAP\",\"updated_price\":null,\"selected_add_ons\":[],\"created_at\":null,\"cancellation_reason_id\":null,\"cancellation_quote\":[],\"selected_fulfillment_id\":null,\"tags\":[{\"descriptor\":{\"code\":\"BAP_TERMS\",\"name\":\"BAP Terms of Engagement\"},\"display\":false,\"list\":[{\"descriptor\":{\"code\":\"BUYER_FINDER_FEES_PERCENTAGE\"},\"value\":\"1\"},{\"descriptor\":{\"code\":\"BUYER_FINDER_FEES_TYPE\"},\"value\":\"percent\"},{\"descriptor\":{\"code\":\"STATIC_TERMS\"},\"value\":\"https://api.example-bap.com/booking/terms\"},{\"descriptor\":{\"code\":\"SETTLEMENT_BASIS\"},\"value\":\"https://api.example-bap.com/booking/terms\"},{\"descriptor\":{\"code\":\"SETTLEMENT_WINDOW\"},\"value\":\"P30D\"}]},{\"descriptor\":{\"code\":\"INCREMENTAL_PULL\",\"name\":\"Incremental Pull\"},\"display\":false,\"list\":[{\"descriptor\":{\"code\":\"REGISTER\",\"name\":\"Register\"},\"value\":\"true\"}]}],\"start_time\":\"2025-09-11T19:29:00.551Z\",\"end_time\":\"2025-09-13T19:29:00.551Z\",\"vehicle_category\":\"SITE\",\"item\":{\"id\":\"I0\",\"descriptor\":{\"name\":\"Parent Item for Culture & Heritage\",\"code\":\"ABSTRACT\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C2\"],\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-11T19:29:00.551Z\",\"end\":\"2025-09-13T19:29:00.551Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"cancellation_terms\":[{\"cancellation_fee\":{\"percentage\":\"10\"},\"fulfillment_state\":{\"descriptor\":{\"code\":\"CONFIRMED\"}},\"cancel_by\":{\"label\":\"DURATION\",\"duration\":\"PT1H30M\"},\"cancellation_eligible\":true},{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass.com/beckn/tnc.html\"},\"cancellation_eligible\":true}],\"replacement_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass/beckn/replacement.html\"}}],\"tags\":[{\"descriptor\":{\"code\":\"INCLUSIONS\"},\"list\":[{\"value\":\"water\"}]},{\"descriptor\":{\"code\":\"EXCLUSIONS\"},\"list\":[{\"value\":\"out side food\"},{\"value\":\"photography\"}]}]}}",
-          "timestamp": "2025-09-11T19:29:06.580Z"
+          "data": "{\"latestAction\":\"on_search\",\"subscriberType\":\"BAP\",\"latestTimestamp\":\"2025-09-12T07:11:05.561Z\",\"type\":\"manual\",\"messageIds\":[],\"apiList\":[{\"entryType\":\"API\",\"action\":\"search\",\"messageId\":\"60f11f6b-d252-4dab-8648-088129f84cdf\",\"payloadId\":\"db18cee4-83ac-44f2-afb9-9f113ec518a6\",\"response\":{\"message\":\"STUB API RESPONSE FOR AUTO RUNNER\"},\"timestamp\":\"2025-09-12T07:11:13.790Z\"},{\"entryType\":\"API\",\"action\":\"on_search\",\"messageId\":\"60f11f6b-d252-4dab-8648-088129f84cdf\",\"payloadId\":\"634377fc-7c3c-4294-9b31-8de3b49b6685\",\"response\":{\"message\":\"STUB API RESPONSE FOR AUTO RUNNER\"},\"timestamp\":\"2025-09-12T07:09:23.394Z\"},{\"entryType\":\"API\",\"action\":\"on_search\",\"messageId\":\"11cc3439-ed69-4b08-9eb0-7ef57969cc8d\",\"payloadId\":\"09db6ffb-bf8c-4ea6-9434-746b33a0e547\",\"response\":{\"message\":\"STUB API RESPONSE FOR AUTO RUNNER\"},\"timestamp\":\"2025-09-12T07:11:05.561Z\"}],\"referenceData\":{}}",
+          "timestamp": "2025-09-12T07:16:36.116Z"
+        },
+        {
+          "data": "{\"latestAction\":\"on_search\",\"subscriberType\":\"BAP\",\"latestTimestamp\":\"2025-09-12T07:15:24.686Z\",\"type\":\"manual\",\"messageIds\":[],\"apiList\":[{\"entryType\":\"API\",\"action\":\"search\",\"messageId\":\"60f11f6b-d252-4dab-8648-088129f84cdf\",\"payloadId\":\"db18cee4-83ac-44f2-afb9-9f113ec518a6\",\"response\":{\"message\":\"STUB API RESPONSE FOR AUTO RUNNER\"},\"timestamp\":\"2025-09-12T07:11:13.790Z\"},{\"entryType\":\"API\",\"action\":\"on_search\",\"messageId\":\"60f11f6b-d252-4dab-8648-088129f84cdf\",\"payloadId\":\"634377fc-7c3c-4294-9b31-8de3b49b6685\",\"response\":{\"message\":\"STUB API RESPONSE FOR AUTO RUNNER\"},\"timestamp\":\"2025-09-12T07:09:23.394Z\"},{\"entryType\":\"API\",\"action\":\"on_search\",\"messageId\":\"11cc3439-ed69-4b08-9eb0-7ef57969cc8d\",\"payloadId\":\"09db6ffb-bf8c-4ea6-9434-746b33a0e547\",\"response\":{\"message\":\"STUB API RESPONSE FOR AUTO RUNNER\"},\"timestamp\":\"2025-09-12T07:11:05.561Z\"},{\"entryType\":\"API\",\"action\":\"on_search\",\"messageId\":\"f88254c9-d7af-4c7b-b387-bf782c6df01f\",\"payloadId\":\"a74f1d6c-5518-4fca-9ee7-a54917c01278\",\"response\":{\"message\":\"STUB API RESPONSE FOR AUTO RUNNER\"},\"timestamp\":\"2025-09-12T07:15:24.686Z\"}],\"referenceData\":{}}",
+          "timestamp": "2025-09-12T07:16:36.318Z"
+        }
+      ],
+      "db2df11e-c54b-4a0d-a849-a79335135e11": [
+        {
+          "data": "{\"transaction_id\":\"db2df11e-c54b-4a0d-a849-a79335135e11\",\"message_id\":\"60f11f6b-d252-4dab-8648-088129f84cdf\",\"last_action\":null,\"mock_type\":null,\"city_code\":\"std:080\",\"bap_id\":\"dev-automation.ondc.org\",\"bap_uri\":\"https://dev-automation.ondc.org/buyer\",\"bpp_id\":\"dev-automation.ondc.org\",\"bpp_uri\":\"https://dev-automation.ondc.org/seller\",\"start_location\":null,\"intermediate_location\":null,\"end_location\":null,\"buyer_app_fee\":null,\"vehicle_type\":null,\"fulfillments\":[],\"category_ids\":[],\"provider_id\":null,\"fulfillment_ids\":[],\"item_ids\":[],\"items\":[],\"selected_items\":[],\"selected_item_id\":null,\"billing\":{},\"payments\":[],\"updated_payments\":[],\"order_id\":null,\"status\":null,\"quote\":null,\"ref_id\":null,\"ttl\":null,\"usecaseId\":null,\"stops\":[],\"update_stop\":[],\"update_quote\":[],\"selected_fulfillments\":[],\"bap_items\":[],\"collected_by\":\"BAP\",\"updated_price\":null,\"selected_add_ons\":[],\"created_at\":null,\"cancellation_reason_id\":null,\"cancellation_quote\":[],\"selected_fulfillment_id\":null,\"tags\":[{\"descriptor\":{\"code\":\"BAP_TERMS\",\"name\":\"BAP Terms of Engagement\"},\"display\":false,\"list\":[{\"descriptor\":{\"code\":\"BUYER_FINDER_FEES_PERCENTAGE\"},\"value\":\"1\"},{\"descriptor\":{\"code\":\"BUYER_FINDER_FEES_TYPE\"},\"value\":\"percent\"},{\"descriptor\":{\"code\":\"STATIC_TERMS\"},\"value\":\"https://api.example-bap.com/booking/terms\"},{\"descriptor\":{\"code\":\"SETTLEMENT_BASIS\"},\"value\":\"https://api.example-bap.com/booking/terms\"},{\"descriptor\":{\"code\":\"SETTLEMENT_WINDOW\"},\"value\":\"P30D\"}]},{\"descriptor\":{\"code\":\"INCREMENTAL_PULL\",\"name\":\"Incremental Pull\"},\"display\":false,\"list\":[{\"descriptor\":{\"code\":\"REGISTER\",\"name\":\"Register\"},\"value\":\"true\"}]}],\"start_time\":\"2025-09-12T07:16:31.395Z\",\"end_time\":\"2025-09-14T07:16:31.395Z\",\"vehicle_category\":\"SITE\"}",
+          "timestamp": "2025-09-12T07:16:35.650Z"
+        },
+        {
+          "data": "{\"transaction_id\":\"db2df11e-c54b-4a0d-a849-a79335135e11\",\"message_id\":\"60f11f6b-d252-4dab-8648-088129f84cdf\",\"last_action\":null,\"mock_type\":null,\"city_code\":\"std:080\",\"bap_id\":\"dev-automation.ondc.org\",\"bap_uri\":\"https://dev-automation.ondc.org/buyer\",\"bpp_id\":\"dev-automation.ondc.org\",\"bpp_uri\":\"https://dev-automation.ondc.org/seller\",\"start_location\":null,\"intermediate_location\":null,\"end_location\":null,\"buyer_app_fee\":null,\"vehicle_type\":null,\"fulfillments\":[],\"category_ids\":[],\"provider_id\":\"P1\",\"fulfillment_ids\":[],\"item_ids\":[],\"items\":[],\"selected_items\":[],\"selected_item_id\":null,\"billing\":{},\"payments\":[],\"updated_payments\":[],\"order_id\":null,\"status\":null,\"quote\":null,\"ref_id\":null,\"ttl\":null,\"usecaseId\":null,\"stops\":[],\"update_stop\":[],\"update_quote\":[],\"selected_fulfillments\":[],\"bap_items\":[],\"collected_by\":\"BAP\",\"updated_price\":null,\"selected_add_ons\":[],\"created_at\":null,\"cancellation_reason_id\":null,\"cancellation_quote\":[],\"selected_fulfillment_id\":null,\"tags\":[{\"descriptor\":{\"code\":\"BAP_TERMS\",\"name\":\"BAP Terms of Engagement\"},\"display\":false,\"list\":[{\"descriptor\":{\"code\":\"BUYER_FINDER_FEES_PERCENTAGE\"},\"value\":\"1\"},{\"descriptor\":{\"code\":\"BUYER_FINDER_FEES_TYPE\"},\"value\":\"percent\"},{\"descriptor\":{\"code\":\"STATIC_TERMS\"},\"value\":\"https://api.example-bap.com/booking/terms\"},{\"descriptor\":{\"code\":\"SETTLEMENT_BASIS\"},\"value\":\"https://api.example-bap.com/booking/terms\"},{\"descriptor\":{\"code\":\"SETTLEMENT_WINDOW\"},\"value\":\"P30D\"}]},{\"descriptor\":{\"code\":\"INCREMENTAL_PULL\",\"name\":\"Incremental Pull\"},\"display\":false,\"list\":[{\"descriptor\":{\"code\":\"REGISTER\",\"name\":\"Register\"},\"value\":\"true\"}]}],\"start_time\":\"2025-09-12T07:16:31.395Z\",\"end_time\":\"2025-09-14T07:16:31.395Z\",\"vehicle_category\":\"SITE\"}",
+          "timestamp": "2025-09-12T07:16:35.879Z"
+        },
+        {
+          "data": "{\"transaction_id\":\"db2df11e-c54b-4a0d-a849-a79335135e11\",\"message_id\":\"11cc3439-ed69-4b08-9eb0-7ef57969cc8d\",\"last_action\":null,\"mock_type\":null,\"city_code\":\"std:080\",\"bap_id\":\"dev-automation.ondc.org\",\"bap_uri\":\"https://dev-automation.ondc.org/buyer\",\"bpp_id\":\"dev-automation.ondc.org\",\"bpp_uri\":\"https://dev-automation.ondc.org/seller\",\"start_location\":null,\"intermediate_location\":null,\"end_location\":null,\"buyer_app_fee\":null,\"vehicle_type\":null,\"fulfillments\":[{\"id\":\"F1\",\"type\":\"VISIT\",\"stops\":[{\"type\":\"START\",\"instructions\":{\"additional_desc\":{\"url\":\"https://api.unreserved-entry-pass.com/sites/additional-info\",\"content_type\":\"text/plain\"}},\"time\":{\"timestamp\":\"2025-09-12T07:16:31.395Z\"}}],\"agent\":{\"organization\":{\"contact\":{\"phone\":\"+91-9999999999\",\"email\":\"john.doe@example.com\"}}},\"vehicle\":{\"category\":\"SITE\"}},{\"id\":\"F2\",\"type\":\"VISIT\",\"stops\":[{\"type\":\"START\",\"instructions\":{\"additional_desc\":{\"url\":\"https://api.unreserved-entry-pass.com/sites/additional-info\",\"content_type\":\"text/plain\"}},\"time\":{\"range\":{\"start\":\"2025-09-12T07:16:31.395Z\",\"end\":\"2025-09-14T07:16:31.395Z\"}}}],\"agent\":{\"organization\":{\"contact\":{\"phone\":\"+91-9999999999\",\"email\":\"john.doe@example.com\"}}},\"vehicle\":{\"category\":\"SITE\"}}],\"category_ids\":[],\"provider_id\":\"P1\",\"fulfillment_ids\":[],\"item_ids\":[],\"items\":[{\"id\":\"I0\",\"descriptor\":{\"name\":\"Parent Item for Culture & Heritage\",\"code\":\"ABSTRACT\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C2\"],\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-12T07:16:31.395Z\",\"end\":\"2025-09-14T07:16:31.395Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"cancellation_terms\":[{\"cancellation_fee\":{\"percentage\":\"10\"},\"fulfillment_state\":{\"descriptor\":{\"code\":\"CONFIRMED\"}},\"cancel_by\":{\"label\":\"DURATION\",\"duration\":\"PT1H30M\"},\"cancellation_eligible\":true},{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass.com/beckn/tnc.html\"},\"cancellation_eligible\":true}],\"replacement_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass/beckn/replacement.html\"}}],\"tags\":[{\"descriptor\":{\"code\":\"INCLUSIONS\"},\"list\":[{\"value\":\"water\"}]},{\"descriptor\":{\"code\":\"EXCLUSIONS\"},\"list\":[{\"value\":\"out side food\"},{\"value\":\"photography\"}]}]},{\"id\":\"I1\",\"descriptor\":{\"name\":\"Adult-Ticket Culture & Heritage Item\",\"code\":\"ENTRY_PASS\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"parent_item_id\":\"I0\",\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C2\"],\"price\":{\"currency\":\"INR\",\"value\":\"350\"},\"quantity\":{\"maximum\":{\"count\":6},\"minimum\":{\"count\":1}},\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-12T07:16:31.395Z\",\"end\":\"2025-09-14T07:16:31.395Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"add_ons\":[{\"id\":\"A1\",\"descriptor\":{\"name\":\"Audio Assistance\"},\"quantity\":{\"available\":{\"count\":1}},\"price\":{\"value\":\"100\",\"currency\":\"INR\"}}],\"tags\":[{\"descriptor\":{\"code\":\"FARE_POLICY\"},\"list\":[{\"descriptor\":{\"code\":\"MIN_AGE\"},\"value\":\"18\"},{\"descriptor\":{\"code\":\"MAX_AGE\"},\"value\":\"70\"},{\"descriptor\":{\"code\":\"GENDER\"},\"value\":\"MALE\"},{\"descriptor\":{\"code\":\"NATIONALITY\"},\"value\":\"INDIAN\"}]}]},{\"id\":\"I2\",\"descriptor\":{\"name\":\"Child-Ticket Culture & Heritage Item\",\"code\":\"ENTRY_PASS\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"parent_item_id\":\"I0\",\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C2\"],\"price\":{\"currency\":\"INR\",\"value\":\"150\"},\"quantity\":{\"maximum\":{\"count\":4},\"minimum\":{\"count\":1}},\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-12T07:16:31.395Z\",\"end\":\"2025-09-14T07:16:31.395Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"add_ons\":[{\"id\":\"A1\",\"descriptor\":{\"name\":\"Audio Assistance\"},\"quantity\":{\"available\":{\"count\":1}},\"price\":{\"value\":\"100\",\"currency\":\"INR\"}}],\"tags\":[{\"descriptor\":{\"code\":\"FARE_POLICY\"},\"list\":[{\"descriptor\":{\"code\":\"MIN_AGE\"},\"value\":\"1\"},{\"descriptor\":{\"code\":\"MAX_AGE\"},\"value\":\"70\"},{\"descriptor\":{\"code\":\"GENDER\"},\"value\":\"MALE\"},{\"descriptor\":{\"code\":\"NATIONALITY\"},\"value\":\"INDIAN\"}]}]},{\"id\":\"I3\",\"descriptor\":{\"name\":\"Adult-Ticket Culture & Heritage Item\",\"code\":\"ENTRY_PASS\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C3\"],\"price\":{\"currency\":\"INR\",\"value\":\"400\"},\"quantity\":{\"maximum\":{\"count\":6},\"minimum\":{\"count\":1}},\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-12T07:16:31.395Z\",\"end\":\"2025-09-14T07:16:31.395Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"add_ons\":[{\"id\":\"A1\",\"descriptor\":{\"name\":\"Audio Assistance\"},\"quantity\":{\"available\":{\"count\":1}},\"price\":{\"value\":\"100\",\"currency\":\"INR\"}}],\"cancellation_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass.com/beckn/tnc.html\"},\"cancellation_eligible\":true},{\"cancellation_fee\":{\"percentage\":\"10\"},\"cancel_by\":{\"label\":\"TIMESTAMP\",\"timestamp\":\"2024-07-26T04:43:16.000Z\"},\"cancellation_eligible\":true}],\"replacement_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass/beckn/replacement.html\"}}],\"tags\":[{\"descriptor\":{\"code\":\"FARE_POLICY\"},\"list\":[{\"descriptor\":{\"code\":\"MIN_AGE\"},\"value\":\"18\"},{\"descriptor\":{\"code\":\"MAX_AGE\"},\"value\":\"70\"},{\"descriptor\":{\"code\":\"GENDER\"},\"value\":\"MALE\"},{\"descriptor\":{\"code\":\"NATIONALITY\"},\"value\":\"INDIAN\"}]},{\"descriptor\":{\"code\":\"INCLUSIONS\"},\"list\":[{\"value\":\"water\"},{\"value\":\"guide_tour\"}]},{\"descriptor\":{\"code\":\"EXCLUSIONS\"},\"list\":[{\"value\":\"out side food\"},{\"value\":\"photography\"}]}]},{\"id\":\"I4\",\"descriptor\":{\"name\":\"Child-Ticket Culture & Heritage Item\",\"code\":\"ENTRY_PASS\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C3\"],\"price\":{\"currency\":\"INR\",\"value\":\"250\"},\"quantity\":{\"maximum\":{\"count\":4},\"minimum\":{\"count\":1}},\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-12T07:16:31.395Z\",\"end\":\"2025-09-14T07:16:31.395Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"add_ons\":[{\"id\":\"A1\",\"descriptor\":{\"name\":\"Audio Assistance\"},\"quantity\":{\"available\":{\"count\":1}},\"price\":{\"value\":\"100\",\"currency\":\"INR\"}}],\"cancellation_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass.com/beckn/tnc.html\"},\"cancellation_eligible\":true}],\"replacement_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass/beckn/replacement.html\"}}],\"tags\":[{\"descriptor\":{\"code\":\"FARE_POLICY\"},\"list\":[{\"descriptor\":{\"code\":\"MIN_AGE\"},\"value\":\"1\"},{\"descriptor\":{\"code\":\"MAX_AGE\"},\"value\":\"70\"},{\"descriptor\":{\"code\":\"GENDER\"},\"value\":\"MALE\"},{\"descriptor\":{\"code\":\"NATIONALITY\"},\"value\":\"INDIAN\"}]},{\"descriptor\":{\"code\":\"INCLUSIONS\"},\"list\":[{\"value\":\"water\"},{\"value\":\"guide_tour\"}]},{\"descriptor\":{\"code\":\"EXCLUSIONS\"},\"list\":[{\"value\":\"out side food\"},{\"value\":\"photography\"}]}]},{\"id\":\"I5\",\"descriptor\":{\"name\":\"Add on item\",\"code\":\"ADD_ON\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"price\":{\"currency\":\"INR\",\"value\":\"100\"},\"quantity\":{\"maximum\":{\"count\":3},\"minimum\":{\"count\":1}},\"time\":{\"range\":{\"start\":\"2025-09-12T07:16:31.395Z\",\"end\":\"2025-09-14T07:16:31.395Z\"}}}],\"selected_items\":[],\"selected_item_id\":null,\"billing\":{},\"payments\":[],\"updated_payments\":[],\"order_id\":null,\"status\":null,\"quote\":null,\"ref_id\":null,\"ttl\":null,\"usecaseId\":null,\"stops\":[],\"update_stop\":[],\"update_quote\":[],\"selected_fulfillments\":[],\"bap_items\":[],\"collected_by\":\"BAP\",\"updated_price\":null,\"selected_add_ons\":[],\"created_at\":null,\"cancellation_reason_id\":null,\"cancellation_quote\":[],\"selected_fulfillment_id\":null,\"tags\":[{\"descriptor\":{\"code\":\"BAP_TERMS\",\"name\":\"BAP Terms of Engagement\"},\"display\":false,\"list\":[{\"descriptor\":{\"code\":\"BUYER_FINDER_FEES_PERCENTAGE\"},\"value\":\"1\"},{\"descriptor\":{\"code\":\"BUYER_FINDER_FEES_TYPE\"},\"value\":\"percent\"},{\"descriptor\":{\"code\":\"STATIC_TERMS\"},\"value\":\"https://api.example-bap.com/booking/terms\"},{\"descriptor\":{\"code\":\"SETTLEMENT_BASIS\"},\"value\":\"https://api.example-bap.com/booking/terms\"},{\"descriptor\":{\"code\":\"SETTLEMENT_WINDOW\"},\"value\":\"P30D\"}]},{\"descriptor\":{\"code\":\"INCREMENTAL_PULL\",\"name\":\"Incremental Pull\"},\"display\":false,\"list\":[{\"descriptor\":{\"code\":\"REGISTER\",\"name\":\"Register\"},\"value\":\"true\"}]}],\"start_time\":\"2025-09-12T07:16:31.395Z\",\"end_time\":\"2025-09-14T07:16:31.395Z\",\"vehicle_category\":\"SITE\",\"item\":{\"id\":\"I0\",\"descriptor\":{\"name\":\"Parent Item for Culture & Heritage\",\"code\":\"ABSTRACT\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C2\"],\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-12T07:16:31.395Z\",\"end\":\"2025-09-14T07:16:31.395Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"cancellation_terms\":[{\"cancellation_fee\":{\"percentage\":\"10\"},\"fulfillment_state\":{\"descriptor\":{\"code\":\"CONFIRMED\"}},\"cancel_by\":{\"label\":\"DURATION\",\"duration\":\"PT1H30M\"},\"cancellation_eligible\":true},{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass.com/beckn/tnc.html\"},\"cancellation_eligible\":true}],\"replacement_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass/beckn/replacement.html\"}}],\"tags\":[{\"descriptor\":{\"code\":\"INCLUSIONS\"},\"list\":[{\"value\":\"water\"}]},{\"descriptor\":{\"code\":\"EXCLUSIONS\"},\"list\":[{\"value\":\"out side food\"},{\"value\":\"photography\"}]}]}}",
+          "timestamp": "2025-09-12T07:16:36.116Z"
+        },
+        {
+          "data": "{\"transaction_id\":\"db2df11e-c54b-4a0d-a849-a79335135e11\",\"message_id\":\"f88254c9-d7af-4c7b-b387-bf782c6df01f\",\"last_action\":null,\"mock_type\":null,\"city_code\":\"std:080\",\"bap_id\":\"dev-automation.ondc.org\",\"bap_uri\":\"https://dev-automation.ondc.org/buyer\",\"bpp_id\":\"dev-automation.ondc.org\",\"bpp_uri\":\"https://dev-automation.ondc.org/seller\",\"start_location\":null,\"intermediate_location\":null,\"end_location\":null,\"buyer_app_fee\":null,\"vehicle_type\":null,\"fulfillments\":[{\"id\":\"F1\",\"type\":\"VISIT\",\"stops\":[{\"type\":\"START\",\"instructions\":{\"additional_desc\":{\"url\":\"https://api.unreserved-entry-pass.com/sites/additional-info\",\"content_type\":\"text/plain\"}},\"time\":{\"timestamp\":\"2025-09-12T07:16:31.395Z\"}}],\"agent\":{\"organization\":{\"contact\":{\"phone\":\"+91-9999999999\",\"email\":\"john.doe@example.com\"}}},\"vehicle\":{\"category\":\"SITE\"}},{\"id\":\"F2\",\"type\":\"VISIT\",\"stops\":[{\"type\":\"START\",\"instructions\":{\"additional_desc\":{\"url\":\"https://api.unreserved-entry-pass.com/sites/additional-info\",\"content_type\":\"text/plain\"}},\"time\":{\"range\":{\"start\":\"2025-09-12T07:16:31.395Z\",\"end\":\"2025-09-14T07:16:31.395Z\"}}}],\"agent\":{\"organization\":{\"contact\":{\"phone\":\"+91-9999999999\",\"email\":\"john.doe@example.com\"}}},\"vehicle\":{\"category\":\"SITE\"}}],\"category_ids\":[],\"provider_id\":\"P1\",\"fulfillment_ids\":[],\"item_ids\":[],\"items\":[{\"id\":\"I0\",\"descriptor\":{\"name\":\"Parent Item for Culture & Heritage\",\"code\":\"ABSTRACT\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C2\"],\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-12T07:16:31.395Z\",\"end\":\"2025-09-14T07:16:31.395Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"cancellation_terms\":[{\"cancellation_fee\":{\"percentage\":\"10\"},\"fulfillment_state\":{\"descriptor\":{\"code\":\"CONFIRMED\"}},\"cancel_by\":{\"label\":\"DURATION\",\"duration\":\"PT1H30M\"},\"cancellation_eligible\":true},{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass.com/beckn/tnc.html\"},\"cancellation_eligible\":true}],\"replacement_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass/beckn/replacement.html\"}}],\"tags\":[{\"descriptor\":{\"code\":\"INCLUSIONS\"},\"list\":[{\"value\":\"water\"}]},{\"descriptor\":{\"code\":\"EXCLUSIONS\"},\"list\":[{\"value\":\"out side food\"},{\"value\":\"photography\"}]}]},{\"id\":\"I1\",\"descriptor\":{\"name\":\"Adult-Ticket Culture & Heritage Item\",\"code\":\"ENTRY_PASS\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"parent_item_id\":\"I0\",\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C2\"],\"price\":{\"currency\":\"INR\",\"value\":\"350\"},\"quantity\":{\"maximum\":{\"count\":6},\"minimum\":{\"count\":1}},\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-12T07:16:31.395Z\",\"end\":\"2025-09-14T07:16:31.395Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"add_ons\":[{\"id\":\"A1\",\"descriptor\":{\"name\":\"Audio Assistance\"},\"quantity\":{\"available\":{\"count\":1}},\"price\":{\"value\":\"100\",\"currency\":\"INR\"}}],\"tags\":[{\"descriptor\":{\"code\":\"FARE_POLICY\"},\"list\":[{\"descriptor\":{\"code\":\"MIN_AGE\"},\"value\":\"18\"},{\"descriptor\":{\"code\":\"MAX_AGE\"},\"value\":\"70\"},{\"descriptor\":{\"code\":\"GENDER\"},\"value\":\"MALE\"},{\"descriptor\":{\"code\":\"NATIONALITY\"},\"value\":\"INDIAN\"}]}]},{\"id\":\"I2\",\"descriptor\":{\"name\":\"Child-Ticket Culture & Heritage Item\",\"code\":\"ENTRY_PASS\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"parent_item_id\":\"I0\",\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C2\"],\"price\":{\"currency\":\"INR\",\"value\":\"150\"},\"quantity\":{\"maximum\":{\"count\":4},\"minimum\":{\"count\":1}},\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-12T07:16:31.395Z\",\"end\":\"2025-09-14T07:16:31.395Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"add_ons\":[{\"id\":\"A1\",\"descriptor\":{\"name\":\"Audio Assistance\"},\"quantity\":{\"available\":{\"count\":1}},\"price\":{\"value\":\"100\",\"currency\":\"INR\"}}],\"tags\":[{\"descriptor\":{\"code\":\"FARE_POLICY\"},\"list\":[{\"descriptor\":{\"code\":\"MIN_AGE\"},\"value\":\"1\"},{\"descriptor\":{\"code\":\"MAX_AGE\"},\"value\":\"70\"},{\"descriptor\":{\"code\":\"GENDER\"},\"value\":\"MALE\"},{\"descriptor\":{\"code\":\"NATIONALITY\"},\"value\":\"INDIAN\"}]}]},{\"id\":\"I3\",\"descriptor\":{\"name\":\"Adult-Ticket Culture & Heritage Item\",\"code\":\"ENTRY_PASS\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C3\"],\"price\":{\"currency\":\"INR\",\"value\":\"400\"},\"quantity\":{\"maximum\":{\"count\":6},\"minimum\":{\"count\":1}},\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-12T07:16:31.395Z\",\"end\":\"2025-09-14T07:16:31.395Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"add_ons\":[{\"id\":\"A1\",\"descriptor\":{\"name\":\"Audio Assistance\"},\"quantity\":{\"available\":{\"count\":1}},\"price\":{\"value\":\"100\",\"currency\":\"INR\"}}],\"cancellation_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass.com/beckn/tnc.html\"},\"cancellation_eligible\":true},{\"cancellation_fee\":{\"percentage\":\"10\"},\"cancel_by\":{\"label\":\"TIMESTAMP\",\"timestamp\":\"2024-07-26T04:43:16.000Z\"},\"cancellation_eligible\":true}],\"replacement_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass/beckn/replacement.html\"}}],\"tags\":[{\"descriptor\":{\"code\":\"FARE_POLICY\"},\"list\":[{\"descriptor\":{\"code\":\"MIN_AGE\"},\"value\":\"18\"},{\"descriptor\":{\"code\":\"MAX_AGE\"},\"value\":\"70\"},{\"descriptor\":{\"code\":\"GENDER\"},\"value\":\"MALE\"},{\"descriptor\":{\"code\":\"NATIONALITY\"},\"value\":\"INDIAN\"}]},{\"descriptor\":{\"code\":\"INCLUSIONS\"},\"list\":[{\"value\":\"water\"},{\"value\":\"guide_tour\"}]},{\"descriptor\":{\"code\":\"EXCLUSIONS\"},\"list\":[{\"value\":\"out side food\"},{\"value\":\"photography\"}]}]},{\"id\":\"I4\",\"descriptor\":{\"name\":\"Child-Ticket Culture & Heritage Item\",\"code\":\"ENTRY_PASS\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C3\"],\"price\":{\"currency\":\"INR\",\"value\":\"250\"},\"quantity\":{\"maximum\":{\"count\":4},\"minimum\":{\"count\":1}},\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-12T07:16:31.395Z\",\"end\":\"2025-09-14T07:16:31.395Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"add_ons\":[{\"id\":\"A1\",\"descriptor\":{\"name\":\"Audio Assistance\"},\"quantity\":{\"available\":{\"count\":1}},\"price\":{\"value\":\"100\",\"currency\":\"INR\"}}],\"cancellation_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass.com/beckn/tnc.html\"},\"cancellation_eligible\":true}],\"replacement_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass/beckn/replacement.html\"}}],\"tags\":[{\"descriptor\":{\"code\":\"FARE_POLICY\"},\"list\":[{\"descriptor\":{\"code\":\"MIN_AGE\"},\"value\":\"1\"},{\"descriptor\":{\"code\":\"MAX_AGE\"},\"value\":\"70\"},{\"descriptor\":{\"code\":\"GENDER\"},\"value\":\"MALE\"},{\"descriptor\":{\"code\":\"NATIONALITY\"},\"value\":\"INDIAN\"}]},{\"descriptor\":{\"code\":\"INCLUSIONS\"},\"list\":[{\"value\":\"water\"},{\"value\":\"guide_tour\"}]},{\"descriptor\":{\"code\":\"EXCLUSIONS\"},\"list\":[{\"value\":\"out side food\"},{\"value\":\"photography\"}]}]},{\"id\":\"I5\",\"descriptor\":{\"name\":\"Add on item\",\"code\":\"ADD_ON\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"price\":{\"currency\":\"INR\",\"value\":\"100\"},\"quantity\":{\"maximum\":{\"count\":3},\"minimum\":{\"count\":1}},\"time\":{\"range\":{\"start\":\"2025-09-12T07:16:31.395Z\",\"end\":\"2025-09-14T07:16:31.395Z\"}}}],\"selected_items\":[],\"selected_item_id\":null,\"billing\":{},\"payments\":[],\"updated_payments\":[],\"order_id\":null,\"status\":null,\"quote\":null,\"ref_id\":null,\"ttl\":null,\"usecaseId\":null,\"stops\":[],\"update_stop\":[],\"update_quote\":[],\"selected_fulfillments\":[],\"bap_items\":[],\"collected_by\":\"BAP\",\"updated_price\":null,\"selected_add_ons\":[],\"created_at\":null,\"cancellation_reason_id\":null,\"cancellation_quote\":[],\"selected_fulfillment_id\":null,\"tags\":[{\"descriptor\":{\"code\":\"BAP_TERMS\",\"name\":\"BAP Terms of Engagement\"},\"display\":false,\"list\":[{\"descriptor\":{\"code\":\"BUYER_FINDER_FEES_PERCENTAGE\"},\"value\":\"1\"},{\"descriptor\":{\"code\":\"BUYER_FINDER_FEES_TYPE\"},\"value\":\"percent\"},{\"descriptor\":{\"code\":\"STATIC_TERMS\"},\"value\":\"https://api.example-bap.com/booking/terms\"},{\"descriptor\":{\"code\":\"SETTLEMENT_BASIS\"},\"value\":\"https://api.example-bap.com/booking/terms\"},{\"descriptor\":{\"code\":\"SETTLEMENT_WINDOW\"},\"value\":\"P30D\"}]},{\"descriptor\":{\"code\":\"INCREMENTAL_PULL\",\"name\":\"Incremental Pull\"},\"display\":false,\"list\":[{\"descriptor\":{\"code\":\"REGISTER\",\"name\":\"Register\"},\"value\":\"true\"}]}],\"start_time\":\"2025-09-12T07:16:31.395Z\",\"end_time\":\"2025-09-14T07:16:31.395Z\",\"vehicle_category\":\"SITE\",\"item\":{\"id\":\"I0\",\"descriptor\":{\"name\":\"Parent Item for Culture & Heritage\",\"code\":\"ABSTRACT\",\"short_desc\":\"Ticket for Qutab Minar\",\"long_desc\":\"This ticket grants entry to the Qutab Minar.\",\"images\":[{\"url\":\"https://api.unreserved-entry-pass.com/sites/default/files/event/logo/event_logo_2.png\",\"size_type\":\"xs\"}]},\"location_ids\":[\"L1\"],\"category_ids\":[\"C1\",\"C2\"],\"time\":{\"label\":\"VALIDITY\",\"duration\":\"P2D\",\"range\":{\"start\":\"2025-09-12T07:16:31.395Z\",\"end\":\"2025-09-14T07:16:31.395Z\"}},\"fulfillment_ids\":[\"F1\",\"F2\"],\"cancellation_terms\":[{\"cancellation_fee\":{\"percentage\":\"10\"},\"fulfillment_state\":{\"descriptor\":{\"code\":\"CONFIRMED\"}},\"cancel_by\":{\"label\":\"DURATION\",\"duration\":\"PT1H30M\"},\"cancellation_eligible\":true},{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass.com/beckn/tnc.html\"},\"cancellation_eligible\":true}],\"replacement_terms\":[{\"external_ref\":{\"mimetype\":\"text/html\",\"url\":\"https://api.unreserved-entry-pass/beckn/replacement.html\"}}],\"tags\":[{\"descriptor\":{\"code\":\"INCLUSIONS\"},\"list\":[{\"value\":\"water\"}]},{\"descriptor\":{\"code\":\"EXCLUSIONS\"},\"list\":[{\"value\":\"out side food\"},{\"value\":\"photography\"}]}]}}",
+          "timestamp": "2025-09-12T07:16:36.319Z"
         }
       ]
     }

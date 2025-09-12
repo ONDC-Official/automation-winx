@@ -4,7 +4,9 @@
 	"description": "",
 	"main": "src/index.ts",
 	"scripts": {
-		"workbench": "ts-node -r tsconfig-paths/register src/index.ts"
+		"workbench": "ts-node -r tsconfig-paths/register src/index.ts",
+		"mock": "",
+		"api-service": ""
 	},
 	"bin": "",
 	"keywords": [],

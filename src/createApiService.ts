@@ -14,7 +14,7 @@ export async function createApiService() {
 	const valParsed = buildParsed["x-validations"];
 	const tsCompiler = new ConfigCompiler(SupportedLanguages.Typescript);
 	await tsCompiler.initialize(buildYamlRaw);
-	const targetPath = "./src/workbench-runner/generated";
+	const targetPath = "./src/workbench-runner/generated/";
 	await tsCompiler.generateCode(valParsed, "L1-Validations", false, targetPath);
 	await tsCompiler.generateL0Schema(targetPath);
 

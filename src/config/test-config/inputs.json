@@ -3,24 +3,16 @@
 		"incremental_pull_journey": [
 			{
 				"actionId": "search_incremental_pull",
-				"mock_input": {
-					"json_path_changes": {
-						"$.message.intent.fulfillment.stops[?(@.type=='START')].location.city.code": "std:080"
-					},
-					"input_data": {
-						"city_code": "std:080"
-					}
+				"input_data": {
+					"city_code": "std:080"
 				}
 			}
 		],
 		"seller_app_pagination_journey": [
 			{
 				"actionId": "search_seller_pagination",
-				"mock_input": {
-					"json_path_changes": {
-						"$.message.intent.fulfillment.stops[?(@.type=='START')].location.city.code": "std:080"
-					},
-					"input_data": null
+				"input_data": {
+					"city_code": "std:080"
 				}
 			}
 		]
