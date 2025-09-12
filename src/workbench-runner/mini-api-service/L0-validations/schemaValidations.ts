@@ -1,7 +1,7 @@
 import Ajv from "ajv";
 import addFormats from "ajv-formats";
 import logger from "@ondc/automation-logger";
-import { shouldAddContext } from "../../utils/ack-utils";
+import { shouldAddContext } from "./ack-utils";
 
 // Dynamic schema loader
 let schemaLoader: any = null;

@@ -6,7 +6,7 @@ import {
 	SubscriberCache,
 	TransactionCache,
 } from "../../../../types/cache-types";
-import { BecknContext } from "../../../../types/beckn-types";
+import { BecknContext } from "../../types/beckn-types";
 
 export class SessionManagementService {
 	transactionService: TransactionCacheService;

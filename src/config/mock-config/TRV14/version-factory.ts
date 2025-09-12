@@ -1,4 +1,4 @@
-import { SessionData, Input } from "./session-types";
+import { SessionData,Input } from "./session-types";
 import { RedisService } from "ondc-automation-cache-lib";
 import { SessionCache } from "../../../types/api-session-cache";
 import { createMockResponseTRV14_200 } from "./2.0.0/generaton-pipeline";
@@ -15,7 +15,7 @@ export async function createMockResponse(
 	console.log(api_session);
 	const data = JSON.parse(api_session) as SessionCache;
 	const { version, usecaseId } = data;
-	sessionData.user_inputs = input;
+	sessionData.user_inputs = input
 	let payload: any = {};
 	if (version === "2.0.0") {
 		payload = await createMockResponseTRV14_200(action_id, sessionData);

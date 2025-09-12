@@ -6,7 +6,7 @@ import {
 	getSaveDataContent,
 	getUiMetaKeys,
 	MockSessionData,
-} from "../config/mock-config";
+} from "../../../config/mock-config";
 import { RedisService } from "ondc-automation-cache-lib";
 
 export function updateSessionData(

@@ -1,27 +1,21 @@
 // flows.yaml
 // mock - config
 // build yaml
-import { runProtocolFlows } from "./workbench-runner";
-import { createApiService } from "./createApiService";
+import { runProtocolFlows } from "./workbench-runner/runner";
+import { createApiService } from "./create-api-service";
 import reporter from "reporter";
 import { runConfigValidations } from "./services/runFlowSchemaValidations";
 import logger from "@ondc/automation-logger";
 import { writeFileSync } from "fs";
-
-export const runnerConfig = {
-	createApiService: false,
-	runFlows: true,
-	runConfigValidations: false,
-	runApiService: true,
-};
+import { getRunnerConfig } from "runner-config-manager";
 
 async function start() {
 	reporter.start("workbench-testing");
 	createApiService;
 	try {
-		runnerConfig.createApiService && (await createApiService());
-		runnerConfig.runConfigValidations && (await runConfigValidations());
-		runnerConfig.runFlows && (await runProtocolFlows());
+		getRunnerConfig().createApiService && (await createApiService());
+		getRunnerConfig().runConfigValidations && (await runConfigValidations());
+		getRunnerConfig().runFlows && (await runProtocolFlows());
 	} catch (e) {
 		logger.error("Error in workbench", {}, e);
 		reporter.error("Error in running the workbench", e);

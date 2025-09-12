@@ -1,5 +1,5 @@
 import { apiProperties, supportedActions } from "./get-supported-actions";
-import { BecknContext } from "../../../../types/beckn-types";
+import { BecknContext } from "../../types/beckn-types";
 import {
 	ApiData,
 	RequestProperties,

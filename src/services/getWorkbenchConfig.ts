@@ -24,7 +24,7 @@ export async function getWorkbenchConfig(configType: ConfigType): Promise<any> {
 			rawConfig = readFileSync(
 				path.resolve(
 					__dirname,
-					"./config/config-service/supportedActions/index.yaml"
+					"../../src/config/config-service/supportedActions/index.yaml"
 				),
 				"utf8"
 			);
@@ -34,7 +34,7 @@ export async function getWorkbenchConfig(configType: ConfigType): Promise<any> {
 			rawConfig = readFileSync(
 				path.resolve(
 					__dirname,
-					"./config/config-service/flow-config/index.yaml"
+					"../../src/config/config-service/flow-config/index.yaml"
 				),
 				"utf8"
 			);
@@ -46,7 +46,7 @@ export async function getWorkbenchConfig(configType: ConfigType): Promise<any> {
 
 		case "testConfig":
 			rawConfig = readFileSync(
-				path.resolve(__dirname, "./config/test-config/inputs.json"),
+				path.resolve(__dirname, "../../src/config/test-config/inputs.json"),
 				"utf8"
 			);
 			return JSON.parse(rawConfig);

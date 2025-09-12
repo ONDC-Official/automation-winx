@@ -10,11 +10,17 @@ import { getWorkbenchConfig } from "services/getWorkbenchConfig";
 import { generateMockResponse, getMockActionObject } from "config/mock-config";
 import { updateAllJsonPaths } from "workbench-runner/mini-mock-service/utils/json-editor-utils/jsonPathEditor";
 import reporter from "reporter";
+import { getRunnerConfig } from "runner-config-manager";
 export async function runMock(
 	index: number,
 	sessionId: string,
 	flowId: string
 ) {
+	if (getRunnerConfig().runMockService.skipAll == true) {
+		logger.warning("Skipping mock service functions");
+		reporter.warning("Skipping mock service functions");
+		return;
+	}
 	const session = await RedisService.getKey(sessionId);
 	if (!session) {
 		throw new Error("Session not found");
@@ -33,6 +39,7 @@ export async function runMock(
 		return {
 			continue: false,
 			payload: undefined,
+			mockAction: undefined,
 		};
 	}
 	logger.info(`Executing step ${index + 1}: ${current.key}`);
@@ -54,9 +61,10 @@ export async function runMock(
 		json_path_changes: {},
 	};
 	if (inputConfig) {
-		const mockInputs = await getWorkbenchConfig("testConfig");
+		const mockInputs = (await getWorkbenchConfig("testConfig")).payload_inputs;
 		const flowInputs = mockInputs[flowId];
 		if (!flowInputs) {
+			logger.error("Inputs were:", mockInputs);
 			throw new Error(`No inputs found for flow ${flowId}`);
 		}
 		const saved = flowInputs.find((inp: any) => inp.actionId === current.key);
@@ -96,5 +104,6 @@ export async function runMock(
 	return {
 		continue: true,
 		payload: payload,
+		mockAction: mockAction,
 	};
 }

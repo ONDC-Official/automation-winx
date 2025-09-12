@@ -1,4 +1,4 @@
-import { BecknContext } from "types/beckn-types";
+import { BecknContext } from "workbench-runner/mini-api-service/types/beckn-types";
 import { validateAsyncContext } from "./async-validations";
 import logger from "@ondc/automation-logger";
 import { TransactionCacheService } from "./session-service";
