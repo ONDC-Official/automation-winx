@@ -172,7 +172,43 @@ export function validateYamlConfigWithResults(
 	}
 }
 
-// Validate Zod schema and return TestResults
+// Function to convert Zod errors into clear, readable messages
+function formatZodError(error: z.ZodError): string {
+	const issues = error.issues.map((issue) => {
+		const path =
+			issue.path.length > 0 ? `at "${issue.path.join(".")}"` : "at root";
+
+		switch (issue.code) {
+			case "invalid_type":
+				return `${path}: expected ${issue.expected}, but received ${issue.input}`;
+			case "unrecognized_keys":
+				return `${path}: unrecognized keys: ${issue.keys.join(", ")}`;
+			case "invalid_union":
+				return `${path}: value doesn't match any of the expected union types`;
+			case "invalid_format":
+				return `${path}: invalid format`;
+			case "too_small":
+				return `${path}: value is too small (minimum: ${issue.minimum})`;
+			case "too_big":
+				return `${path}: value is too big (maximum: ${issue.maximum})`;
+			case "custom":
+				return `${path}: ${issue.message || "custom validation failed"}`;
+			case "not_multiple_of":
+				return `${path}: value must be a multiple of ${(issue as any).multipleOf || "specified number"}`;
+			case "invalid_key":
+				return `${path}: invalid object key`;
+			case "invalid_element":
+				return `${path}: invalid array element`;
+			case "invalid_value":
+				return `${path}: invalid value`;
+			default:
+				return `${path}: ${(issue as any).message || "validation failed"}`;
+		}
+	});
+
+	return issues.join("; ");
+}
+
 // Function to validate any Zod schema and return TestResults
 export function validateSchema<T>(
 	schema: z.ZodType<T>,
@@ -189,12 +225,14 @@ export function validateSchema<T>(
 		];
 	} catch (error) {
 		if (error instanceof z.ZodError) {
+			const errorMessage = formatZodError(error);
 			return [
 				{
 					success: false,
-					description: "Schema validation failed",
+					description: `Schema validation failed: ${errorMessage}`,
 					meta: {
-						errors: z.treeifyError(error),
+						errorCount: error.issues.length,
+						rawError: error.issues,
 					},
 				},
 			];

@@ -3,11 +3,24 @@ import { createFakeSession } from "./api-session-faker";
 import { RedisService } from "ondc-automation-cache-lib";
 import { runMock } from "./mini-mock-service/mock-service";
 import { runApiService } from "./mini-api-service/api-service";
+import Cli from "cli-tools";
+import { getRunnerConfig } from "runner-config-manager";
 
-// import { performL1Validations } from "./generated/L1-Validations";
 export async function runProtocolFlows() {
-	logger.info("Starting protocol flow runner...");
-	const fakeSession = createFakeSession("transport", "2.0.0", "TRV14");
+	console.log(Cli.title("RUNNING DEFINED FLOWS"));
+	if (getRunnerConfig().runFlows === false) {
+		console.log(Cli.skip.secondary("skipping flow execution") + "\n");
+		return;
+	}
+	const domain = process.env.DOMAIN;
+	const version = process.env.VERSION;
+	if (!domain || !version) {
+		throw new Error("DOMAIN and VERSION must be set in environment variables");
+	}
+	console.log(
+		Cli.description.secondary(`Domain: ${domain} Version: ${version}\n`)
+	);
+	const fakeSession = createFakeSession(domain, version, "TRV14");
 	const flowIds = Object.keys(fakeSession.flowConfigs);
 	const sessionId = "test-session-id";
 	RedisService.setKey(sessionId, JSON.stringify(fakeSession));

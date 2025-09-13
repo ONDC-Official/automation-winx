@@ -110,7 +110,8 @@
 		"resolveJsonModule": true,
 		"paths": {
 			"ondc-automation-cache-lib": ["./lib/ondc-automation-cache-lib/index"],
-			"reporter": ["./lib/reporter/index"]
+			"reporter": ["./lib/reporter/index"],
+			"cli-tools": ["./lib/cli-tools/index"]
 		}
 	}
 }

@@ -128,7 +128,11 @@ async function contextValidations(payload: any, subscriber_url: string) {
 		randomUUID(),
 		payload,
 		{
-			message: "STUB API RESPONSE FOR AUTO RUNNER",
+			message: {
+				ack: {
+					status: "ACK",
+				},
+			},
 		},
 		subscriber_url
 	);

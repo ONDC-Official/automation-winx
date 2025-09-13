@@ -1,10 +1,10 @@
 import reporter from "reporter";
-
+import logger from "@ondc/automation-logger";
 const dummyJson: any = {};
 
 export const RedisService = {
 	useDb: (dbIndex: number) => {
-		console.log(`Setting Dummy Redis DB to ${dbIndex}`);
+		logger.info(`Setting Dummy Redis DB to ${dbIndex}`);
 	},
 	async getKey(key: string) {
 		if (!dummyJson[key]) {
