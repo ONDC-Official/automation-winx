@@ -5,8 +5,13 @@ import { performContextValidations } from "workbench-runner/mini-api-service/con
 import { TransactionCacheService } from "workbench-runner/mini-api-service/context-validations/data-utils/session-service";
 import { randomUUID } from "crypto";
 import { getRunnerConfig } from "runner-config-manager";
+import { FlowMeta } from "workbench-runner/runner";
 
-export async function runApiService(payload: any, subscriber_url: string) {
+export async function runApiService(
+	payload: any,
+	subscriber_url: string,
+	meta: FlowMeta
+) {
 	if (getRunnerConfig().runApiService.skipAll == true) {
 		logger.warning("Skipping api service functions");
 		reporter.warning("Skipping api service functions");
@@ -28,7 +33,6 @@ async function runPayloadValidations(payload: any, subscriber_url: string) {
 		// L0 Validations
 		const l0Result: any = await performL0Validations(payload, action, {});
 		if (!l0Result.valid) {
-			console.log(l0Result);
 			logger.error(`L0 Validation failed for action `, l0Result);
 			reporter.error(`L0 Validation failed for action `, {
 				errors: l0Result.errors,

@@ -36,7 +36,6 @@ export function updateSessionData(
 			}
 		}
 		if (errorData) {
-			console.log("errorData", errorData);
 			sessionData.error_code = errorData.code.toString();
 			sessionData.error_message = errorData.message;
 		} else {
@@ -148,6 +147,5 @@ export function getReferenceData(sessionData: MockSessionData) {
 			logger.warning(`No data found for key: ${key}`);
 		}
 	}
-	console.log("referenceData", referenceData);
 	return referenceData;
 }

@@ -11,10 +11,12 @@ import { generateMockResponse, getMockActionObject } from "config/mock-config";
 import { updateAllJsonPaths } from "workbench-runner/mini-mock-service/utils/json-editor-utils/jsonPathEditor";
 import reporter from "reporter";
 import { getRunnerConfig } from "runner-config-manager";
+import { FlowMeta } from "workbench-runner/runner";
 export async function runMock(
 	index: number,
 	sessionId: string,
-	flowId: string
+	flowId: string,
+	meta: FlowMeta
 ) {
 	if (getRunnerConfig().runMockService.skipAll == true) {
 		logger.warning("Skipping mock service functions");
@@ -33,7 +35,6 @@ export async function runMock(
 	}
 
 	const current = flowConfig.sequence[index];
-	console.log(current);
 	if (!current) {
 		logger.info(`No more steps in the flow at index ${index}`);
 		return {
