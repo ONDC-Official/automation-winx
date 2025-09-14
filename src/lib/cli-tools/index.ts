@@ -91,8 +91,8 @@ export default class Cli {
 			default: ((text: string, opts?: Partial<TitleOptions>) => {
 				const { indentation = 0, padding, badge } = opts || {};
 				const inner =
-					(badge ? this._chalk.black.bgYellowBright(` ${badge} `) + " " : "") +
-					this._chalk.bold.bgYellowBright(` ${text} `);
+					(badge ? this._chalk.black.bgYellow(` ${badge} `) + " " : "") +
+					this._chalk.bold.black.bgYellow(` ${text} `);
 				const block = " ".repeat(indentation) + inner;
 				return padLines(block, padding ?? {});
 			}) as Formatter<TitleOptions>,

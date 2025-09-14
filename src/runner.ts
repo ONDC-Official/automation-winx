@@ -6,12 +6,12 @@ import { createApiService } from "./create-api-service";
 import reporter from "reporter";
 import { runConfigValidations } from "./services/runFlowSchemaValidations";
 import logger from "@ondc/automation-logger";
-import { getRunnerConfig } from "runner-config-manager";
 import { generateFinalReportArtifact } from "services/reportGenerator";
 import Cli from "cli-tools";
+import { generateCliReport } from "services/reportGeneratorCli";
 export async function runWorkbench() {
 	reporter.start("workbench-testing");
-	console.log("=== RUNNING WORKBENCH TESTS ===\n");
+	console.log(Cli.description.primary("=== SIMULATING WORKBENCH ===") + "\n");
 	try {
 		await runConfigValidations();
 		await createApiService();
@@ -20,10 +20,15 @@ export async function runWorkbench() {
 		logger.error("Error in workbench", {}, e);
 		reporter.error("Error in running the workbench", e);
 	}
-	console.log(Cli.title.info("GENERATING REPORT"));
 	const diagnostics = reporter.diagnostics();
-	console.log("Diagnostics:", diagnostics);
 	await generateFinalReportArtifact(diagnostics);
+	generateCliReport(diagnostics);
+	const anyError = diagnostics.complete.items.some(
+		(item) => item.severity === "error"
+	);
+	if (anyError) {
+		throw new Error(
+			"Errors found during workbench run. Please check the report for details."
+		);
+	}
 }
-
-// finally create a report folder which contains all ondc-logs which will act as a artifact for workflow

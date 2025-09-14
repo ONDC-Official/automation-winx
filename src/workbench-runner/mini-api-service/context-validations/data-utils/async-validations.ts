@@ -13,7 +13,6 @@ export function validateAsyncContext(
 	requestProperties: RequestProperties,
 	loggingMeta: any
 ) {
-	logger.info("Validating Transaction History", loggingMeta);
 	const flowPayloads = transactionData.apiList.filter(
 		(item) => item.entryType === "API"
 	) as ApiData[];
@@ -108,7 +107,6 @@ function validateTransactionId(
 	sortedContexts: ApiData[],
 	loggingMeta: any
 ) {
-	logger.info("Running Transaction Id Checks", loggingMeta);
 	const transactionPartners = getTransactionPartners(action);
 	const transactionContexts = findFirstMatches(
 		sortedContexts,
@@ -132,7 +130,6 @@ function validateTransactionId(
 			)} not found in the transaction history to proceed with ${action}`,
 		};
 	}
-	logger.info("Transaction History Checks passed", loggingMeta);
 	return {
 		valid: true,
 	};

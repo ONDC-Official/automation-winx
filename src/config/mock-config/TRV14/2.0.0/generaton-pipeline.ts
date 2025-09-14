@@ -102,7 +102,6 @@ export async function createMockResponseTRV14_200(
 		};
 		delete payload.message;
 		payload.error = error_message;
-		logger.info(`L2 error found: ${JSON.stringify(error_message)}`);
 		return payload;
 	}
 	const mockAction = getMockAction(actionID);

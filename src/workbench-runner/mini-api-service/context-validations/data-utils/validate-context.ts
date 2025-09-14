@@ -12,14 +12,12 @@ export async function performContextValidations(
 	valid: boolean;
 	error?: string;
 }> {
-	logger.info(`Running Context Validations`, loggingMeta);
 	const transService = new TransactionCacheService();
 	let transactionData = await transService.tryLoadTransaction(
 		apiProperties.transactionId,
 		apiProperties.subscriberUrl
 	);
 	if (!transactionData) {
-		logger.info("Transaction not found, creating new transaction", loggingMeta);
 		transactionData = await transService.createTransaction(
 			transService.createTransactionKey(
 				apiProperties.transactionId,

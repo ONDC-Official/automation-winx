@@ -36,14 +36,12 @@ export async function runMock(
 
 	const current = flowConfig.sequence[index];
 	if (!current) {
-		logger.info(`No more steps in the flow at index ${index}`);
 		return {
 			continue: false,
 			payload: undefined,
 			mockAction: undefined,
 		};
 	}
-	logger.info(`Executing step ${index + 1}: ${current.key}`);
 
 	let txId = randomUUID() as string;
 	if (sessionData.flowMap && sessionData.flowMap[flowId])
@@ -65,7 +63,6 @@ export async function runMock(
 		const mockInputs = (await getWorkbenchConfig("testConfig")).payload_inputs;
 		const flowInputs = mockInputs[flowId];
 		if (!flowInputs) {
-			logger.error("Inputs were:", mockInputs);
 			throw new Error(`No inputs found for flow ${flowId}`);
 		}
 		const saved = flowInputs.find((inp: any) => inp.actionId === current.key);
@@ -79,7 +76,7 @@ export async function runMock(
 				const given = saved.input_data[config.name];
 				if (!given) {
 					throw new Error(
-						`No mock input found for field ${config.name} in action ${current.key}`
+						`No mock input found for field ${config.name} in action ${current.key} in flow ${flowId}`
 					);
 				}
 				input.json_path_changes[config.name] = saved.input_data[config.name];

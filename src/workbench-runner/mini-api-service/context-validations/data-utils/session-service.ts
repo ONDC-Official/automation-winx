@@ -24,20 +24,12 @@ export class SessionManagementService {
 		subscriberType: "BAP" | "BPP",
 		loggerMeta: any
 	): Promise<RequestProperties> => {
-		logger.info(
-			`Received request for action ${action} and transactionId ${body.context?.transaction_id} from subscriber ${subscriberUrl}`,
-			loggerMeta
-		);
 		const txnId = body.context.transaction_id;
 		if (
 			await this.transactionService.checkIfTransactionExists(
 				this.transactionService.createTransactionKey(txnId, subscriberUrl)
 			)
 		) {
-			logger.info(
-				`Transaction already exists for ${txnId} and subscriber ${subscriberUrl}`,
-				loggerMeta
-			);
 			return await this.handleExistingTransaction(txnId, action, subscriberUrl);
 		} else {
 			if (await this.subscriberService.checkIfSubscriberExists(subscriberUrl)) {
@@ -61,10 +53,6 @@ export class SessionManagementService {
 							txnId
 						);
 					}
-					logger.info(
-						`Successfully fulfilled expectation for ${txnId} and subscriber ${subscriberUrl}`,
-						loggerMeta
-					);
 					return {
 						action: action,
 						transactionId: txnId,
@@ -78,10 +66,6 @@ export class SessionManagementService {
 					};
 				}
 			}
-			logger.info(
-				"No existing transaction found, using default properties",
-				loggerMeta
-			);
 			return await this.getDefaultProperties(
 				action,
 				txnId,
@@ -106,30 +90,14 @@ export class SessionManagementService {
 				this.transactionService.createTransactionKey(txnId, subscriberUrl)
 			)
 		) {
-			logger.info(
-				`Transaction already exists for ${txnId} and subscriber ${subscriberUrl}`,
-				loggerMeta
-			);
 			return await this.handleExistingTransaction(txnId, action, subscriberUrl);
 		}
-
-		logger.info(
-			`Received request for action ${action} and transactionId ${txnId} from mock with session ${
-				sessionId ?? "default"
-			}`,
-			loggerMeta
-		);
 		if (flowId && sessionId) {
 			const session =
 				await this.sessionService.loadSessionThatExists(sessionId);
 			if (session.flowMap[flowId] === undefined) {
 				await this.assignTransactionToSession(sessionId, flowId, txnId);
 			}
-
-			logger.info(
-				`Transaction assigned to session ${sessionId} and flow ${flowId} for ${txnId} and subscriber ${subscriberUrl}`,
-				loggerMeta
-			);
 			return {
 				action: action,
 				transactionId: txnId,
@@ -143,10 +111,6 @@ export class SessionManagementService {
 				sessionData: session,
 			};
 		}
-		logger.info(
-			"No existing transaction found, using default properties",
-			loggerMeta
-		);
 		return await this.getDefaultProperties(
 			action,
 			txnId,
@@ -197,19 +161,11 @@ export class SessionManagementService {
 		action: string,
 		loggerMeta: any
 	) => {
-		logger.info(
-			`Trying to fulfill expectation for action ${action} in subscriber ${subscriberUrl}`,
-			loggerMeta
-		);
 		let expectations = subscriber.activeSessions.filter(
 			(e) => Date.now() < new Date(e.expireAt).getTime()
 		);
 		const target = expectations.find((exp) => exp.expectedAction === action);
 		if (target) {
-			logger.info(
-				`FOUND! expectation for action ${action} in subscriber ${subscriberUrl}`,
-				loggerMeta
-			);
 			expectations = expectations.filter((e) => e.expectedAction !== action);
 			subscriber.activeSessions = expectations;
 			await this.subscriberService.updateSubscriber(subscriber, subscriberUrl);
@@ -349,10 +305,6 @@ export class TransactionCacheService {
 	) => {
 		const key = this.createTransactionKey(transactionId, subscriberUrl);
 		await RedisService.setKey(key, JSON.stringify(transaction));
-		logger.info(`Transaction with id ${transactionId} overridden`, {
-			transactionId: transactionId,
-			subscriberUrl: subscriberUrl,
-		});
 	};
 }
 

@@ -18,7 +18,6 @@ export function updateSessionData(
 		message: string;
 	}
 ) {
-	logger.info(`updating session`);
 	try {
 		for (const key in saveData) {
 			const jsonPath = saveData[key as keyof typeof saveData];
@@ -68,7 +67,6 @@ export async function saveData(
 			payload?.context.transaction_id,
 			JSON.stringify(sessionData)
 		);
-		logger.info("Data saved to session");
 	} catch (e) {
 		logger.error("Error in saving data to session", {}, e);
 	}
@@ -93,7 +91,6 @@ export async function saveDataForConfig(
 			JSON.stringify(sessionData),
 			payload?.context.transaction_id
 		);
-		logger.info("Data saved to session");
 	} catch (e) {
 		logger.error("Error in saving data to session", {}, e);
 	}
@@ -105,7 +102,6 @@ export async function saveCompleteData(data: string, transactionId: string) {
 			throw new Error("Transaction ID is missing, cannot save complete data");
 		}
 		await RedisService.setKey(transactionId, data);
-		logger.info("Complete Data saved to session");
 	} catch (e) {
 		logger.error("Error in saving complete data to session", {}, e);
 	}
@@ -125,11 +121,9 @@ export async function loadMockSessionData(
 		sessionData.bap_uri = "https://dev-automation.ondc.org/buyer";
 		sessionData.bpp_uri = "https://dev-automation.ondc.org/seller";
 		sessionData.subscriber_url = subscriber_url;
-		logger.info(`new session data is ${JSON.stringify(sessionData)}`);
 		return sessionData;
 	} else {
 		const rawData = await RedisService.getKey(transactionID);
-		logger.info(`loading session data for ${transactionID}`);
 		const sessionData = JSON.parse(rawData ?? "{}") as MockSessionData;
 		return sessionData;
 	}
@@ -139,7 +133,6 @@ export function getReferenceData(sessionData: MockSessionData) {
 	const listOfKeys = getUiMetaKeys();
 	const referenceData: Record<string, any> = {};
 	for (const key of listOfKeys) {
-		logger.info(`Fetching data for key: ${key}`);
 		const data = sessionData[key];
 		if (data) {
 			referenceData[key] = data;

@@ -19,7 +19,6 @@ export function performL1CustomValidations(
 	allErrors = false,
 	externalData = {}
 ): validationOutput {
-	console.log("Performing custom L1 validations for action: " + action);
 	return [
 		{
 			valid: true,
