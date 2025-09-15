@@ -51,11 +51,19 @@ const FlowSequenceItemSchema = z.object({
 		.optional(),
 });
 
-const FlowSchema = z.object({
-	id: z.string(),
-	description: z.string(),
-	sequence: z.array(FlowSequenceItemSchema),
-});
+// expect at 0th index must be true
+const FlowSchema = z
+	.object({
+		id: z.string(),
+		description: z.string(),
+		sequence: z.array(FlowSequenceItemSchema),
+	})
+	.refine(
+		(data) => data.sequence.length > 0 && data.sequence[0].expect === true,
+		{
+			message: 'The first item in "sequence" must have "expect" set to true',
+		}
+	);
 
 const FlowConfigSchema = z.object({
 	flows: z.array(FlowSchema),

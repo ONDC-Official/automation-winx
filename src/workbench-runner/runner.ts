@@ -6,6 +6,7 @@ import { runApiService } from "./mini-api-service/api-service";
 import Cli from "cli-tools";
 import { getRunnerConfig } from "runner-config-manager";
 import { Listr, PRESET_TIMER } from "listr2";
+import reporter from "reporter";
 
 export type FlowMeta = {
 	flowId: string;
@@ -84,6 +85,7 @@ export async function runProtocolFlows() {
 						continue: true,
 						payload: undefined,
 						mockAction: undefined,
+						actionId: "N/A",
 					};
 					let i = 0;
 
@@ -91,7 +93,7 @@ export async function runProtocolFlows() {
 						task.output = `Step ${i + 1}/${stepCount} • Overall ${ctx.completedSteps}/${ctx.totalSteps}`;
 						const meta: FlowMeta = {
 							flowId,
-							actionId: run.mockAction ? run.mockAction.action : "N/A",
+							actionId: run.actionId ? run.actionId : "N/A",
 							operation: run.mockAction ? run.mockAction.operation : "N/A",
 						};
 
@@ -120,7 +122,7 @@ export async function runProtocolFlows() {
 				rendererOptions: {
 					// Nice defaults for a CLI: show subtasks & a timer, keep outputs visible
 					timer: PRESET_TIMER,
-					showSubtasks: false,
+					showSubtasks: true,
 					collapseSubtasks: false,
 					clearOutput: false,
 					showErrorMessage: true,
@@ -135,6 +137,10 @@ export async function runProtocolFlows() {
 	} catch (err: any) {
 		const stack = err.stack ? err.stack.split("\n").slice(0, 2).join("\n") : "";
 		const message = err.message ? err.message : String(err);
+		reporter.error("Error in flow execution", {
+			completeMessage: message,
+			stackTrace: stack,
+		});
 		console.log(
 			Cli.description.error(
 				"Error while executing flows: " + message + "\n" + stack,

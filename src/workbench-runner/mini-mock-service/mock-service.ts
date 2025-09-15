@@ -103,5 +103,6 @@ export async function runMock(
 		continue: true,
 		payload: payload,
 		mockAction: mockAction,
+		actionId: current.key,
 	};
 }
