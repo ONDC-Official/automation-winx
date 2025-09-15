@@ -15,7 +15,7 @@ export type MainRunnerConfigType = {
 };
 
 export const defaultConfig: MainRunnerConfigType = {
-	createApiService: false,
+	createApiService: true,
 	runFlows: true,
 	runConfigValidations: true,
 	runApiService: {

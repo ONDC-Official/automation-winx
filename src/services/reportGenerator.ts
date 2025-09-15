@@ -8,15 +8,11 @@ const JSON_WRITE_OPTIONS = { spaces: 2 };
 export async function generateFinalReportArtifact(
 	diagnostics: Diagnostics
 ): Promise<void> {
-	logger.info("Generating final report artifact...");
-
 	await initializeReportFolder();
 	await generateFlowsReport(diagnostics.complete.flows);
 	await generateErrorsAndWarningsReport(diagnostics.complete.items);
 	await generateRedisReport(diagnostics.complete.cacheData);
 	await generateMetaReport(diagnostics);
-
-	logger.info(`Final report artifact generated at ./${REPORT_FOLDER}`);
 }
 
 /**
