@@ -51,8 +51,8 @@ function selectValidations(input: validationInput): validationOutput {
             for (const testObj of scope) {
                 testObj._EXTERNAL = input.externalData;
                 const action = ["select"];
-                const domain = ["ONDC:TRV14"];
-                const version = ["2.0.0"];
+                const domain = ["ONDC:TRV19"];
+                const version = ["2.0.21"];
 
                 function CONTEXT_REQUIRED(
                     input: validationInput,
@@ -79,8 +79,8 @@ function selectValidations(input: validationInput): validationOutput {
                                     "$.context.location.country.code",
                                 );
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -95,7 +95,7 @@ function selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE**: $.context.location.country.code must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -112,7 +112,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -135,8 +135,8 @@ function selectValidations(input: validationInput): validationOutput {
                                     "$.context.location.city.code",
                                 );
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -151,7 +151,7 @@ function selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_LOCATION_CITY_CODE**: $.context.location.city.code must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -168,7 +168,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -191,8 +191,8 @@ function selectValidations(input: validationInput): validationOutput {
                                     "$.context.domain",
                                 );
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -206,7 +206,7 @@ function selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_DOMAIN**: $.context.domain must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -222,7 +222,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -245,8 +245,8 @@ function selectValidations(input: validationInput): validationOutput {
                                     "$.context.timestamp",
                                 );
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -261,7 +261,7 @@ function selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_TIMESTAMP**: $.context.timestamp must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -277,7 +277,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -300,8 +300,8 @@ function selectValidations(input: validationInput): validationOutput {
                                     "$.context.bap_id",
                                 );
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -315,7 +315,7 @@ function selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_BAP_ID**: $.context.bap_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -331,7 +331,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -354,8 +354,8 @@ function selectValidations(input: validationInput): validationOutput {
                                     "$.context.bap_uri",
                                 );
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -370,7 +370,7 @@ function selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_BAP_URI**: $.context.bap_uri must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -386,7 +386,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -410,8 +410,8 @@ function selectValidations(input: validationInput): validationOutput {
                                 );
                                 const var_search = ["search"];
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const skipCheck = validations.equalTo(
                                     action,
@@ -435,7 +435,7 @@ function selectValidations(input: validationInput): validationOutput {
 	> - **condition B**: ["select"] must be equal to ["search"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -451,7 +451,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -475,8 +475,8 @@ function selectValidations(input: validationInput): validationOutput {
                                 );
                                 const var_search = ["search"];
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const skipCheck = validations.equalTo(
                                     action,
@@ -501,7 +501,7 @@ function selectValidations(input: validationInput): validationOutput {
 	> - **condition B**: ["select"] must be equal to ["search"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -517,7 +517,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -540,8 +540,8 @@ function selectValidations(input: validationInput): validationOutput {
                                     "$.context.transaction_id",
                                 );
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -556,7 +556,7 @@ function selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_TRANSACTION_ID**: $.context.transaction_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -572,7 +572,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -595,8 +595,8 @@ function selectValidations(input: validationInput): validationOutput {
                                     "$.context.message_id",
                                 );
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -611,7 +611,7 @@ function selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_MESSAGE_ID**: $.context.message_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -627,7 +627,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -650,8 +650,8 @@ function selectValidations(input: validationInput): validationOutput {
                                     "$.context.version",
                                 );
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -666,7 +666,7 @@ function selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_VERSION**: $.context.version must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -682,7 +682,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -705,8 +705,8 @@ function selectValidations(input: validationInput): validationOutput {
                                     "$.context.ttl",
                                 );
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -720,7 +720,7 @@ function selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_TTL**: $.context.ttl must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -736,7 +736,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -776,7 +776,7 @@ function selectValidations(input: validationInput): validationOutput {
                             code: valid ? 200 : 30000,
                             _debugInfo: {
                                 fedConfig: `
-{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}
+{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}]}
 `,
                             },
                         },
@@ -807,10 +807,10 @@ function selectValidations(input: validationInput): validationOutput {
                                     testObj,
                                     "$.context.location.country.code",
                                 );
-                                const enumList = ["IND"];
+                                const enumList = ["IND2"];
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const validate = validations.anyIn(
                                     attr,
@@ -825,10 +825,10 @@ function selectValidations(input: validationInput): validationOutput {
                                                 "VALID_CONTEXT_LOCATION_COUNTRY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]`,
+                                            description: `- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -845,7 +845,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -869,8 +869,8 @@ function selectValidations(input: validationInput): validationOutput {
                                 );
                                 const enumList = ["ONDC:TRV14"];
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const validate = validations.allIn(
                                     attr,
@@ -887,7 +887,7 @@ function selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -903,7 +903,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -933,7 +933,7 @@ function selectValidations(input: validationInput): validationOutput {
                             code: valid ? 200 : 30000,
                             _debugInfo: {
                                 fedConfig: `
-{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}
+{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}]}
 `,
                             },
                         },
@@ -966,8 +966,8 @@ function selectValidations(input: validationInput): validationOutput {
                                 );
                                 const reg = ["^std:\\d{3,5}$"];
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const validate = validations.followRegex(
                                     attr,
@@ -985,7 +985,7 @@ function selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REGEX_CONTEXT_LOCATION_CITY_CODE**: all elements of $.context.location.city.code must follow every regex in ["^std:\\d{3,5}$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -1002,7 +1002,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -1028,8 +1028,8 @@ function selectValidations(input: validationInput): validationOutput {
                                     "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$",
                                 ];
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const validate = validations.followRegex(
                                     attr,
@@ -1046,7 +1046,7 @@ function selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REGEX_CONTEXT_TIMESTAMP**: all elements of $.context.timestamp must follow every regex in ["^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\.\\d{3}Z$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -1062,7 +1062,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -1086,8 +1086,8 @@ function selectValidations(input: validationInput): validationOutput {
                                 );
                                 const reg = ["^https:\\/\\/"];
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const validate = validations.followRegex(
                                     attr,
@@ -1104,7 +1104,7 @@ function selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REGEX_CONTEXT_BAP_URI**: all elements of $.context.bap_uri must follow every regex in ["^https:\/\/"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -1120,7 +1120,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -1146,8 +1146,8 @@ function selectValidations(input: validationInput): validationOutput {
                                     "^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+D)?(T(\\d+H)?(\\d+M)?(\\d+S)?)?$",
                                 ];
                                 const action = ["select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV19"];
+                                const version = ["2.0.21"];
 
                                 const validate = validations.followRegex(
                                     attr,
@@ -1164,7 +1164,7 @@ function selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_TTL**: all elements of $.context.ttl must follow every regex in ["^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+D)?(T(\\d+H)?(\\d+M)?(\\d+S)?)?$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                             },
                                         },
@@ -1180,7 +1180,7 @@ function selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
 `,
                                     },
                                 },
@@ -1212,7 +1212,7 @@ function selectValidations(input: validationInput): validationOutput {
                             code: valid ? 200 : 30000,
                             _debugInfo: {
                                 fedConfig: `
-{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}
+{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}]}
 `,
                             },
                         },
@@ -1243,7 +1243,7 @@ function selectValidations(input: validationInput): validationOutput {
                     code: valid ? 200 : 30000,
                     _debugInfo: {
                         fedConfig: `
-{"_NAME_":"SELECT_CONTEXT","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}]}
+{"_NAME_":"SELECT_CONTEXT","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}]}]}
 `,
                     },
                 },
@@ -1260,6 +1260,56 @@ function selectValidations(input: validationInput): validationOutput {
                 testObj._EXTERNAL = input.externalData;
                 const action = ["select"];
 
+                function REQUIRED_123(
+                    input: validationInput,
+                ): validationOutput {
+                    const scope = payloadUtils.getJsonPath(input.payload, "$");
+                    let subResults: validationOutput = [];
+                    let valid = true;
+                    for (const testObj of scope) {
+                        testObj._EXTERNAL = input.externalData;
+                        const domain = ["ONDC:123"];
+                        const attr = payloadUtils.getJsonPath(
+                            testObj,
+                            "$.context.domain",
+                        );
+                        const action = ["select"];
+
+                        const validate = validations.allIn(attr, domain);
+
+                        if (!validate) {
+                            delete testObj._EXTERNAL;
+                            return [
+                                {
+                                    testName: "REQUIRED_123",
+                                    valid: false,
+                                    code: 30000,
+                                    description: `- **condition REQUIRED_123**: every element of $.context.domain must be in ["ONDC:123"]`,
+                                    _debugInfo: {
+                                        fedConfig: `
+{"_NAME_":"REQUIRED_123","domain":["ONDC:123"],"attr":"$.context.domain","_RETURN_":"attr all in domain","action":["select"]}
+`,
+                                    },
+                                },
+                            ];
+                        }
+
+                        delete testObj._EXTERNAL;
+                    }
+                    return [
+                        {
+                            testName: "REQUIRED_123",
+                            valid: valid,
+                            code: valid ? 200 : 30000,
+                            _debugInfo: {
+                                fedConfig: `
+{"_NAME_":"REQUIRED_123","domain":["ONDC:123"],"attr":"$.context.domain","_RETURN_":"attr all in domain","action":["select"]}
+`,
+                            },
+                        },
+                        ...subResults,
+                    ];
+                }
                 function REQUIRED_ORDER_ITEM(
                     input: validationInput,
                 ): validationOutput {
@@ -1409,6 +1459,7 @@ function selectValidations(input: validationInput): validationOutput {
                 }
 
                 const testFunctions: testFunctionArray = [
+                    REQUIRED_123,
                     REQUIRED_ORDER_ITEM,
                     REQUIRED_ORDER_ITEM_PARENT,
                     REQUIRED_ORDER_ITEM_QUANTITY,
@@ -1431,7 +1482,7 @@ function selectValidations(input: validationInput): validationOutput {
                     code: valid ? 200 : 30000,
                     _debugInfo: {
                         fedConfig: `
-{"_NAME_":"SELECT_ITEM_SELECT_0","action":["select"],"_RETURN_":[{"_NAME_":"REQUIRED_ORDER_ITEM","attr":"$.message.order.items[*].id","_RETURN_":"attr are present","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_PARENT","attr":"$.message.order.items[*].parent_item_id","_RETURN_":"attr are present","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_QUANTITY","attr":"$.message.order.items[*].quantity.selected.count","_RETURN_":"attr are present","action":["select"]}]}
+{"_NAME_":"SELECT_ITEM_SELECT_0","action":["select"],"_RETURN_":[{"_NAME_":"REQUIRED_123","domain":["ONDC:123"],"attr":"$.context.domain","_RETURN_":"attr all in domain","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM","attr":"$.message.order.items[*].id","_RETURN_":"attr are present","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_PARENT","attr":"$.message.order.items[*].parent_item_id","_RETURN_":"attr are present","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_QUANTITY","attr":"$.message.order.items[*].quantity.selected.count","_RETURN_":"attr are present","action":["select"]}]}
 `,
                     },
                 },
@@ -2319,7 +2370,7 @@ function selectValidations(input: validationInput): validationOutput {
             code: valid ? 200 : 30000,
             _debugInfo: {
                 fedConfig: `
-{"_NAME_":"selectValidations","_RETURN_":[{"_NAME_":"SELECT_CONTEXT","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}]},{"_NAME_":"SELECT_ITEM_SELECT_0","action":["select"],"_RETURN_":[{"_NAME_":"REQUIRED_ORDER_ITEM","attr":"$.message.order.items[*].id","_RETURN_":"attr are present","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_PARENT","attr":"$.message.order.items[*].parent_item_id","_RETURN_":"attr are present","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_QUANTITY","attr":"$.message.order.items[*].quantity.selected.count","_RETURN_":"attr are present","action":["select"]}]},{"_NAME_":"SELECT_ITEM_SELECT_1","usecasepath":"$.message.order.items[*].xinput.form.id","_CONTINUE_":"!(usecasepath are present)","action":["select"],"_RETURN_":[{"_NAME_":"REQUIRED_ORDER_ITEM","attr":"$.message.order.items[*].id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_PARENT","attr":"$.message.order.items[*].parent_item_id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_QUANTITY","attr":"$.message.order.items[*].quantity.selected.count","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_XINPUT_FORM","attr":"$.message.order.items[*].xinput.form.id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_XINPUT_FORM_RESPONSE","attr":"$.message.order.items[*].xinput.form_response.status","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_XINPUT_FORM_RESPONSE_SUBMISSION","attr":"$.message.order.items[*].xinput.form_response.submission_id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]}]},{"_NAME_":"SELECT_FULLFILLMENTS","action":["select"],"_RETURN_":[{"_NAME_":"REQUIRED_FULFILLMENT","_RETURN_":[{"_NAME_":"REQUIRED_ORDER_FULFILLMENT_ID","attr":"$.message.order.fulfillments[*].id","_RETURN_":"attr are present","action":["select"]},{"_NAME_":"REQUIRED_ORDER_FULFILLMENT_STOPS","attr":"$.message.order.fulfillments[*].stops[*].type","_RETURN_":"attr are present","action":["select"]},{"_NAME_":"REQUIRED_ORDER_FULFILLMENT_TIME","attr":"$.message.order.fulfillments[*].stops[*].time.timestamp","_RETURN_":"attr are present","action":["select"]}]},{"_NAME_":"ENUM_FULFILLMENT","_RETURN_":[{"_NAME_":"REQUIRED_ORDER_FULFILLMENT_STOPS","attr":"$.message.order.fulfillments[*].stops[*].type","enumList":["START"],"_RETURN_":"attr all in enumList","action":["select"]},{"_NAME_":"REQUIRED_ORDER_FULFILLMENT_TIME","attr":"$.message.order.fulfillments[*].stops[*].time.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["select"]}]}]},{"_NAME_":"SELECT_PROVIDER","action":["select"],"_RETURN_":[{"_NAME_":"REQUIRED_ORDER_PROVIDER","attr":"$.message.order.provider.id","_RETURN_":"attr are present","action":["select"]}]}]}
+{"_NAME_":"selectValidations","_RETURN_":[{"_NAME_":"SELECT_CONTEXT","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}]}]},{"_NAME_":"SELECT_ITEM_SELECT_0","action":["select"],"_RETURN_":[{"_NAME_":"REQUIRED_123","domain":["ONDC:123"],"attr":"$.context.domain","_RETURN_":"attr all in domain","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM","attr":"$.message.order.items[*].id","_RETURN_":"attr are present","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_PARENT","attr":"$.message.order.items[*].parent_item_id","_RETURN_":"attr are present","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_QUANTITY","attr":"$.message.order.items[*].quantity.selected.count","_RETURN_":"attr are present","action":["select"]}]},{"_NAME_":"SELECT_ITEM_SELECT_1","usecasepath":"$.message.order.items[*].xinput.form.id","_CONTINUE_":"!(usecasepath are present)","action":["select"],"_RETURN_":[{"_NAME_":"REQUIRED_ORDER_ITEM","attr":"$.message.order.items[*].id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_PARENT","attr":"$.message.order.items[*].parent_item_id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_QUANTITY","attr":"$.message.order.items[*].quantity.selected.count","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_XINPUT_FORM","attr":"$.message.order.items[*].xinput.form.id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_XINPUT_FORM_RESPONSE","attr":"$.message.order.items[*].xinput.form_response.status","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_XINPUT_FORM_RESPONSE_SUBMISSION","attr":"$.message.order.items[*].xinput.form_response.submission_id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]}]},{"_NAME_":"SELECT_FULLFILLMENTS","action":["select"],"_RETURN_":[{"_NAME_":"REQUIRED_FULFILLMENT","_RETURN_":[{"_NAME_":"REQUIRED_ORDER_FULFILLMENT_ID","attr":"$.message.order.fulfillments[*].id","_RETURN_":"attr are present","action":["select"]},{"_NAME_":"REQUIRED_ORDER_FULFILLMENT_STOPS","attr":"$.message.order.fulfillments[*].stops[*].type","_RETURN_":"attr are present","action":["select"]},{"_NAME_":"REQUIRED_ORDER_FULFILLMENT_TIME","attr":"$.message.order.fulfillments[*].stops[*].time.timestamp","_RETURN_":"attr are present","action":["select"]}]},{"_NAME_":"ENUM_FULFILLMENT","_RETURN_":[{"_NAME_":"REQUIRED_ORDER_FULFILLMENT_STOPS","attr":"$.message.order.fulfillments[*].stops[*].type","enumList":["START"],"_RETURN_":"attr all in enumList","action":["select"]},{"_NAME_":"REQUIRED_ORDER_FULFILLMENT_TIME","attr":"$.message.order.fulfillments[*].stops[*].time.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["select"]}]}]},{"_NAME_":"SELECT_PROVIDER","action":["select"],"_RETURN_":[{"_NAME_":"REQUIRED_ORDER_PROVIDER","attr":"$.message.order.provider.id","_RETURN_":"attr are present","action":["select"]}]}]}
 `,
             },
         },

@@ -40,7 +40,7 @@
 		
 		- **CONTEXT_ENUM** : All the following sub conditions must pass as per the api requirement
 		
-			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]
+			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]
 			
 			- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]
 		
@@ -166,7 +166,7 @@
 		
 		- **CONTEXT_ENUM** : All the following sub conditions must pass as per the api requirement
 		
-			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]
+			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]
 			
 			- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]
 		
@@ -367,7 +367,7 @@
 		
 		- **CONTEXT_ENUM** : All the following sub conditions must pass as per the api requirement
 		
-			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]
+			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]
 			
 			- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]
 		
@@ -383,6 +383,8 @@
 	
 	- **SELECT_ITEM_SELECT_0** : All the following sub conditions must pass as per the api requirement
 	
+		- **condition REQUIRED_123**: every element of $.context.domain must be in ["ONDC:123"]
+		
 		- **condition REQUIRED_ORDER_ITEM**: $.message.order.items[*].id must be present in the payload
 		
 		- **condition REQUIRED_ORDER_ITEM_PARENT**: $.message.order.items[*].parent_item_id must be present in the payload
@@ -463,7 +465,7 @@
 		
 		- **CONTEXT_ENUM** : All the following sub conditions must pass as per the api requirement
 		
-			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]
+			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]
 			
 			- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]
 		
@@ -731,7 +733,7 @@
 		
 		- **CONTEXT_ENUM** : All the following sub conditions must pass as per the api requirement
 		
-			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]
+			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]
 			
 			- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]
 		
@@ -747,6 +749,8 @@
 	
 	- **INIT_ITEM** : All the following sub conditions must pass as per the api requirement
 	
+		- **condition REQUIRED_123**: every element of $.context.domain must be in ["ONDC:123"]
+		
 		- **condition REQUIRED_ORDER_ITEM**: $.message.order.items[*].id must be present in the payload
 		
 		- **condition REQUIRED_ORDER_ITEM_PARENT**: $.message.order.items[*].parent_item_id must be present in the payload
@@ -846,7 +850,7 @@
 		
 		- **CONTEXT_ENUM** : All the following sub conditions must pass as per the api requirement
 		
-			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]
+			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]
 			
 			- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]
 		
@@ -1067,7 +1071,7 @@
 		
 		- **CONTEXT_ENUM** : All the following sub conditions must pass as per the api requirement
 		
-			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]
+			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]
 			
 			- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]
 		
@@ -1083,6 +1087,8 @@
 	
 	- **CONFIRM_ITEM** : All the following sub conditions must pass as per the api requirement
 	
+		- **condition REQUIRED_123**: every element of $.context.domain must be in ["ONDC:123"]
+		
 		- **condition REQUIRED_ORDER_ITEM**: $.message.order.items[*].id must be present in the payload
 		
 		- **condition REQUIRED_ORDER_ITEM_PARENT**: $.message.order.items[*].parent_item_id must be present in the payload
@@ -1193,7 +1199,7 @@
 		
 		- **CONTEXT_ENUM** : All the following sub conditions must pass as per the api requirement
 		
-			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]
+			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]
 			
 			- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]
 		
@@ -1457,7 +1463,7 @@
 		
 		- **CONTEXT_ENUM** : All the following sub conditions must pass as per the api requirement
 		
-			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]
+			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]
 			
 			- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]
 		
@@ -1513,7 +1519,7 @@
 		
 		- **CONTEXT_ENUM** : All the following sub conditions must pass as per the api requirement
 		
-			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]
+			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]
 			
 			- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]
 		
@@ -1777,7 +1783,7 @@
 		
 		- **CONTEXT_ENUM** : All the following sub conditions must pass as per the api requirement
 		
-			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]
+			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]
 			
 			- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]
 		
@@ -1845,7 +1851,7 @@
 		
 		- **CONTEXT_ENUM** : All the following sub conditions must pass as per the api requirement
 		
-			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]
+			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]
 			
 			- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]
 		
@@ -2125,7 +2131,7 @@
 		
 		- **CONTEXT_ENUM** : All the following sub conditions must pass as per the api requirement
 		
-			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]
+			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]
 			
 			- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]
 		
@@ -2195,7 +2201,7 @@
 		
 		- **CONTEXT_ENUM** : All the following sub conditions must pass as per the api requirement
 		
-			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]
+			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]
 			
 			- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]
 		
@@ -2467,7 +2473,7 @@
 		
 		- **CONTEXT_ENUM** : All the following sub conditions must pass as per the api requirement
 		
-			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]
+			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]
 			
 			- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]
 		
@@ -2529,7 +2535,7 @@
 		
 		- **CONTEXT_ENUM** : All the following sub conditions must pass as per the api requirement
 		
-			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]
+			- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]
 			
 			- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]
 		

@@ -94,6 +94,8 @@ export async function runMock(
 	if (input.json_path_changes) {
 		payload = updateAllJsonPaths(payload, input.json_path_changes);
 	}
+	payload.context.bap_uri = "https://workbench-auto-runner.com";
+	payload.context.bpp_uri = "https://workbench-auto-runner.com";
 	const mockAction = getMockActionObject(current.key);
 	reporter.flowPayload(flowId, current.key, payload);
 	reporter.flowSessionData(flowId, current.key, mockSessionData);

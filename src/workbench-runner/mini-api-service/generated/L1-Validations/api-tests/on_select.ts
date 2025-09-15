@@ -51,8 +51,8 @@ function on_selectValidations(input: validationInput): validationOutput {
             for (const testObj of scope) {
                 testObj._EXTERNAL = input.externalData;
                 const action = ["on_select"];
-                const domain = ["ONDC:TRV14"];
-                const version = ["2.0.0"];
+                const domain = ["ONDC:TRV15"];
+                const version = ["2.0.1"];
 
                 function CONTEXT_REQUIRED(
                     input: validationInput,
@@ -79,8 +79,8 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     "$.context.location.country.code",
                                 );
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -95,7 +95,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE**: $.context.location.country.code must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -112,7 +112,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -135,8 +135,8 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     "$.context.location.city.code",
                                 );
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -151,7 +151,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_LOCATION_CITY_CODE**: $.context.location.city.code must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -168,7 +168,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -191,8 +191,8 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     "$.context.domain",
                                 );
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -206,7 +206,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_DOMAIN**: $.context.domain must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -222,7 +222,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -245,8 +245,8 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     "$.context.timestamp",
                                 );
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -261,7 +261,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_TIMESTAMP**: $.context.timestamp must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -277,7 +277,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -300,8 +300,8 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     "$.context.bap_id",
                                 );
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -315,7 +315,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_BAP_ID**: $.context.bap_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -331,7 +331,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -354,8 +354,8 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     "$.context.bap_uri",
                                 );
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -370,7 +370,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_BAP_URI**: $.context.bap_uri must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -386,7 +386,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -410,8 +410,8 @@ function on_selectValidations(input: validationInput): validationOutput {
                                 );
                                 const var_search = ["search"];
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const skipCheck = validations.equalTo(
                                     action,
@@ -435,7 +435,7 @@ function on_selectValidations(input: validationInput): validationOutput {
 	> - **condition B**: ["on_select"] must be equal to ["search"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -451,7 +451,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -475,8 +475,8 @@ function on_selectValidations(input: validationInput): validationOutput {
                                 );
                                 const var_search = ["search"];
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const skipCheck = validations.equalTo(
                                     action,
@@ -501,7 +501,7 @@ function on_selectValidations(input: validationInput): validationOutput {
 	> - **condition B**: ["on_select"] must be equal to ["search"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -517,7 +517,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -540,8 +540,8 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     "$.context.transaction_id",
                                 );
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -556,7 +556,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_TRANSACTION_ID**: $.context.transaction_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -572,7 +572,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -595,8 +595,8 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     "$.context.message_id",
                                 );
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -611,7 +611,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_MESSAGE_ID**: $.context.message_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -627,7 +627,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -650,8 +650,8 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     "$.context.version",
                                 );
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -666,7 +666,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_VERSION**: $.context.version must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -682,7 +682,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -705,8 +705,8 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     "$.context.ttl",
                                 );
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const validate = validations.arePresent(attr);
 
@@ -720,7 +720,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_TTL**: $.context.ttl must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -736,7 +736,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -776,7 +776,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                             code: valid ? 200 : 30000,
                             _debugInfo: {
                                 fedConfig: `
-{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}
+{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}]}
 `,
                             },
                         },
@@ -807,10 +807,10 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     testObj,
                                     "$.context.location.country.code",
                                 );
-                                const enumList = ["IND"];
+                                const enumList = ["IND2"];
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const validate = validations.anyIn(
                                     attr,
@@ -825,10 +825,10 @@ function on_selectValidations(input: validationInput): validationOutput {
                                                 "VALID_CONTEXT_LOCATION_COUNTRY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]`,
+                                            description: `- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -845,7 +845,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -869,8 +869,8 @@ function on_selectValidations(input: validationInput): validationOutput {
                                 );
                                 const enumList = ["ONDC:TRV14"];
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const validate = validations.allIn(
                                     attr,
@@ -887,7 +887,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -903,7 +903,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -933,7 +933,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                             code: valid ? 200 : 30000,
                             _debugInfo: {
                                 fedConfig: `
-{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}
+{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}]}
 `,
                             },
                         },
@@ -966,8 +966,8 @@ function on_selectValidations(input: validationInput): validationOutput {
                                 );
                                 const reg = ["^std:\\d{3,5}$"];
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const validate = validations.followRegex(
                                     attr,
@@ -985,7 +985,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REGEX_CONTEXT_LOCATION_CITY_CODE**: all elements of $.context.location.city.code must follow every regex in ["^std:\\d{3,5}$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -1002,7 +1002,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -1028,8 +1028,8 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$",
                                 ];
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const validate = validations.followRegex(
                                     attr,
@@ -1046,7 +1046,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REGEX_CONTEXT_TIMESTAMP**: all elements of $.context.timestamp must follow every regex in ["^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\.\\d{3}Z$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -1062,7 +1062,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -1086,8 +1086,8 @@ function on_selectValidations(input: validationInput): validationOutput {
                                 );
                                 const reg = ["^https:\\/\\/"];
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const validate = validations.followRegex(
                                     attr,
@@ -1104,7 +1104,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REGEX_CONTEXT_BAP_URI**: all elements of $.context.bap_uri must follow every regex in ["^https:\/\/"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -1120,7 +1120,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -1146,8 +1146,8 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     "^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+D)?(T(\\d+H)?(\\d+M)?(\\d+S)?)?$",
                                 ];
                                 const action = ["on_select"];
-                                const domain = ["ONDC:TRV14"];
-                                const version = ["2.0.0"];
+                                const domain = ["ONDC:TRV15"];
+                                const version = ["2.0.1"];
 
                                 const validate = validations.followRegex(
                                     attr,
@@ -1164,7 +1164,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_TTL**: all elements of $.context.ttl must follow every regex in ["^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+D)?(T(\\d+H)?(\\d+M)?(\\d+S)?)?$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                             },
                                         },
@@ -1180,7 +1180,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}
 `,
                                     },
                                 },
@@ -1212,7 +1212,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                             code: valid ? 200 : 30000,
                             _debugInfo: {
                                 fedConfig: `
-{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}
+{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}]}
 `,
                             },
                         },
@@ -1243,7 +1243,7 @@ function on_selectValidations(input: validationInput): validationOutput {
                     code: valid ? 200 : 30000,
                     _debugInfo: {
                         fedConfig: `
-{"_NAME_":"ON_SELECT_CONTEXT","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}]}
+{"_NAME_":"ON_SELECT_CONTEXT","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}]}]}
 `,
                     },
                 },
@@ -6454,7 +6454,7 @@ function on_selectValidations(input: validationInput): validationOutput {
             code: valid ? 200 : 30000,
             _debugInfo: {
                 fedConfig: `
-{"_NAME_":"on_selectValidations","_RETURN_":[{"_NAME_":"ON_SELECT_CONTEXT","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}]},{"_NAME_":"ON_SELECT_ITEMS_PAGE_0","action":["on_select"],"usecasepath":"$.message.order.items[*].xinput.head.index.min","_CONTINUE_":"!(usecasepath are present)","_RETURN_":[{"_NAME_":"REQUIRED_ITEMS","_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_ITEMS_ID","attr":"$.message.order.items[*].id","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_ITEMS_NAME","attr":"$.message.order.items[*].descriptor.name","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_ITEMS_CODE","attr":"$.message.order.items[*].descriptor.code","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_ITEMS_LOCATIONS","attr":"$.message.order.items[*].location_ids[*]","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_CATEGORIES","attr":"$.message.order.items[*].category_ids[*]","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_FULFILMENTS","attr":"$.message.order.items[*].fulfillment_ids[*]","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_IMAGES_URL","attr":"$.message.order.items[*].descriptor.images[*].url","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_NAME","attr":"$.message.order.items[*].xinput.head.descriptor.name","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_INDEX_MIN","attr":"$.message.order.items[*].xinput.head.index.min","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_INDEX_CUR","attr":"$.message.order.items[*].xinput.head.index.cur","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_INDEX_MAX","attr":"$.message.order.items[*].xinput.head.index.max","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_HEADINGS","attr":"$.message.order.items[*].xinput.head.headings[*]","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_FORM","attr":"$.message.order.items[*].xinput.form.id","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_FORM_MIME","attr":"$.message.order.items[*].xinput.form.mime_type","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_URL","attr":"$.message.order.items[*].xinput.form.url","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_RESUBMIT","attr":"$.message.order.items[*].xinput.form.resubmit","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_MULTIPLE_SUMBISSIONS","attr":"$.message.order.items[*].xinput.form.multiple_sumbissions","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"}]},{"_NAME_":"ENUM_ITEMS","_RETURN_":[{"_NAME_":"ENUM_MESSAGE_ITEMS_CODE","attr":"$.message.order.items[*].descriptor.code","enumList":["ABSTRACT","ENTRY_PASS","ADD_ON"],"_RETURN_":"attr all in enumList","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"}]},{"_NAME_":"REGEX_MESSAGE_ITEMS_IMAGES_URL","attr":"$.message.order.items[*].descriptor.images[*].url","reg":["^https:\\\\/\\\\/[a-zA-Z0-9.-]+\\\\.[a-zA-Z]{2,}(\\\\/.*)?$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"ABSTRACT_ITEM_CODE","usecasepath":"$.message.order.items[*].descriptor.code","var_code":["ABSTRACT"],"_CONTINUE_":"!(var_code equal to usecasepath)","_RETURN_":[{"_NAME_":"REQUIRED_CANCELLATION_TERMS_ELIGIBLE","attr":"$.message.order.items[*].cancellation_terms[*].cancellation_eligible","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_MIME","attr":"$.message.order.items[*].replacement_terms[*].external_ref.mimetype","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_URL","attr":"$.message.order.items[*].replacement_terms[*].external_ref.url","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REGEX_REPLACEMENT_TERMS_ELIGIBLE_URL","attr":"$.message.order.items[*].replacement_terms[*].external_ref.url","reg":["^https?:\\\\/\\\\/[a-zA-Z0-9.-]+(?:\\\\.[a-zA-Z]{2,})?(:\\\\d+)?(\\\\/[^\\\\s?#]*)?(\\\\?[^\\\\s#]*)?(#[^\\\\s]*)?$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]}]},{"_NAME_":"CHILD_ITEM_CODE","usecasepath":"$.message.order.items[*].descriptor.code","var_code":["ABSTRACT"],"_CONTINUE_":"!(var_code none in usecasepath)","_RETURN_":[{"_NAME_":"REQUIRED_PARENT_ITEM_ID","attr":"$.message.order.items[*].parent_item_id","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_PRICE_VAL","attr":"$.message.order.items[*].price.value","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_PRICE_CURRENCY","attr":"$.message.order.items[*].price.currency","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_QUANTITY_MAX","attr":"$.message.order.items[*].quantity.maximum.count","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_QUANTITY_MIN","attr":"$.message.order.items[*].quantity.minimum.count","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"ITEM_TAGS","validTags":["FARE_POLICY"],"tagPath":"$.message.order.items[*].tags[*].descriptor.code","_RETURN_":"tagPath all in validTags","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_ITEM_TAG_FARE_POLICY","_SCOPE_":"$.message.order.items[*].tags[?(@.descriptor.code=='FARE_POLICY')]","subTags":"$.list[*].descriptor.code","validValues":["MIN_AGE","MAX_AGE","GENDER","NATIONALITY"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]}]}]},{"_NAME_":"ON_SELECT_ITEMS_PAGE_1","usecasepath":"$.message.order.items[*].xinput.form_response.submission_id","_CONTINUE_":"!(usecasepath are present)","action":["on_select"],"_RETURN_":[{"_NAME_":"REQUIRED_ITEMS","_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_ITEMS_ID","attr":"$.message.order.items[*].id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_ITEMS_NAME","attr":"$.message.order.items[*].descriptor.name","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_ITEMS_CODE","attr":"$.message.order.items[*].descriptor.code","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_ITEMS_LOCATIONS","attr":"$.message.order.items[*].location_ids[*]","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_CATEGORIES","attr":"$.message.order.items[*].category_ids[*]","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_FULFILMENTS","attr":"$.message.order.items[*].fulfillment_ids[*]","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL","attr":"$.message.order.items[*].descriptor.images[*].url","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_FORM","attr":"$.message.order.items[*].xinput.form.id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_XINPUT_FORM_RESPONSE","attr":"$.message.order.items[*].xinput.form_response.status","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_XINPUT_FORM_RESPONSE_SUBMISSION","attr":"$.message.order.items[*].xinput.form_response.submission_id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]}]},{"_NAME_":"ENUM_ITEMS","_RETURN_":[{"_NAME_":"ENUM_MESSAGE_ITEMS_CODE","attr":"$.message.order.items[*].descriptor.code","enumList":["ABSTRACT","ENTRY_PASS","ADD_ON"],"_RETURN_":"attr all in enumList","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]}]},{"_NAME_":"REGEX_MESSAGE_ITEMS_IMAGES_URL","attr":"$.message.order.items[*].descriptor.images[*].url","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"ABSTRACT_ITEM_CODE","usecasepath":"$.message.order.items[*].descriptor.code","var_code":["ABSTRACT"],"_CONTINUE_":"!(var_code equal to usecasepath)","_RETURN_":[{"_NAME_":"REQUIRED_CANCELLATION_TERMS_ELIGIBLE","attr":"$.message.order.items[*].cancellation_terms[*].cancellation_eligible","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_MIME","attr":"$.message.order.items[*].replacement_terms[*].external_ref.mimetype","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_URL","attr":"$.message.order.items[*].replacement_terms[*].external_ref.url","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"REGEX_REPLACEMENT_TERMS_ELIGIBLE_URL","attr":"$.message.order.items[*].replacement_terms[*].external_ref.url","reg":["^https?:\\\\/\\\\/[a-zA-Z0-9.-]+(?:\\\\.[a-zA-Z]{2,})?(:\\\\d+)?(\\\\/[^\\\\s?#]*)?(\\\\?[^\\\\s#]*)?(#[^\\\\s]*)?$"],"_RETURN_":"attr follow regex reg","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]}]},{"_NAME_":"CHILD_ITEM_CODE","usecasepath":"$.message.order.items[*].descriptor.code","var_code":["ABSTRACT"],"_CONTINUE_":"!(var_code none in usecasepath)","_RETURN_":[{"_NAME_":"REQUIRED_PARENT_ITEM_ID","attr":"$.message.order.items[*].parent_item_id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_PRICE_VAL","attr":"$.message.order.items[*].price.value","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_PRICE_CURRENCY","attr":"$.message.order.items[*].price.currency","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_QUANTITY_MAX","attr":"$.message.order.items[*].quantity.maximum.count","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_QUANTITY_MIN","attr":"$.message.order.items[*].quantity.minimum.count","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"ITEM_TAGS","validTags":["FARE_POLICY"],"tagPath":"$.message.order.items[*].tags[*].descriptor.code","_RETURN_":"tagPath all in validTags","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_ITEM_TAG_FARE_POLICY","_SCOPE_":"$.message.order.items[*].tags[?(@.descriptor.code=='FARE_POLICY')]","subTags":"$.list[*].descriptor.code","validValues":["MIN_AGE","MAX_AGE","GENDER","NATIONALITY"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]}]}]},{"_NAME_":"ON_SELECT_FULFILLMENTS","action":["on_select"],"_RETURN_":[{"_NAME_":"REQUIRED_FULFILLMENTS","_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_ID","attr":"$.message.order.fulfillments[*].id","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_TYPE","attr":"$.message.order.fulfillments[*].type","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_STOPS_TYPE","attr":"$.message.order.fulfillments[*].stops[*].type","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_CATEGORY","attr":"$.message.order.fulfillments[*].vehicle.category","_RETURN_":"attr are present","action":["on_select"]}]},{"_NAME_":"ENUM_FULFILLMENTS","_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE","attr":"$.message.order.fulfillments[*].type","enumList":["VISIT"],"_RETURN_":"attr all in enumList","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_STOPS_TYPE","attr":"$.message.order.fulfillments[*].stops[*].type","enumList":["START"],"_RETURN_":"attr all in enumList","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_CATEGORY","attr":"$.message.order.fulfillments[*].vehicle.category","enumList":["SITE"],"_RETURN_":"attr all in enumList","action":["on_select"]}]}]},{"_NAME_":"ON_SELECT_PROVIDER","action":["on_select"],"_RETURN_":[{"_NAME_":"REQUIRED_ORDER_PROVIDER","attr":"$.message.order.provider.id","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_ORDER_PROVIDER_DESCRIPTOR_NAME","attr":"$.message.order.provider.descriptor.name","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_ORDER_PROVIDER_DESCRIPTOR_IMAGES","attr":"$.message.order.provider.descriptor.images[*].url","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_ID","attr":"$.message.order.provider.locations[*].id","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_GPS","attr":"$.message.order.provider.locations[*].gps","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_NAME","attr":"$.message.order.provider.locations[*].descriptor.name","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_DESC","attr":"$.message.order.provider.locations[*].descriptor.short_desc","_RETURN_":"attr are present","action":["on_select"]}]},{"_NAME_":"ON_SELECT_CANCELLATION_TERMS","action":["on_select"],"_RETURN_":[{"_NAME_":"REQUIRED_CANCELLATION_TERMS_ELIGIBLE","attr":"$.message.order.cancellation_terms[*].cancellation_eligible","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_CANCELLATION_TERMS_EXTERNAL_URL","attr":"$.message.order.cancellation_terms[*].external_ref.url","useCasePath":"$.message.order.cancellation_terms[*].external_ref.url","_CONTINUE_":"!(useCasePath are present)","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_CANCELLATION_TERMS_EXTERNAL_MIME","attr":"$.message.order.cancellation_terms[*].external_ref.mimetype","useCasePath":"$.message.order.cancellation_terms[*].external_ref.mimetype","_CONTINUE_":"!(useCasePath are present)","_RETURN_":"attr are present","action":["on_select"]}]},{"_NAME_":"ON_SELECT_QUOTE","action":["on_select"],"_RETURN_":[{"_NAME_":"REQUIRED_QUOTE","_RETURN_":[{"_NAME_":"REQUIRED_QUOTE_TITLE","attr":"$.message.order.quote.breakup[*].title","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_QUOTE_ITEM_ID","attr":"$.message.order.quote.breakup[*].item.id","useCasePath":"$.message.order.quote.breakup[*].title","var_title":["TAX"],"_CONTINUE_":"(var_title equal to useCasePath)","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_QUOTE_ITEM_PRICE_CURRENCY","attr":"$.message.order.quote.breakup[*].item.price.currency","useCasePath":"$.message.order.quote.breakup[*].title","var_title":["TAX"],"_CONTINUE_":"(var_title equal to useCasePath)","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_QUOTE_ITEM_PRICE_VALUE","attr":"$.message.order.quote.breakup[*].item.price.value","useCasePath":"$.message.order.quote.breakup[*].title","var_title":["TAX"],"_CONTINUE_":"(var_title equal to useCasePath)","_RETURN_":"attr are present","action":["on_select"]}]},{"_NAME_":"ENUM_QUOTE","_RETURN_":[{"_NAME_":"ENUM_QUOTE_TITLE","attr":"$.message.order.quote.breakup[*].title","enumList":["BASE_FARE","TAX","ADD_ONS","REFUND","CANCELLATION_CHARGES"],"_RETURN_":"attr all in enumList","action":["on_select"]}]}]}]}
+{"_NAME_":"on_selectValidations","_RETURN_":[{"_NAME_":"ON_SELECT_CONTEXT","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"domain":["ONDC:TRV15"],"version":["2.0.1"]}]}]},{"_NAME_":"ON_SELECT_ITEMS_PAGE_0","action":["on_select"],"usecasepath":"$.message.order.items[*].xinput.head.index.min","_CONTINUE_":"!(usecasepath are present)","_RETURN_":[{"_NAME_":"REQUIRED_ITEMS","_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_ITEMS_ID","attr":"$.message.order.items[*].id","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_ITEMS_NAME","attr":"$.message.order.items[*].descriptor.name","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_ITEMS_CODE","attr":"$.message.order.items[*].descriptor.code","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_ITEMS_LOCATIONS","attr":"$.message.order.items[*].location_ids[*]","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_CATEGORIES","attr":"$.message.order.items[*].category_ids[*]","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_FULFILMENTS","attr":"$.message.order.items[*].fulfillment_ids[*]","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_IMAGES_URL","attr":"$.message.order.items[*].descriptor.images[*].url","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_NAME","attr":"$.message.order.items[*].xinput.head.descriptor.name","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_INDEX_MIN","attr":"$.message.order.items[*].xinput.head.index.min","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_INDEX_CUR","attr":"$.message.order.items[*].xinput.head.index.cur","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_INDEX_MAX","attr":"$.message.order.items[*].xinput.head.index.max","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_HEADINGS","attr":"$.message.order.items[*].xinput.head.headings[*]","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_FORM","attr":"$.message.order.items[*].xinput.form.id","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_FORM_MIME","attr":"$.message.order.items[*].xinput.form.mime_type","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_URL","attr":"$.message.order.items[*].xinput.form.url","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_RESUBMIT","attr":"$.message.order.items[*].xinput.form.resubmit","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_MULTIPLE_SUMBISSIONS","attr":"$.message.order.items[*].xinput.form.multiple_sumbissions","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"}]},{"_NAME_":"ENUM_ITEMS","_RETURN_":[{"_NAME_":"ENUM_MESSAGE_ITEMS_CODE","attr":"$.message.order.items[*].descriptor.code","enumList":["ABSTRACT","ENTRY_PASS","ADD_ON"],"_RETURN_":"attr all in enumList","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"}]},{"_NAME_":"REGEX_MESSAGE_ITEMS_IMAGES_URL","attr":"$.message.order.items[*].descriptor.images[*].url","reg":["^https:\\\\/\\\\/[a-zA-Z0-9.-]+\\\\.[a-zA-Z]{2,}(\\\\/.*)?$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.head.index.min"},{"_NAME_":"ABSTRACT_ITEM_CODE","usecasepath":"$.message.order.items[*].descriptor.code","var_code":["ABSTRACT"],"_CONTINUE_":"!(var_code equal to usecasepath)","_RETURN_":[{"_NAME_":"REQUIRED_CANCELLATION_TERMS_ELIGIBLE","attr":"$.message.order.items[*].cancellation_terms[*].cancellation_eligible","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_MIME","attr":"$.message.order.items[*].replacement_terms[*].external_ref.mimetype","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_URL","attr":"$.message.order.items[*].replacement_terms[*].external_ref.url","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REGEX_REPLACEMENT_TERMS_ELIGIBLE_URL","attr":"$.message.order.items[*].replacement_terms[*].external_ref.url","reg":["^https?:\\\\/\\\\/[a-zA-Z0-9.-]+(?:\\\\.[a-zA-Z]{2,})?(:\\\\d+)?(\\\\/[^\\\\s?#]*)?(\\\\?[^\\\\s#]*)?(#[^\\\\s]*)?$"],"_RETURN_":"attr follow regex reg","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]}]},{"_NAME_":"CHILD_ITEM_CODE","usecasepath":"$.message.order.items[*].descriptor.code","var_code":["ABSTRACT"],"_CONTINUE_":"!(var_code none in usecasepath)","_RETURN_":[{"_NAME_":"REQUIRED_PARENT_ITEM_ID","attr":"$.message.order.items[*].parent_item_id","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_PRICE_VAL","attr":"$.message.order.items[*].price.value","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_PRICE_CURRENCY","attr":"$.message.order.items[*].price.currency","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_QUANTITY_MAX","attr":"$.message.order.items[*].quantity.maximum.count","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_QUANTITY_MIN","attr":"$.message.order.items[*].quantity.minimum.count","_RETURN_":"attr are present","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"ITEM_TAGS","validTags":["FARE_POLICY"],"tagPath":"$.message.order.items[*].tags[*].descriptor.code","_RETURN_":"tagPath all in validTags","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_ITEM_TAG_FARE_POLICY","_SCOPE_":"$.message.order.items[*].tags[?(@.descriptor.code=='FARE_POLICY')]","subTags":"$.list[*].descriptor.code","validValues":["MIN_AGE","MAX_AGE","GENDER","NATIONALITY"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues","action":["on_select"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]}]}]},{"_NAME_":"ON_SELECT_ITEMS_PAGE_1","usecasepath":"$.message.order.items[*].xinput.form_response.submission_id","_CONTINUE_":"!(usecasepath are present)","action":["on_select"],"_RETURN_":[{"_NAME_":"REQUIRED_ITEMS","_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_ITEMS_ID","attr":"$.message.order.items[*].id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_ITEMS_NAME","attr":"$.message.order.items[*].descriptor.name","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_ITEMS_CODE","attr":"$.message.order.items[*].descriptor.code","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_ITEMS_LOCATIONS","attr":"$.message.order.items[*].location_ids[*]","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_CATEGORIES","attr":"$.message.order.items[*].category_ids[*]","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_FULFILMENTS","attr":"$.message.order.items[*].fulfillment_ids[*]","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL","attr":"$.message.order.items[*].descriptor.images[*].url","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_XINPUT_FORM","attr":"$.message.order.items[*].xinput.form.id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_XINPUT_FORM_RESPONSE","attr":"$.message.order.items[*].xinput.form_response.status","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"REQUIRED_ORDER_ITEM_XINPUT_FORM_RESPONSE_SUBMISSION","attr":"$.message.order.items[*].xinput.form_response.submission_id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]}]},{"_NAME_":"ENUM_ITEMS","_RETURN_":[{"_NAME_":"ENUM_MESSAGE_ITEMS_CODE","attr":"$.message.order.items[*].descriptor.code","enumList":["ABSTRACT","ENTRY_PASS","ADD_ON"],"_RETURN_":"attr all in enumList","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]}]},{"_NAME_":"REGEX_MESSAGE_ITEMS_IMAGES_URL","attr":"$.message.order.items[*].descriptor.images[*].url","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form_response.submission_id","action":["on_select"]},{"_NAME_":"ABSTRACT_ITEM_CODE","usecasepath":"$.message.order.items[*].descriptor.code","var_code":["ABSTRACT"],"_CONTINUE_":"!(var_code equal to usecasepath)","_RETURN_":[{"_NAME_":"REQUIRED_CANCELLATION_TERMS_ELIGIBLE","attr":"$.message.order.items[*].cancellation_terms[*].cancellation_eligible","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_MIME","attr":"$.message.order.items[*].replacement_terms[*].external_ref.mimetype","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_URL","attr":"$.message.order.items[*].replacement_terms[*].external_ref.url","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"REGEX_REPLACEMENT_TERMS_ELIGIBLE_URL","attr":"$.message.order.items[*].replacement_terms[*].external_ref.url","reg":["^https?:\\\\/\\\\/[a-zA-Z0-9.-]+(?:\\\\.[a-zA-Z]{2,})?(:\\\\d+)?(\\\\/[^\\\\s?#]*)?(\\\\?[^\\\\s#]*)?(#[^\\\\s]*)?$"],"_RETURN_":"attr follow regex reg","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]}]},{"_NAME_":"CHILD_ITEM_CODE","usecasepath":"$.message.order.items[*].descriptor.code","var_code":["ABSTRACT"],"_CONTINUE_":"!(var_code none in usecasepath)","_RETURN_":[{"_NAME_":"REQUIRED_PARENT_ITEM_ID","attr":"$.message.order.items[*].parent_item_id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_PRICE_VAL","attr":"$.message.order.items[*].price.value","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_PRICE_CURRENCY","attr":"$.message.order.items[*].price.currency","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_QUANTITY_MAX","attr":"$.message.order.items[*].quantity.maximum.count","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_ITEMS_QUANTITY_MIN","attr":"$.message.order.items[*].quantity.minimum.count","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"ITEM_TAGS","validTags":["FARE_POLICY"],"tagPath":"$.message.order.items[*].tags[*].descriptor.code","_RETURN_":"tagPath all in validTags","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_ITEM_TAG_FARE_POLICY","_SCOPE_":"$.message.order.items[*].tags[?(@.descriptor.code=='FARE_POLICY')]","subTags":"$.list[*].descriptor.code","validValues":["MIN_AGE","MAX_AGE","GENDER","NATIONALITY"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","action":["on_select"],"var_code":["ABSTRACT"]}]}]},{"_NAME_":"ON_SELECT_FULFILLMENTS","action":["on_select"],"_RETURN_":[{"_NAME_":"REQUIRED_FULFILLMENTS","_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_ID","attr":"$.message.order.fulfillments[*].id","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_TYPE","attr":"$.message.order.fulfillments[*].type","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_STOPS_TYPE","attr":"$.message.order.fulfillments[*].stops[*].type","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_CATEGORY","attr":"$.message.order.fulfillments[*].vehicle.category","_RETURN_":"attr are present","action":["on_select"]}]},{"_NAME_":"ENUM_FULFILLMENTS","_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE","attr":"$.message.order.fulfillments[*].type","enumList":["VISIT"],"_RETURN_":"attr all in enumList","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_STOPS_TYPE","attr":"$.message.order.fulfillments[*].stops[*].type","enumList":["START"],"_RETURN_":"attr all in enumList","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_CATEGORY","attr":"$.message.order.fulfillments[*].vehicle.category","enumList":["SITE"],"_RETURN_":"attr all in enumList","action":["on_select"]}]}]},{"_NAME_":"ON_SELECT_PROVIDER","action":["on_select"],"_RETURN_":[{"_NAME_":"REQUIRED_ORDER_PROVIDER","attr":"$.message.order.provider.id","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_ORDER_PROVIDER_DESCRIPTOR_NAME","attr":"$.message.order.provider.descriptor.name","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_ORDER_PROVIDER_DESCRIPTOR_IMAGES","attr":"$.message.order.provider.descriptor.images[*].url","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_ID","attr":"$.message.order.provider.locations[*].id","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_GPS","attr":"$.message.order.provider.locations[*].gps","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_NAME","attr":"$.message.order.provider.locations[*].descriptor.name","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_DESC","attr":"$.message.order.provider.locations[*].descriptor.short_desc","_RETURN_":"attr are present","action":["on_select"]}]},{"_NAME_":"ON_SELECT_CANCELLATION_TERMS","action":["on_select"],"_RETURN_":[{"_NAME_":"REQUIRED_CANCELLATION_TERMS_ELIGIBLE","attr":"$.message.order.cancellation_terms[*].cancellation_eligible","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_CANCELLATION_TERMS_EXTERNAL_URL","attr":"$.message.order.cancellation_terms[*].external_ref.url","useCasePath":"$.message.order.cancellation_terms[*].external_ref.url","_CONTINUE_":"!(useCasePath are present)","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_CANCELLATION_TERMS_EXTERNAL_MIME","attr":"$.message.order.cancellation_terms[*].external_ref.mimetype","useCasePath":"$.message.order.cancellation_terms[*].external_ref.mimetype","_CONTINUE_":"!(useCasePath are present)","_RETURN_":"attr are present","action":["on_select"]}]},{"_NAME_":"ON_SELECT_QUOTE","action":["on_select"],"_RETURN_":[{"_NAME_":"REQUIRED_QUOTE","_RETURN_":[{"_NAME_":"REQUIRED_QUOTE_TITLE","attr":"$.message.order.quote.breakup[*].title","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_QUOTE_ITEM_ID","attr":"$.message.order.quote.breakup[*].item.id","useCasePath":"$.message.order.quote.breakup[*].title","var_title":["TAX"],"_CONTINUE_":"(var_title equal to useCasePath)","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_QUOTE_ITEM_PRICE_CURRENCY","attr":"$.message.order.quote.breakup[*].item.price.currency","useCasePath":"$.message.order.quote.breakup[*].title","var_title":["TAX"],"_CONTINUE_":"(var_title equal to useCasePath)","_RETURN_":"attr are present","action":["on_select"]},{"_NAME_":"REQUIRED_QUOTE_ITEM_PRICE_VALUE","attr":"$.message.order.quote.breakup[*].item.price.value","useCasePath":"$.message.order.quote.breakup[*].title","var_title":["TAX"],"_CONTINUE_":"(var_title equal to useCasePath)","_RETURN_":"attr are present","action":["on_select"]}]},{"_NAME_":"ENUM_QUOTE","_RETURN_":[{"_NAME_":"ENUM_QUOTE_TITLE","attr":"$.message.order.quote.breakup[*].title","enumList":["BASE_FARE","TAX","ADD_ONS","REFUND","CANCELLATION_CHARGES"],"_RETURN_":"attr all in enumList","action":["on_select"]}]}]}]}
 `,
             },
         },

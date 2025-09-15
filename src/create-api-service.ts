@@ -20,22 +20,6 @@ export async function createApiService() {
 	const spinner = new TimedSpinner("Compiling Build.yaml....").start();
 
 	try {
-		const buildYamlRaw = readFileSync(
-			path.resolve(__dirname, "./config/api-service/build.yaml"),
-			"utf-8"
-		);
-		const buildParsed = (await loadAndDereferenceYaml(buildYamlRaw)) as any;
-		const valParsed = buildParsed["x-validations"];
-		const tsCompiler = new ConfigCompiler(SupportedLanguages.Typescript);
-		await tsCompiler.initialize(buildYamlRaw);
-		const targetPath = "./src/workbench-runner/generated/";
-		await tsCompiler.generateCode(
-			valParsed,
-			"L1-Validations",
-			false,
-			targetPath
-		);
-		await tsCompiler.generateL0Schema(targetPath);
 		if (
 			existsSync(
 				path.resolve(__dirname, "./config/api-service/L1-custom-validations")
@@ -45,10 +29,27 @@ export async function createApiService() {
 				path.resolve(__dirname, "./config/api-service/L1-custom-validations"),
 				path.resolve(
 					__dirname,
-					"./workbench-runner/generated/L1-custom-validations"
+					"./workbench-runner/mini-api-service/generated/L1-custom-validations"
 				)
 			);
 		}
+
+		const buildYamlRaw = readFileSync(
+			path.resolve(__dirname, "./config/api-service/build.yaml"),
+			"utf-8"
+		);
+		const buildParsed = (await loadAndDereferenceYaml(buildYamlRaw)) as any;
+		const valParsed = buildParsed["x-validations"];
+		const tsCompiler = new ConfigCompiler(SupportedLanguages.Typescript);
+		await tsCompiler.initialize(buildYamlRaw);
+		const targetPath = "./src/workbench-runner/mini-api-service/";
+		await tsCompiler.generateCode(
+			valParsed,
+			"L1-Validations",
+			false,
+			targetPath
+		);
+		await tsCompiler.generateL0Schema(targetPath);
 
 		spinner.succeed(
 			Cli.description.success("Build.yaml compiled \n", {

@@ -51,7 +51,7 @@ function on_searchValidations(input: validationInput): validationOutput {
             for (const testObj of scope) {
                 testObj._EXTERNAL = input.externalData;
                 const action = ["on_search"];
-                const domain = ["ONDC:TRV14"];
+                const domain = ["ONDC:TRV15"];
                 const version = ["2.0.0"];
 
                 function CONTEXT_REQUIRED(
@@ -79,7 +79,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     "$.context.location.country.code",
                                 );
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const validate = validations.arePresent(attr);
@@ -95,7 +95,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE**: $.context.location.country.code must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -112,7 +112,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -135,7 +135,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     "$.context.location.city.code",
                                 );
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const validate = validations.arePresent(attr);
@@ -151,7 +151,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_LOCATION_CITY_CODE**: $.context.location.city.code must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -168,7 +168,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -191,7 +191,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     "$.context.domain",
                                 );
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const validate = validations.arePresent(attr);
@@ -206,7 +206,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_DOMAIN**: $.context.domain must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -222,7 +222,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -245,7 +245,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     "$.context.timestamp",
                                 );
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const validate = validations.arePresent(attr);
@@ -261,7 +261,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_TIMESTAMP**: $.context.timestamp must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -277,7 +277,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -300,7 +300,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     "$.context.bap_id",
                                 );
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const validate = validations.arePresent(attr);
@@ -315,7 +315,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_BAP_ID**: $.context.bap_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -331,7 +331,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -354,7 +354,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     "$.context.bap_uri",
                                 );
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const validate = validations.arePresent(attr);
@@ -370,7 +370,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_BAP_URI**: $.context.bap_uri must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -386,7 +386,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -410,7 +410,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                 );
                                 const var_search = ["search"];
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const skipCheck = validations.equalTo(
@@ -435,7 +435,7 @@ function on_searchValidations(input: validationInput): validationOutput {
 	> - **condition B**: ["on_search"] must be equal to ["search"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -451,7 +451,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -475,7 +475,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                 );
                                 const var_search = ["search"];
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const skipCheck = validations.equalTo(
@@ -501,7 +501,7 @@ function on_searchValidations(input: validationInput): validationOutput {
 	> - **condition B**: ["on_search"] must be equal to ["search"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -517,7 +517,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -540,7 +540,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     "$.context.transaction_id",
                                 );
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const validate = validations.arePresent(attr);
@@ -556,7 +556,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_TRANSACTION_ID**: $.context.transaction_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -572,7 +572,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -595,7 +595,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     "$.context.message_id",
                                 );
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const validate = validations.arePresent(attr);
@@ -611,7 +611,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_MESSAGE_ID**: $.context.message_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -627,7 +627,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -650,7 +650,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     "$.context.version",
                                 );
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const validate = validations.arePresent(attr);
@@ -666,7 +666,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_VERSION**: $.context.version must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -682,7 +682,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -705,7 +705,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     "$.context.ttl",
                                 );
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const validate = validations.arePresent(attr);
@@ -720,7 +720,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_TTL**: $.context.ttl must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -736,7 +736,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -776,7 +776,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                             code: valid ? 200 : 30000,
                             _debugInfo: {
                                 fedConfig: `
-{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}
+{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]}
 `,
                             },
                         },
@@ -807,9 +807,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     testObj,
                                     "$.context.location.country.code",
                                 );
-                                const enumList = ["IND"];
+                                const enumList = ["IND2"];
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const validate = validations.anyIn(
@@ -825,10 +825,10 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "VALID_CONTEXT_LOCATION_COUNTRY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND"]`,
+                                            description: `- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -845,7 +845,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -869,7 +869,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                 );
                                 const enumList = ["ONDC:TRV14"];
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const validate = validations.allIn(
@@ -887,7 +887,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             description: `- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -903,7 +903,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -933,7 +933,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                             code: valid ? 200 : 30000,
                             _debugInfo: {
                                 fedConfig: `
-{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}
+{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]}
 `,
                             },
                         },
@@ -966,7 +966,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                 );
                                 const reg = ["^std:\\d{3,5}$"];
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const validate = validations.followRegex(
@@ -985,7 +985,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             description: `- **condition REGEX_CONTEXT_LOCATION_CITY_CODE**: all elements of $.context.location.city.code must follow every regex in ["^std:\\d{3,5}$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -1002,7 +1002,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -1028,7 +1028,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$",
                                 ];
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const validate = validations.followRegex(
@@ -1046,7 +1046,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             description: `- **condition REGEX_CONTEXT_TIMESTAMP**: all elements of $.context.timestamp must follow every regex in ["^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\.\\d{3}Z$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -1062,7 +1062,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -1086,7 +1086,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                 );
                                 const reg = ["^https:\\/\\/"];
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const validate = validations.followRegex(
@@ -1104,7 +1104,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             description: `- **condition REGEX_CONTEXT_BAP_URI**: all elements of $.context.bap_uri must follow every regex in ["^https:\/\/"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -1120,7 +1120,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -1146,7 +1146,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     "^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+D)?(T(\\d+H)?(\\d+M)?(\\d+S)?)?$",
                                 ];
                                 const action = ["on_search"];
-                                const domain = ["ONDC:TRV14"];
+                                const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
 
                                 const validate = validations.followRegex(
@@ -1164,7 +1164,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             description: `- **condition REQUIRED_CONTEXT_TTL**: all elements of $.context.ttl must follow every regex in ["^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+D)?(T(\\d+H)?(\\d+M)?(\\d+S)?)?$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
@@ -1180,7 +1180,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -1212,7 +1212,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                             code: valid ? 200 : 30000,
                             _debugInfo: {
                                 fedConfig: `
-{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}
+{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]}
 `,
                             },
                         },
@@ -1243,7 +1243,7 @@ function on_searchValidations(input: validationInput): validationOutput {
                     code: valid ? 200 : 30000,
                     _debugInfo: {
                         fedConfig: `
-{"_NAME_":"ON_SEARCH_CONTEXT","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}]}
+{"_NAME_":"ON_SEARCH_CONTEXT","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]}]}
 `,
                     },
                 },
@@ -4558,7 +4558,7 @@ function on_searchValidations(input: validationInput): validationOutput {
             code: valid ? 200 : 30000,
             _debugInfo: {
                 fedConfig: `
-{"_NAME_":"on_searchValidations","_RETURN_":[{"_NAME_":"ON_SEARCH_CONTEXT","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}]},{"_NAME_":"ON_SEARCH_CATALOG","action":["on_search"],"_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_CATALOG_NAME","attr":"$.message.catalog.descriptor.name","_RETURN_":"attr are present","action":["on_search"]}]},{"_NAME_":"ON_SEARCH_PROVIDERS","action":["on_search"],"_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ID","attr":"$.message.catalog.providers[*].id","_RETURN_":"attr are present","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_DESCRIPTOR","attr":"$.message.catalog.providers[*].descriptor.name","_RETURN_":"attr are present","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_CATRGORY_ID","attr":"$.message.catalog.providers[*].categories[*].id","_RETURN_":"attr are present","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_CATRGORY","attr":"$.message.catalog.providers[*].categories[*].descriptor.name","_RETURN_":"attr are present","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_CATRGORY_CODE","attr":"$.message.catalog.providers[*].categories[*].descriptor.code","useCasePath":"$.message.catalog.providers[*].categories[*].parent_category_id","_CONTINUE_":"(useCasePath are present)","_RETURN_":"attr are present","action":["on_search"]},{"_NAME_":"ENUM_MESSAGE_PROVIDERS_CATRGORY_CODE","attr":"$.message.catalog.providers[*].categories[*].descriptor.code","enumList":["CULTURE_HERITAGE"],"useCasePath":"$.message.catalog.providers[*].categories[*].parent_category_id","_CONTINUE_":"(useCasePath are present)","_RETURN_":"attr all in enumList","action":["on_search"]},{"_NAME_":"CHECK_CATEGORY_ID_PARENT_ID","attr":"$.message.catalog.providers[*].categories[*].parent_category_id","useCasePath":"$.message.catalog.providers[*].categories[*].descriptor.code","var_category_id":"$.message.catalog.providers[*].categories[*].id","_CONTINUE_":"!(useCasePath are present && var_category_id equal to attr)","_RETURN_":"attr are present","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_START_RANGE","attr":"$.message.catalog.providers[*].time.range.start","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr are present && attr follow regex reg","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_END_RANGE","attr":"$.message.catalog.providers[*].time.range.end","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr are present && attr follow regex reg","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_ID","attr":"$.message.catalog.providers[*].locations[*].id","_RETURN_":"attr are present","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_NAME","attr":"$.message.catalog.providers[*].locations[*].descriptor.name","_RETURN_":"attr are present","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_DESC","attr":"$.message.catalog.providers[*].locations[*].descriptor.short_desc","_RETURN_":"attr are present","action":["on_search"]}]},{"_NAME_":"ON_SEARCH_ITEMS_PAGE_1","action":["on_search"],"_SCOPE_":"$.message.catalog.tags[?(@.descriptor.code=='PAGINATION')]","subTags":"$.list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"_CONTINUE_":"!(var_page all in subTags)","_RETURN_":[{"_NAME_":"REQUIRED_ITEMS","_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_ID","attr":"$.message.catalog.providers[*].items[*].id","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_NAME","attr":"$.message.catalog.providers[*].items[*].descriptor.name","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_CODE","attr":"$.message.catalog.providers[*].items[*].descriptor.code","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_LOCATIONS","attr":"$.message.catalog.providers[*].items[*].location_ids[*]","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"VALID_MESSAGE_PROVIDERS_ITEMS_LOCATIONS_1","attr":"$.message.catalog.providers[*].items[*].location_ids[*]","usecasepath":"$.message.catalog.providers[*].locations[*].id","_RETURN_":"attr all in usecasepath","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"VALID_MESSAGE_PROVIDERS_ITEMS_CATEGORIES","attr":"$.message.catalog.providers[*].items[*].category_ids[*]","usecasepath":"$.message.catalog.providers[*].categories[*].id","_RETURN_":"attr all in usecasepath","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_CATEGORIES_1","attr":"$.message.catalog.providers[*].items[*].category_ids[*]","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_FULFILMENTS","attr":"$.message.catalog.providers[*].items[*].fulfillment_ids[*]","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"VALID_MESSAGE_PROVIDERS_ITEMS_CATEGORIES_2","attr":"$.message.catalog.providers[*].items[*].fulfillment_ids[*]","usecasepath":"$.message.catalog.providers[*].fulfillments[*].id","_RETURN_":"attr all in usecasepath","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL","attr":"$.message.catalog.providers[*].items[*].descriptor.images[*].url","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}]},{"_NAME_":"ENUM_ITEMS","_RETURN_":[{"_NAME_":"ENUM_MESSAGE_PROVIDERS_ITEMS_CODE","attr":"$.message.catalog.providers[*].items[*].descriptor.code","enumList":["ABSTRACT","ENTRY_PASS","ADD_ON"],"_RETURN_":"attr all in enumList","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}]},{"_NAME_":"REGEX_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL","attr":"$.message.catalog.providers[*].items[*].descriptor.images[*].url","reg":["^https:\\\\/\\\\/[a-zA-Z0-9.-]+\\\\.[a-zA-Z]{2,}(\\\\/.*)?$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"ABSTRACT_ITEM_CODE","usecasepath":"$.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"],"_CONTINUE_":"!(var_code equal to usecasepath)","_RETURN_":[{"_NAME_":"REQUIRED_CANCELLATION_TERMS_ELIGIBLE","attr":"$.message.catalog.providers[*].items[*].cancellation_terms[*].cancellation_eligible","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_MIME","attr":"$.message.catalog.providers[*].items[*].replacement_terms[*].external_ref.mimetype","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_URL","attr":"$.message.catalog.providers[*].items[*].replacement_terms[*].external_ref.url","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REGEX_REPLACEMENT_TERMS_ELIGIBLE_URL","attr":"$.message.catalog.providers[*].items[*].replacement_terms[*].external_ref.url","reg":["^https?:\\\\/\\\\/[a-zA-Z0-9.-]+(?:\\\\.[a-zA-Z]{2,})?(:\\\\d+)?(\\\\/[^\\\\s?#]*)?(\\\\?[^\\\\s#]*)?(#[^\\\\s]*)?$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]}]},{"_NAME_":"CHILD_ITEM_CODE","usecasepath":"$.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"],"_CONTINUE_":"!(var_code none in usecasepath)","_RETURN_":[{"_NAME_":"REQUIRED_PARENT_ITEM_ID","attr":"$.message.catalog.providers[*].items[*].parent_item_id","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_PRICE_VAL","attr":"$.message.catalog.providers[*].items[*].price.value","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_PRICE_CURRENCY","attr":"$.message.catalog.providers[*].items[*].price.currency","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_QUANTITY_MAX","attr":"$.message.catalog.providers[*].items[*].quantity.maximum.count","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_QUANTITY_MIN","attr":"$.message.catalog.providers[*].items[*].quantity.minimum.count","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"ITEM_TAGS","validTags":["FARE_POLICY"],"tagPath":"$.message.catalog.tags[*].descriptor.code","_RETURN_":"tagPath all in validTags","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_ITEM_TAG_FARE_POLICY","_SCOPE_":"$.message.catalog.providers[*].items[*].tags[?(@.descriptor.code=='FARE_POLICY')]","subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","validValues":["MIN_AGE","MAX_AGE","GENDER","NATIONALITY"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues","action":["on_search"],"var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]}]}]},{"_NAME_":"ON_SEARCH_FULLFILLMENTS","action":["on_search"],"_SCOPE_":"$.message.catalog.tags[?(@.descriptor.code=='PAGINATION')]","subTags":"$.list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"_CONTINUE_":"!(var_page equal to subTags)","_RETURN_":[{"_NAME_":"REQUIRED_FULFILLMENTS","_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_ID","attr":"$.message.catalog.providers[*].fulfillments[*].id","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE","attr":"$.message.catalog.providers[*].fulfillments[*].type","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_STOPS_TYPE","attr":"$.message.catalog.providers[*].fulfillments[*].stops[*].type","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_CATEGORY","attr":"$.message.catalog.providers[*].fulfillments[*].vehicle.category","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}]},{"_NAME_":"ENUM_FULFILLMENTS","_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE","attr":"$.message.catalog.providers[*].fulfillments[*].type","enumList":["VISIT"],"_RETURN_":"attr all in enumList","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_STOPS_TYPE","attr":"$.message.catalog.providers[*].fulfillments[*].stops[*].type","enumList":["START"],"_RETURN_":"attr all in enumList","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_CATEGORY","attr":"$.message.catalog.providers[*].fulfillments[*].vehicle.category","enumList":["VISIT"],"_RETURN_":"attr all in enumList","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}]}]},{"_NAME_":"ON_SEARCH_TAGS","action":["on_search"],"_RETURN_":[{"_NAME_":"PAYMENT_TAG_GROUP","validTags":["BPP_TERMS","PAGINATION"],"tagPath":"$.message.catalog.tags[*].descriptor.code","_RETURN_":"tagPath all in validTags","action":["on_search"]},{"_NAME_":"REQUIRED_PAYMENT_TAG_BPP_TERMS","_SCOPE_":"$.message.catalog.tags[?(@.descriptor.code=='BPP_TERMS')]","subTags":"$.list[*].descriptor.code","validValues":["BUYER_FINDER_FEES_PERCENTAGE","BUYER_FINDER_FEES_TYPE","STATIC_TERMS","MANDATORY_ARBITRATION","COURT_JURISDICTION","DELAY_INTEREST"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues","action":["on_search"]},{"_NAME_":"REQUIRED_PAYMENT_TAG_PAGINATION","_SCOPE_":"$.message.catalog.tags[?(@.descriptor.code=='PAGINATION')]","subTags":"$.list[*].descriptor.code","validValues":["PAGINATION_ID","CURRENT_PAGE_NUMBER","MAX_PAGE_NUMBER"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues","action":["on_search"]}]}]}
+{"_NAME_":"on_searchValidations","_RETURN_":[{"_NAME_":"ON_SEARCH_CONTEXT","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]}]},{"_NAME_":"ON_SEARCH_CATALOG","action":["on_search"],"_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_CATALOG_NAME","attr":"$.message.catalog.descriptor.name","_RETURN_":"attr are present","action":["on_search"]}]},{"_NAME_":"ON_SEARCH_PROVIDERS","action":["on_search"],"_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ID","attr":"$.message.catalog.providers[*].id","_RETURN_":"attr are present","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_DESCRIPTOR","attr":"$.message.catalog.providers[*].descriptor.name","_RETURN_":"attr are present","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_CATRGORY_ID","attr":"$.message.catalog.providers[*].categories[*].id","_RETURN_":"attr are present","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_CATRGORY","attr":"$.message.catalog.providers[*].categories[*].descriptor.name","_RETURN_":"attr are present","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_CATRGORY_CODE","attr":"$.message.catalog.providers[*].categories[*].descriptor.code","useCasePath":"$.message.catalog.providers[*].categories[*].parent_category_id","_CONTINUE_":"(useCasePath are present)","_RETURN_":"attr are present","action":["on_search"]},{"_NAME_":"ENUM_MESSAGE_PROVIDERS_CATRGORY_CODE","attr":"$.message.catalog.providers[*].categories[*].descriptor.code","enumList":["CULTURE_HERITAGE"],"useCasePath":"$.message.catalog.providers[*].categories[*].parent_category_id","_CONTINUE_":"(useCasePath are present)","_RETURN_":"attr all in enumList","action":["on_search"]},{"_NAME_":"CHECK_CATEGORY_ID_PARENT_ID","attr":"$.message.catalog.providers[*].categories[*].parent_category_id","useCasePath":"$.message.catalog.providers[*].categories[*].descriptor.code","var_category_id":"$.message.catalog.providers[*].categories[*].id","_CONTINUE_":"!(useCasePath are present && var_category_id equal to attr)","_RETURN_":"attr are present","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_START_RANGE","attr":"$.message.catalog.providers[*].time.range.start","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr are present && attr follow regex reg","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_END_RANGE","attr":"$.message.catalog.providers[*].time.range.end","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr are present && attr follow regex reg","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_ID","attr":"$.message.catalog.providers[*].locations[*].id","_RETURN_":"attr are present","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_NAME","attr":"$.message.catalog.providers[*].locations[*].descriptor.name","_RETURN_":"attr are present","action":["on_search"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_DESC","attr":"$.message.catalog.providers[*].locations[*].descriptor.short_desc","_RETURN_":"attr are present","action":["on_search"]}]},{"_NAME_":"ON_SEARCH_ITEMS_PAGE_1","action":["on_search"],"_SCOPE_":"$.message.catalog.tags[?(@.descriptor.code=='PAGINATION')]","subTags":"$.list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"_CONTINUE_":"!(var_page all in subTags)","_RETURN_":[{"_NAME_":"REQUIRED_ITEMS","_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_ID","attr":"$.message.catalog.providers[*].items[*].id","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_NAME","attr":"$.message.catalog.providers[*].items[*].descriptor.name","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_CODE","attr":"$.message.catalog.providers[*].items[*].descriptor.code","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_LOCATIONS","attr":"$.message.catalog.providers[*].items[*].location_ids[*]","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"VALID_MESSAGE_PROVIDERS_ITEMS_LOCATIONS_1","attr":"$.message.catalog.providers[*].items[*].location_ids[*]","usecasepath":"$.message.catalog.providers[*].locations[*].id","_RETURN_":"attr all in usecasepath","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"VALID_MESSAGE_PROVIDERS_ITEMS_CATEGORIES","attr":"$.message.catalog.providers[*].items[*].category_ids[*]","usecasepath":"$.message.catalog.providers[*].categories[*].id","_RETURN_":"attr all in usecasepath","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_CATEGORIES_1","attr":"$.message.catalog.providers[*].items[*].category_ids[*]","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_FULFILMENTS","attr":"$.message.catalog.providers[*].items[*].fulfillment_ids[*]","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"VALID_MESSAGE_PROVIDERS_ITEMS_CATEGORIES_2","attr":"$.message.catalog.providers[*].items[*].fulfillment_ids[*]","usecasepath":"$.message.catalog.providers[*].fulfillments[*].id","_RETURN_":"attr all in usecasepath","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL","attr":"$.message.catalog.providers[*].items[*].descriptor.images[*].url","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}]},{"_NAME_":"ENUM_ITEMS","_RETURN_":[{"_NAME_":"ENUM_MESSAGE_PROVIDERS_ITEMS_CODE","attr":"$.message.catalog.providers[*].items[*].descriptor.code","enumList":["ABSTRACT","ENTRY_PASS","ADD_ON"],"_RETURN_":"attr all in enumList","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}]},{"_NAME_":"REGEX_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL","attr":"$.message.catalog.providers[*].items[*].descriptor.images[*].url","reg":["^https:\\\\/\\\\/[a-zA-Z0-9.-]+\\\\.[a-zA-Z]{2,}(\\\\/.*)?$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"ABSTRACT_ITEM_CODE","usecasepath":"$.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"],"_CONTINUE_":"!(var_code equal to usecasepath)","_RETURN_":[{"_NAME_":"REQUIRED_CANCELLATION_TERMS_ELIGIBLE","attr":"$.message.catalog.providers[*].items[*].cancellation_terms[*].cancellation_eligible","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_MIME","attr":"$.message.catalog.providers[*].items[*].replacement_terms[*].external_ref.mimetype","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_URL","attr":"$.message.catalog.providers[*].items[*].replacement_terms[*].external_ref.url","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REGEX_REPLACEMENT_TERMS_ELIGIBLE_URL","attr":"$.message.catalog.providers[*].items[*].replacement_terms[*].external_ref.url","reg":["^https?:\\\\/\\\\/[a-zA-Z0-9.-]+(?:\\\\.[a-zA-Z]{2,})?(:\\\\d+)?(\\\\/[^\\\\s?#]*)?(\\\\?[^\\\\s#]*)?(#[^\\\\s]*)?$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]}]},{"_NAME_":"CHILD_ITEM_CODE","usecasepath":"$.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"],"_CONTINUE_":"!(var_code none in usecasepath)","_RETURN_":[{"_NAME_":"REQUIRED_PARENT_ITEM_ID","attr":"$.message.catalog.providers[*].items[*].parent_item_id","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_PRICE_VAL","attr":"$.message.catalog.providers[*].items[*].price.value","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_PRICE_CURRENCY","attr":"$.message.catalog.providers[*].items[*].price.currency","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_QUANTITY_MAX","attr":"$.message.catalog.providers[*].items[*].quantity.maximum.count","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_QUANTITY_MIN","attr":"$.message.catalog.providers[*].items[*].quantity.minimum.count","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"ITEM_TAGS","validTags":["FARE_POLICY"],"tagPath":"$.message.catalog.tags[*].descriptor.code","_RETURN_":"tagPath all in validTags","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]},{"_NAME_":"REQUIRED_ITEM_TAG_FARE_POLICY","_SCOPE_":"$.message.catalog.providers[*].items[*].tags[?(@.descriptor.code=='FARE_POLICY')]","subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","validValues":["MIN_AGE","MAX_AGE","GENDER","NATIONALITY"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues","action":["on_search"],"var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]}]}]},{"_NAME_":"ON_SEARCH_FULLFILLMENTS","action":["on_search"],"_SCOPE_":"$.message.catalog.tags[?(@.descriptor.code=='PAGINATION')]","subTags":"$.list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"_CONTINUE_":"!(var_page equal to subTags)","_RETURN_":[{"_NAME_":"REQUIRED_FULFILLMENTS","_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_ID","attr":"$.message.catalog.providers[*].fulfillments[*].id","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE","attr":"$.message.catalog.providers[*].fulfillments[*].type","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_STOPS_TYPE","attr":"$.message.catalog.providers[*].fulfillments[*].stops[*].type","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_CATEGORY","attr":"$.message.catalog.providers[*].fulfillments[*].vehicle.category","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}]},{"_NAME_":"ENUM_FULFILLMENTS","_RETURN_":[{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE","attr":"$.message.catalog.providers[*].fulfillments[*].type","enumList":["VISIT"],"_RETURN_":"attr all in enumList","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_STOPS_TYPE","attr":"$.message.catalog.providers[*].fulfillments[*].stops[*].type","enumList":["START"],"_RETURN_":"attr all in enumList","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]},{"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_CATEGORY","attr":"$.message.catalog.providers[*].fulfillments[*].vehicle.category","enumList":["VISIT"],"_RETURN_":"attr all in enumList","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}]}]},{"_NAME_":"ON_SEARCH_TAGS","action":["on_search"],"_RETURN_":[{"_NAME_":"PAYMENT_TAG_GROUP","validTags":["BPP_TERMS","PAGINATION"],"tagPath":"$.message.catalog.tags[*].descriptor.code","_RETURN_":"tagPath all in validTags","action":["on_search"]},{"_NAME_":"REQUIRED_PAYMENT_TAG_BPP_TERMS","_SCOPE_":"$.message.catalog.tags[?(@.descriptor.code=='BPP_TERMS')]","subTags":"$.list[*].descriptor.code","validValues":["BUYER_FINDER_FEES_PERCENTAGE","BUYER_FINDER_FEES_TYPE","STATIC_TERMS","MANDATORY_ARBITRATION","COURT_JURISDICTION","DELAY_INTEREST"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues","action":["on_search"]},{"_NAME_":"REQUIRED_PAYMENT_TAG_PAGINATION","_SCOPE_":"$.message.catalog.tags[?(@.descriptor.code=='PAGINATION')]","subTags":"$.list[*].descriptor.code","validValues":["PAGINATION_ID","CURRENT_PAGE_NUMBER","MAX_PAGE_NUMBER"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues","action":["on_search"]}]}]}
 `,
             },
         },

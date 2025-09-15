@@ -1,4 +1,3 @@
-import logger from "@ondc/automation-logger";
 import { createFakeSession } from "./api-session-faker";
 import { RedisService } from "ondc-automation-cache-lib";
 import { runMock } from "./mini-mock-service/mock-service";
