@@ -22,6 +22,7 @@ export async function runProtocolFlows() {
 	console.log(Cli.title("SCENARIO TESTING"));
 	const domain = process.env.DOMAIN;
 	const version = process.env.VERSION;
+	const useCase = process.env.USE_CASE;
 
 	console.log(
 		Cli.description.secondary(`Domain: ${domain} Version: ${version}\n`)
@@ -32,13 +33,13 @@ export async function runProtocolFlows() {
 	}
 
 	try {
-		if (!domain || !version) {
+		if (!domain || !version || !useCase) {
 			throw new Error(
-				"DOMAIN and VERSION must be set in environment variables"
+				"DOMAIN, VERSION, and USE_CASE must be set in environment variables"
 			);
 		}
 
-		const fakeSession = createFakeSession(domain, version, "TRV14");
+		const fakeSession = createFakeSession(domain, version, useCase);
 		const flowIds = Object.keys(fakeSession.flowConfigs);
 		const sessionId = "test-session-id";
 		RedisService.setKey(sessionId, JSON.stringify(fakeSession));
