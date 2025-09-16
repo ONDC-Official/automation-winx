@@ -92,7 +92,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE**: $.context.location.country.code must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE**
+
+- $.context.location.country.code must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -148,7 +150,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_LOCATION_CITY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_LOCATION_CITY_CODE**: $.context.location.city.code must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_LOCATION_CITY_CODE**
+
+- $.context.location.city.code must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -203,7 +207,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_DOMAIN",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_DOMAIN**: $.context.domain must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_DOMAIN**
+
+- $.context.domain must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -258,7 +264,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_TIMESTAMP",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_TIMESTAMP**: $.context.timestamp must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_TIMESTAMP**
+
+- $.context.timestamp must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -312,7 +320,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_BAP_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_BAP_ID**: $.context.bap_id must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_BAP_ID**
+
+- $.context.bap_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -367,7 +377,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_BAP_URI",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_BAP_URI**: $.context.bap_uri must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_BAP_URI**
+
+- $.context.bap_uri must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -428,11 +440,13 @@ function on_initValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_BPP_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_BPP_ID**: $.context.bpp_id must be present in the payload
+                                            description: `#### **REQUIRED_CONTEXT_BPP_ID**
 
-	> Note: **Condition REQUIRED_CONTEXT_BPP_ID** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: ["on_init"] must be equal to ["search"]`,
+- $.context.bpp_id must be present in the payload
+
+> **Skip if:**
+>
+>     - ["on_init"] equals ["search"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -494,11 +508,13 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_BPP_URI",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_BPP_URI**: $.context.bpp_uri must be present in the payload
+                                            description: `#### **REQUIRED_CONTEXT_BPP_URI**
 
-	> Note: **Condition REQUIRED_CONTEXT_BPP_URI** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: ["on_init"] must be equal to ["search"]`,
+- $.context.bpp_uri must be present in the payload
+
+> **Skip if:**
+>
+>     - ["on_init"] equals ["search"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -553,7 +569,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_TRANSACTION_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_TRANSACTION_ID**: $.context.transaction_id must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_TRANSACTION_ID**
+
+- $.context.transaction_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -608,7 +626,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_MESSAGE_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_MESSAGE_ID**: $.context.message_id must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_MESSAGE_ID**
+
+- $.context.message_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -663,7 +683,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_VERSION",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_VERSION**: $.context.version must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_VERSION**
+
+- $.context.version must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -717,7 +739,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_TTL",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_TTL**: $.context.ttl must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_TTL**
+
+- $.context.ttl must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -825,7 +849,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "VALID_CONTEXT_LOCATION_COUNTRY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]`,
+                                            description: `#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
+
+- At least one of $.context.location.country.code must be in ["IND2"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -884,7 +910,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                             testName: "VALID_CONTEXT_DOMAIN",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]`,
+                                            description: `#### **VALID_CONTEXT_DOMAIN**
+
+- All elements of $.context.domain must be in ["ONDC:TRV14"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -982,7 +1010,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REGEX_CONTEXT_LOCATION_CITY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REGEX_CONTEXT_LOCATION_CITY_CODE**: all elements of $.context.location.city.code must follow every regex in ["^std:\\d{3,5}$"]`,
+                                            description: `#### **REGEX_CONTEXT_LOCATION_CITY_CODE**
+
+- All elements of $.context.location.city.code must follow every regex in ["^std:\\d{3,5}$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -1043,7 +1073,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                             testName: "REGEX_CONTEXT_TIMESTAMP",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REGEX_CONTEXT_TIMESTAMP**: all elements of $.context.timestamp must follow every regex in ["^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\.\\d{3}Z$"]`,
+                                            description: `#### **REGEX_CONTEXT_TIMESTAMP**
+
+- All elements of $.context.timestamp must follow every regex in ["^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\.\\d{3}Z$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -1101,7 +1133,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                             testName: "REGEX_CONTEXT_BAP_URI",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REGEX_CONTEXT_BAP_URI**: all elements of $.context.bap_uri must follow every regex in ["^https:\/\/"]`,
+                                            description: `#### **REGEX_CONTEXT_BAP_URI**
+
+- All elements of $.context.bap_uri must follow every regex in ["^https:\/\/"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -1161,7 +1195,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_TTL",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_TTL**: all elements of $.context.ttl must follow every regex in ["^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+D)?(T(\\d+H)?(\\d+M)?(\\d+S)?)?$"]`,
+                                            description: `#### **REQUIRED_CONTEXT_TTL**
+
+- All elements of $.context.ttl must follow every regex in ["^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+D)?(T(\\d+H)?(\\d+M)?(\\d+S)?)?$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_init"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -1294,7 +1330,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_ITEMS_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_ITEMS_ID**: $.message.order.items[*].id must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_ITEMS_ID**
+
+- $.message.order.items[*].id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_ITEMS_ID","attr":"$.message.order.items[*].id","_RETURN_":"attr are present","action":["on_init"]}
@@ -1346,7 +1384,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_ITEMS_NAME",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_ITEMS_NAME**: $.message.order.items[*].descriptor.name must be present in the payload`,
+                                            description: `#### **REQUIRED_ITEMS_NAME**
+
+- $.message.order.items[*].descriptor.name must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_ITEMS_NAME","attr":"$.message.order.items[*].descriptor.name","_RETURN_":"attr are present","action":["on_init"]}
@@ -1398,7 +1438,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_ITEMS_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_ITEMS_CODE**: $.message.order.items[*].descriptor.code must be present in the payload`,
+                                            description: `#### **REQUIRED_ITEMS_CODE**
+
+- $.message.order.items[*].descriptor.code must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_ITEMS_CODE","attr":"$.message.order.items[*].descriptor.code","_RETURN_":"attr are present","action":["on_init"]}
@@ -1451,7 +1493,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_ITEMS_LOCATIONS",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_ITEMS_LOCATIONS**: $.message.order.items[*].location_ids[*] must be present in the payload`,
+                                            description: `#### **REQUIRED_ITEMS_LOCATIONS**
+
+- $.message.order.items[*].location_ids[*] must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_ITEMS_LOCATIONS","attr":"$.message.order.items[*].location_ids[*]","_RETURN_":"attr are present","action":["on_init"]}
@@ -1504,7 +1548,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_ITEMS_CATEGORIES",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_ITEMS_CATEGORIES**: $.message.order.items[*].category_ids[*] must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_ITEMS_CATEGORIES**
+
+- $.message.order.items[*].category_ids[*] must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_CATEGORIES","attr":"$.message.order.items[*].category_ids[*]","_RETURN_":"attr are present","action":["on_init"]}
@@ -1558,7 +1604,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_ITEMS_FULFILMENTS",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_ITEMS_FULFILMENTS**: $.message.order.items[*].fulfillment_ids[*] must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_ITEMS_FULFILMENTS**
+
+- $.message.order.items[*].fulfillment_ids[*] must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_FULFILMENTS","attr":"$.message.order.items[*].fulfillment_ids[*]","_RETURN_":"attr are present","action":["on_init"]}
@@ -1612,7 +1660,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL**: $.message.order.items[*].descriptor.images[*].url must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL**
+
+- $.message.order.items[*].descriptor.images[*].url must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL","attr":"$.message.order.items[*].descriptor.images[*].url","_RETURN_":"attr are present","action":["on_init"]}
@@ -1715,7 +1765,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                             testName: "ENUM_MESSAGE_ITEMS_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition ENUM_MESSAGE_ITEMS_CODE**: every element of $.message.order.items[*].descriptor.code must be in ["ABSTRACT", "ENTRY_PASS", "ADD_ON"]`,
+                                            description: `#### **ENUM_MESSAGE_ITEMS_CODE**
+
+- All elements of $.message.order.items[*].descriptor.code must be in ["ABSTRACT", "ENTRY_PASS", "ADD_ON"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"ENUM_MESSAGE_ITEMS_CODE","attr":"$.message.order.items[*].descriptor.code","enumList":["ABSTRACT","ENTRY_PASS","ADD_ON"],"_RETURN_":"attr all in enumList","action":["on_init"]}
@@ -1794,7 +1846,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                     testName: "REGEX_MESSAGE_ITEMS_IMAGES_URL",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REGEX_MESSAGE_ITEMS_IMAGES_URL**: all elements of $.message.order.items[*].descriptor.images[*].url must follow every regex in ["^https:\/\/"]`,
+                                    description: `#### **REGEX_MESSAGE_ITEMS_IMAGES_URL**
+
+- All elements of $.message.order.items[*].descriptor.images[*].url must follow every regex in ["^https:\/\/"]`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REGEX_MESSAGE_ITEMS_IMAGES_URL","attr":"$.message.order.items[*].descriptor.images[*].url","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_init"]}
@@ -1872,7 +1926,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CANCELLATION_TERMS_ELIGIBLE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CANCELLATION_TERMS_ELIGIBLE**: $.message.order.items[*].cancellation_terms[*].cancellation_eligible must be present in the payload`,
+                                            description: `#### **REQUIRED_CANCELLATION_TERMS_ELIGIBLE**
+
+- $.message.order.items[*].cancellation_terms[*].cancellation_eligible must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CANCELLATION_TERMS_ELIGIBLE","attr":"$.message.order.items[*].cancellation_terms[*].cancellation_eligible","_RETURN_":"attr are present","action":["on_init"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -1931,7 +1987,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_MIME",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_MIME**: $.message.order.items[*].replacement_terms[*].external_ref.mimetype must be present in the payload`,
+                                            description: `#### **REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_MIME**
+
+- $.message.order.items[*].replacement_terms[*].external_ref.mimetype must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_MIME","attr":"$.message.order.items[*].replacement_terms[*].external_ref.mimetype","_RETURN_":"attr are present","action":["on_init"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -1990,7 +2048,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_URL",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_URL**: $.message.order.items[*].replacement_terms[*].external_ref.url must be present in the payload`,
+                                            description: `#### **REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_URL**
+
+- $.message.order.items[*].replacement_terms[*].external_ref.url must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_URL","attr":"$.message.order.items[*].replacement_terms[*].external_ref.url","_RETURN_":"attr are present","action":["on_init"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -2055,7 +2115,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REGEX_REPLACEMENT_TERMS_ELIGIBLE_URL",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REGEX_REPLACEMENT_TERMS_ELIGIBLE_URL**: all elements of $.message.order.items[*].replacement_terms[*].external_ref.url must follow every regex in ["^https?:\\/\\/[a-zA-Z0-9.-]+(?:\\.[a-zA-Z]{2,})?(:\\d+)?(\\/[^\\s?#]*)?(\\?[^\\s#]*)?(#[^\\s]*)?$"]`,
+                                            description: `#### **REGEX_REPLACEMENT_TERMS_ELIGIBLE_URL**
+
+- All elements of $.message.order.items[*].replacement_terms[*].external_ref.url must follow every regex in ["^https?:\\/\\/[a-zA-Z0-9.-]+(?:\\.[a-zA-Z]{2,})?(:\\d+)?(\\/[^\\s?#]*)?(\\?[^\\s#]*)?(#[^\\s]*)?$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REGEX_REPLACEMENT_TERMS_ELIGIBLE_URL","attr":"$.message.order.items[*].replacement_terms[*].external_ref.url","reg":["^https?:\\\\/\\\\/[a-zA-Z0-9.-]+(?:\\\\.[a-zA-Z]{2,})?(:\\\\d+)?(\\\\/[^\\\\s?#]*)?(\\\\?[^\\\\s#]*)?(#[^\\\\s]*)?$"],"_RETURN_":"attr follow regex reg","action":["on_init"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -2165,7 +2227,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_PARENT_ITEM_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_PARENT_ITEM_ID**: $.message.order.items[*].parent_item_id must be present in the payload`,
+                                            description: `#### **REQUIRED_PARENT_ITEM_ID**
+
+- $.message.order.items[*].parent_item_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_PARENT_ITEM_ID","attr":"$.message.order.items[*].parent_item_id","_RETURN_":"attr are present","action":["on_init"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -2223,7 +2287,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_ITEMS_PRICE_VAL",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_ITEMS_PRICE_VAL**: $.message.order.items[*].price.value must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_ITEMS_PRICE_VAL**
+
+- $.message.order.items[*].price.value must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_ITEMS_PRICE_VAL","attr":"$.message.order.items[*].price.value","_RETURN_":"attr are present","action":["on_init"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -2282,7 +2348,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_ITEMS_PRICE_CURRENCY",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_ITEMS_PRICE_CURRENCY**: $.message.order.items[*].price.currency must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_ITEMS_PRICE_CURRENCY**
+
+- $.message.order.items[*].price.currency must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_ITEMS_PRICE_CURRENCY","attr":"$.message.order.items[*].price.currency","_RETURN_":"attr are present","action":["on_init"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -2341,7 +2409,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_ITEMS_QUANTITY_MAX",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_ITEMS_QUANTITY_MAX**: $.message.order.items[*].quantity.maximum.count must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_ITEMS_QUANTITY_MAX**
+
+- $.message.order.items[*].quantity.maximum.count must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_ITEMS_QUANTITY_MAX","attr":"$.message.order.items[*].quantity.maximum.count","_RETURN_":"attr are present","action":["on_init"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -2400,7 +2470,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_ITEMS_QUANTITY_MIN",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_ITEMS_QUANTITY_MIN**: $.message.order.items[*].quantity.minimum.count must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_ITEMS_QUANTITY_MIN**
+
+- $.message.order.items[*].quantity.minimum.count must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_ITEMS_QUANTITY_MIN","attr":"$.message.order.items[*].quantity.minimum.count","_RETURN_":"attr are present","action":["on_init"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -2462,7 +2534,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                             testName: "ITEM_TAGS",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition ITEM_TAGS**: every element of $.message.order.items[*].tags[*].descriptor.code must be in ["FARE_POLICY"]`,
+                                            description: `#### **ITEM_TAGS**
+
+- All elements of $.message.order.items[*].tags[*].descriptor.code must be in ["FARE_POLICY"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"ITEM_TAGS","validTags":["FARE_POLICY"],"tagPath":"$.message.order.items[*].tags[*].descriptor.code","_RETURN_":"tagPath all in validTags","action":["on_init"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -2533,11 +2607,13 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_ITEM_TAG_FARE_POLICY",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_ITEM_TAG_FARE_POLICY**: every element of $.message.order.items[*].tags[?(@.descriptor.code=='FARE_POLICY')].list[*].descriptor.code must be in ["MIN_AGE", "MAX_AGE", "GENDER", "NATIONALITY"]
+                                            description: `#### **REQUIRED_ITEM_TAG_FARE_POLICY**
 
-	> Note: **Condition REQUIRED_ITEM_TAG_FARE_POLICY** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: $.message.order.items[*].tags[?(@.descriptor.code=='FARE_POLICY')].list[*].descriptor.code must **not** be present in the payload`,
+- All elements of $.message.order.items[*].tags[?(@.descriptor.code=='FARE_POLICY')].list[*].descriptor.code must be in ["MIN_AGE", "MAX_AGE", "GENDER", "NATIONALITY"]
+
+> **Skip if:**
+>
+>     - $.message.order.items[*].tags[?(@.descriptor.code=='FARE_POLICY')].list[*].descriptor.code is not in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_ITEM_TAG_FARE_POLICY","_SCOPE_":"$.message.order.items[*].tags[?(@.descriptor.code=='FARE_POLICY')]","subTags":"$.list[*].descriptor.code","validValues":["MIN_AGE","MAX_AGE","GENDER","NATIONALITY"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues","action":["on_init"],"usecasepath":"$._EXTERNAL._SELF.message.order.items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -2677,7 +2753,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_FULFILLMENTS_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_FULFILLMENTS_ID**: $.message.order.fulfillments[*].id must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_FULFILLMENTS_ID**
+
+- $.message.order.fulfillments[*].id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_ID","attr":"$.message.order.fulfillments[*].id","_RETURN_":"attr are present","action":["on_init"]}
@@ -2731,7 +2809,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_FULFILLMENTS_TYPE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_FULFILLMENTS_TYPE**: $.message.order.fulfillments[*].type must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_FULFILLMENTS_TYPE**
+
+- $.message.order.fulfillments[*].type must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_TYPE","attr":"$.message.order.fulfillments[*].type","_RETURN_":"attr are present","action":["on_init"]}
@@ -2785,7 +2865,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_FULFILLMENTS_STOPS_TYPE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_FULFILLMENTS_STOPS_TYPE**: $.message.order.fulfillments[*].stops[*].type must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_FULFILLMENTS_STOPS_TYPE**
+
+- $.message.order.fulfillments[*].stops[*].type must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_STOPS_TYPE","attr":"$.message.order.fulfillments[*].stops[*].type","_RETURN_":"attr are present","action":["on_init"]}
@@ -2839,7 +2921,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_FULFILLMENTS_CATEGORY",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_FULFILLMENTS_CATEGORY**: $.message.order.fulfillments[*].vehicle.category must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_FULFILLMENTS_CATEGORY**
+
+- $.message.order.fulfillments[*].vehicle.category must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_CATEGORY","attr":"$.message.order.fulfillments[*].vehicle.category","_RETURN_":"attr are present","action":["on_init"]}
@@ -2938,7 +3022,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE**: every element of $.message.order.fulfillments[*].type must be in ["VISIT"]`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE**
+
+- All elements of $.message.order.fulfillments[*].type must be in ["VISIT"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE","attr":"$.message.order.fulfillments[*].type","enumList":["VISIT"],"_RETURN_":"attr all in enumList","action":["on_init"]}
@@ -2996,7 +3082,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_FULFILLMENTS_STOPS_TYPE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_FULFILLMENTS_STOPS_TYPE**: every element of $.message.order.fulfillments[*].stops[*].type must be in ["START"]`,
+                                            description: `#### **REQUIRED_MESSAGE_FULFILLMENTS_STOPS_TYPE**
+
+- All elements of $.message.order.fulfillments[*].stops[*].type must be in ["START"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_STOPS_TYPE","attr":"$.message.order.fulfillments[*].stops[*].type","enumList":["START"],"_RETURN_":"attr all in enumList","action":["on_init"]}
@@ -3054,7 +3142,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_FULFILLMENTS_CATEGORY",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_FULFILLMENTS_CATEGORY**: every element of $.message.order.fulfillments[*].vehicle.category must be in ["SITE"]`,
+                                            description: `#### **REQUIRED_MESSAGE_FULFILLMENTS_CATEGORY**
+
+- All elements of $.message.order.fulfillments[*].vehicle.category must be in ["SITE"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_FULFILLMENTS_CATEGORY","attr":"$.message.order.fulfillments[*].vehicle.category","enumList":["SITE"],"_RETURN_":"attr all in enumList","action":["on_init"]}
@@ -3173,7 +3263,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_ORDER_PROVIDER",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_ORDER_PROVIDER**: $.message.order.provider.id must be present in the payload`,
+                                    description: `#### **REQUIRED_ORDER_PROVIDER**
+
+- $.message.order.provider.id must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_PROVIDER","attr":"$.message.order.provider.id","_RETURN_":"attr are present","action":["on_init"]}
@@ -3223,7 +3315,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                         "REQUIRED_ORDER_PROVIDER_DESCRIPTOR_NAME",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_ORDER_PROVIDER_DESCRIPTOR_NAME**: $.message.order.provider.descriptor.name must be present in the payload`,
+                                    description: `#### **REQUIRED_ORDER_PROVIDER_DESCRIPTOR_NAME**
+
+- $.message.order.provider.descriptor.name must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_PROVIDER_DESCRIPTOR_NAME","attr":"$.message.order.provider.descriptor.name","_RETURN_":"attr are present","action":["on_init"]}
@@ -3273,7 +3367,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                         "REQUIRED_ORDER_PROVIDER_DESCRIPTOR_IMAGES",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_ORDER_PROVIDER_DESCRIPTOR_IMAGES**: $.message.order.provider.descriptor.images[*].url must be present in the payload`,
+                                    description: `#### **REQUIRED_ORDER_PROVIDER_DESCRIPTOR_IMAGES**
+
+- $.message.order.provider.descriptor.images[*].url must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_PROVIDER_DESCRIPTOR_IMAGES","attr":"$.message.order.provider.descriptor.images[*].url","_RETURN_":"attr are present","action":["on_init"]}
@@ -3324,7 +3420,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                         "REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_ID",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_ID**: $.message.order.provider.locations[*].id must be present in the payload`,
+                                    description: `#### **REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_ID**
+
+- $.message.order.provider.locations[*].id must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_ID","attr":"$.message.order.provider.locations[*].id","_RETURN_":"attr are present","action":["on_init"]}
@@ -3374,7 +3472,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                         "REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_GPS",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_GPS**: $.message.order.provider.locations[*].gps must be present in the payload`,
+                                    description: `#### **REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_GPS**
+
+- $.message.order.provider.locations[*].gps must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_GPS","attr":"$.message.order.provider.locations[*].gps","_RETURN_":"attr are present","action":["on_init"]}
@@ -3425,7 +3525,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                         "REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_NAME",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_NAME**: $.message.order.provider.locations[*].descriptor.name must be present in the payload`,
+                                    description: `#### **REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_NAME**
+
+- $.message.order.provider.locations[*].descriptor.name must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_NAME","attr":"$.message.order.provider.locations[*].descriptor.name","_RETURN_":"attr are present","action":["on_init"]}
@@ -3476,7 +3578,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                         "REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_DESC",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_DESC**: $.message.order.provider.locations[*].descriptor.short_desc must be present in the payload`,
+                                    description: `#### **REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_DESC**
+
+- $.message.order.provider.locations[*].descriptor.short_desc must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_DESC","attr":"$.message.order.provider.locations[*].descriptor.short_desc","_RETURN_":"attr are present","action":["on_init"]}
@@ -3572,7 +3676,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                         "REQUIRED_CANCELLATION_TERMS_ELIGIBLE",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_CANCELLATION_TERMS_ELIGIBLE**: $.message.order.cancellation_terms[*].cancellation_eligible must be present in the payload`,
+                                    description: `#### **REQUIRED_CANCELLATION_TERMS_ELIGIBLE**
+
+- $.message.order.cancellation_terms[*].cancellation_eligible must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_CANCELLATION_TERMS_ELIGIBLE","attr":"$.message.order.cancellation_terms[*].cancellation_eligible","_RETURN_":"attr are present","action":["on_init"]}
@@ -3629,11 +3735,13 @@ function on_initValidations(input: validationInput): validationOutput {
                                         "REQUIRED_CANCELLATION_TERMS_EXTERNAL_URL",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_CANCELLATION_TERMS_EXTERNAL_URL**: $.message.order.cancellation_terms[*].external_ref.url must be present in the payload
+                                    description: `#### **REQUIRED_CANCELLATION_TERMS_EXTERNAL_URL**
 
-	> Note: **Condition REQUIRED_CANCELLATION_TERMS_EXTERNAL_URL** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: $.message.order.cancellation_terms[*].external_ref.url must **not** be present in the payload`,
+- $.message.order.cancellation_terms[*].external_ref.url must be present in the payload
+
+> **Skip if:**
+>
+>     - $.message.order.cancellation_terms[*].external_ref.url is not in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_CANCELLATION_TERMS_EXTERNAL_URL","attr":"$.message.order.cancellation_terms[*].external_ref.url","useCasePath":"$.message.order.cancellation_terms[*].external_ref.url","_CONTINUE_":"!(useCasePath are present)","_RETURN_":"attr are present","action":["on_init"]}
@@ -3691,11 +3799,13 @@ function on_initValidations(input: validationInput): validationOutput {
                                         "REQUIRED_CANCELLATION_TERMS_EXTERNAL_MIME",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_CANCELLATION_TERMS_EXTERNAL_MIME**: $.message.order.cancellation_terms[*].external_ref.mimetype must be present in the payload
+                                    description: `#### **REQUIRED_CANCELLATION_TERMS_EXTERNAL_MIME**
 
-	> Note: **Condition REQUIRED_CANCELLATION_TERMS_EXTERNAL_MIME** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: $.message.order.cancellation_terms[*].external_ref.mimetype must **not** be present in the payload`,
+- $.message.order.cancellation_terms[*].external_ref.mimetype must be present in the payload
+
+> **Skip if:**
+>
+>     - $.message.order.cancellation_terms[*].external_ref.mimetype is not in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_CANCELLATION_TERMS_EXTERNAL_MIME","attr":"$.message.order.cancellation_terms[*].external_ref.mimetype","useCasePath":"$.message.order.cancellation_terms[*].external_ref.mimetype","_CONTINUE_":"!(useCasePath are present)","_RETURN_":"attr are present","action":["on_init"]}
@@ -3796,7 +3906,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_QUOTE_TITLE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_QUOTE_TITLE**: $.message.order.quote.breakup[*].title must be present in the payload`,
+                                            description: `#### **REQUIRED_QUOTE_TITLE**
+
+- $.message.order.quote.breakup[*].title must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_QUOTE_TITLE","attr":"$.message.order.quote.breakup[*].title","_RETURN_":"attr are present","action":["on_init"]}
@@ -3859,11 +3971,13 @@ function on_initValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_QUOTE_ITEM_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_QUOTE_ITEM_ID**: $.message.order.quote.breakup[*].item.id must be present in the payload
+                                            description: `#### **REQUIRED_QUOTE_ITEM_ID**
 
-	> Note: **Condition REQUIRED_QUOTE_ITEM_ID** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: ["TAX"] must be equal to $.message.order.quote.breakup[*].title`,
+- $.message.order.quote.breakup[*].item.id must be present in the payload
+
+> **Skip if:**
+>
+>     - ["TAX"] equals $.message.order.quote.breakup[*].title`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_QUOTE_ITEM_ID","attr":"$.message.order.quote.breakup[*].item.id","useCasePath":"$.message.order.quote.breakup[*].title","var_title":["TAX"],"_CONTINUE_":"(var_title equal to useCasePath)","_RETURN_":"attr are present","action":["on_init"]}
@@ -3927,11 +4041,13 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_QUOTE_ITEM_PRICE_CURRENCY",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_QUOTE_ITEM_PRICE_CURRENCY**: $.message.order.quote.breakup[*].item.price.currency must be present in the payload
+                                            description: `#### **REQUIRED_QUOTE_ITEM_PRICE_CURRENCY**
 
-	> Note: **Condition REQUIRED_QUOTE_ITEM_PRICE_CURRENCY** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: ["TAX"] must be equal to $.message.order.quote.breakup[*].title`,
+- $.message.order.quote.breakup[*].item.price.currency must be present in the payload
+
+> **Skip if:**
+>
+>     - ["TAX"] equals $.message.order.quote.breakup[*].title`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_QUOTE_ITEM_PRICE_CURRENCY","attr":"$.message.order.quote.breakup[*].item.price.currency","useCasePath":"$.message.order.quote.breakup[*].title","var_title":["TAX"],"_CONTINUE_":"(var_title equal to useCasePath)","_RETURN_":"attr are present","action":["on_init"]}
@@ -3996,11 +4112,13 @@ function on_initValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_QUOTE_ITEM_PRICE_VALUE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_QUOTE_ITEM_PRICE_VALUE**: $.message.order.quote.breakup[*].item.price.value must be present in the payload
+                                            description: `#### **REQUIRED_QUOTE_ITEM_PRICE_VALUE**
 
-	> Note: **Condition REQUIRED_QUOTE_ITEM_PRICE_VALUE** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: ["TAX"] must be equal to $.message.order.quote.breakup[*].title`,
+- $.message.order.quote.breakup[*].item.price.value must be present in the payload
+
+> **Skip if:**
+>
+>     - ["TAX"] equals $.message.order.quote.breakup[*].title`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_QUOTE_ITEM_PRICE_VALUE","attr":"$.message.order.quote.breakup[*].item.price.value","useCasePath":"$.message.order.quote.breakup[*].title","var_title":["TAX"],"_CONTINUE_":"(var_title equal to useCasePath)","_RETURN_":"attr are present","action":["on_init"]}
@@ -4101,7 +4219,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                             testName: "ENUM_QUOTE_TITLE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition ENUM_QUOTE_TITLE**: every element of $.message.order.quote.breakup[*].title must be in ["BASE_FARE", "TAX", "ADD_ONS", "REFUND", "CANCELLATION_CHARGES"]`,
+                                            description: `#### **ENUM_QUOTE_TITLE**
+
+- All elements of $.message.order.quote.breakup[*].title must be in ["BASE_FARE", "TAX", "ADD_ONS", "REFUND", "CANCELLATION_CHARGES"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"ENUM_QUOTE_TITLE","attr":"$.message.order.quote.breakup[*].title","enumList":["BASE_FARE","TAX","ADD_ONS","REFUND","CANCELLATION_CHARGES"],"_RETURN_":"attr all in enumList","action":["on_init"]}
@@ -4228,11 +4348,13 @@ function on_initValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_PAYMENTS_ID",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_PAYMENTS_ID**: $.message.order.payments[*].id must be present in the payload
+                                    description: `#### **REQUIRED_PAYMENTS_ID**
 
-	> Note: **Condition REQUIRED_PAYMENTS_ID** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: ["BPP"] must be equal to $.message.order.payments[*].collected_by`,
+- $.message.order.payments[*].id must be present in the payload
+
+> **Skip if:**
+>
+>     - ["BPP"] equals $.message.order.payments[*].collected_by`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_PAYMENTS_ID","attr":"$.message.order.payments[*].id","useCasePath":"$.message.order.payments[*].collected_by","var_collectedby":["BPP"],"_CONTINUE_":"(var_collectedby equal to useCasePath)","_RETURN_":"attr are present","action":["on_init"]}
@@ -4284,10 +4406,11 @@ function on_initValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_PAYMENTS_COLLECTOR",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_PAYMENTS_COLLECTOR**: all of the following sub conditions must be met:
+                                    description: `#### **REQUIRED_PAYMENTS_COLLECTOR**
 
-  - **condition REQUIRED_PAYMENTS_COLLECTOR.1**: $.message.order.payments[*].collected_by must be present in the payload
-  - **condition REQUIRED_PAYMENTS_COLLECTOR.2**: every element of $.message.order.payments[*].collected_by must be in ["BAP", "BPP"]`,
+**All of the following must be true:**
+  - $.message.order.payments[*].collected_by must be present in the payload
+  - All elements of $.message.order.payments[*].collected_by must be in ["BAP", "BPP"]`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_PAYMENTS_COLLECTOR","attr":"$.message.order.payments[*].collected_by","enumList":["BAP","BPP"],"_RETURN_":"attr are present && attr all in enumList","action":["on_init"]}
@@ -4339,10 +4462,11 @@ function on_initValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_PAYMENTS_STATUS",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_PAYMENTS_STATUS**: all of the following sub conditions must be met:
+                                    description: `#### **REQUIRED_PAYMENTS_STATUS**
 
-  - **condition REQUIRED_PAYMENTS_STATUS.1**: $.message.order.payments[*].status must be present in the payload
-  - **condition REQUIRED_PAYMENTS_STATUS.2**: every element of $.message.order.payments[*].status must be in ["PAID", "NOT-PAID"]`,
+**All of the following must be true:**
+  - $.message.order.payments[*].status must be present in the payload
+  - All elements of $.message.order.payments[*].status must be in ["PAID", "NOT-PAID"]`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_PAYMENTS_STATUS","attr":"$.message.order.payments[*].status","enumList":["PAID","NOT-PAID"],"_RETURN_":"attr are present && attr all in enumList","action":["on_init"]}
@@ -4394,10 +4518,11 @@ function on_initValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_PAYMENTS_TYPE",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_PAYMENTS_TYPE**: all of the following sub conditions must be met:
+                                    description: `#### **REQUIRED_PAYMENTS_TYPE**
 
-  - **condition REQUIRED_PAYMENTS_TYPE.1**: $.message.order.payments[*].type must be present in the payload
-  - **condition REQUIRED_PAYMENTS_TYPE.2**: every element of $.message.order.payments[*].type must be in ["PRE-ORDER"]`,
+**All of the following must be true:**
+  - $.message.order.payments[*].type must be present in the payload
+  - All elements of $.message.order.payments[*].type must be in ["PRE-ORDER"]`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_PAYMENTS_TYPE","attr":"$.message.order.payments[*].type","enumList":["PRE-ORDER"],"_RETURN_":"attr are present && attr all in enumList","action":["on_init"]}
@@ -4489,7 +4614,9 @@ function on_initValidations(input: validationInput): validationOutput {
                                     testName: "PAYMENT_TAG_GROUP",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition PAYMENT_TAG_GROUP**: every element of $.message.order.tags[*].descriptor.code must be in ["BPP_TERMS"]`,
+                                    description: `#### **PAYMENT_TAG_GROUP**
+
+- All elements of $.message.order.tags[*].descriptor.code must be in ["BPP_TERMS"]`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"PAYMENT_TAG_GROUP","validTags":["BPP_TERMS"],"tagPath":"$.message.order.tags[*].descriptor.code","_RETURN_":"tagPath all in validTags","action":["on_init"]}
@@ -4559,11 +4686,13 @@ function on_initValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_PAYMENT_TAG_BPP_TERMS",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_PAYMENT_TAG_BPP_TERMS**: every element of $.message.order.tags[?(@.descriptor.code=='BPP_TERMS')].list[*].descriptor.code must be in ["BUYER_FINDER_FEES_TYPE", "BUYER_FINDER_FEES_PERCENTAGE", "STATIC_TERMS", "MANDATORY_ARBITRATION", "COURT_JURISDICTION", "DELAY_INTEREST", "SETTLEMENT_AMOUNT", "SETTLEMENT_TYPE", "SETTLEMENT_BANK_CODE", "SETTLEMENT_BANK_ACCOUNT_NUMBER"]
+                                    description: `#### **REQUIRED_PAYMENT_TAG_BPP_TERMS**
 
-	> Note: **Condition REQUIRED_PAYMENT_TAG_BPP_TERMS** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: $.message.order.tags[?(@.descriptor.code=='BPP_TERMS')].list[*].descriptor.code must **not** be present in the payload`,
+- All elements of $.message.order.tags[?(@.descriptor.code=='BPP_TERMS')].list[*].descriptor.code must be in ["BUYER_FINDER_FEES_TYPE", "BUYER_FINDER_FEES_PERCENTAGE", "STATIC_TERMS", "MANDATORY_ARBITRATION", "COURT_JURISDICTION", "DELAY_INTEREST", "SETTLEMENT_AMOUNT", "SETTLEMENT_TYPE", "SETTLEMENT_BANK_CODE", "SETTLEMENT_BANK_ACCOUNT_NUMBER"]
+
+> **Skip if:**
+>
+>     - $.message.order.tags[?(@.descriptor.code=='BPP_TERMS')].list[*].descriptor.code is not in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_PAYMENT_TAG_BPP_TERMS","_SCOPE_":"$.message.order.tags[?(@.descriptor.code=='BPP_TERMS')]","subTags":"$.list[*].descriptor.code","validValues":["BUYER_FINDER_FEES_TYPE","BUYER_FINDER_FEES_PERCENTAGE","STATIC_TERMS","MANDATORY_ARBITRATION","COURT_JURISDICTION","DELAY_INTEREST","SETTLEMENT_AMOUNT","SETTLEMENT_TYPE","SETTLEMENT_BANK_CODE","SETTLEMENT_BANK_ACCOUNT_NUMBER"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues","action":["on_init"]}

@@ -92,7 +92,9 @@ function selectValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE**: $.context.location.country.code must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE**
+
+- $.context.location.country.code must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -148,7 +150,9 @@ function selectValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_LOCATION_CITY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_LOCATION_CITY_CODE**: $.context.location.city.code must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_LOCATION_CITY_CODE**
+
+- $.context.location.city.code must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -203,7 +207,9 @@ function selectValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_DOMAIN",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_DOMAIN**: $.context.domain must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_DOMAIN**
+
+- $.context.domain must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -258,7 +264,9 @@ function selectValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_TIMESTAMP",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_TIMESTAMP**: $.context.timestamp must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_TIMESTAMP**
+
+- $.context.timestamp must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -312,7 +320,9 @@ function selectValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_BAP_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_BAP_ID**: $.context.bap_id must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_BAP_ID**
+
+- $.context.bap_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -367,7 +377,9 @@ function selectValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_BAP_URI",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_BAP_URI**: $.context.bap_uri must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_BAP_URI**
+
+- $.context.bap_uri must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -428,11 +440,13 @@ function selectValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_BPP_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_BPP_ID**: $.context.bpp_id must be present in the payload
+                                            description: `#### **REQUIRED_CONTEXT_BPP_ID**
 
-	> Note: **Condition REQUIRED_CONTEXT_BPP_ID** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: ["select"] must be equal to ["search"]`,
+- $.context.bpp_id must be present in the payload
+
+> **Skip if:**
+>
+>     - ["select"] equals ["search"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -494,11 +508,13 @@ function selectValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_BPP_URI",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_BPP_URI**: $.context.bpp_uri must be present in the payload
+                                            description: `#### **REQUIRED_CONTEXT_BPP_URI**
 
-	> Note: **Condition REQUIRED_CONTEXT_BPP_URI** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: ["select"] must be equal to ["search"]`,
+- $.context.bpp_uri must be present in the payload
+
+> **Skip if:**
+>
+>     - ["select"] equals ["search"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -553,7 +569,9 @@ function selectValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_TRANSACTION_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_TRANSACTION_ID**: $.context.transaction_id must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_TRANSACTION_ID**
+
+- $.context.transaction_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -608,7 +626,9 @@ function selectValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_MESSAGE_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_MESSAGE_ID**: $.context.message_id must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_MESSAGE_ID**
+
+- $.context.message_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -663,7 +683,9 @@ function selectValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_VERSION",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_VERSION**: $.context.version must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_VERSION**
+
+- $.context.version must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -717,7 +739,9 @@ function selectValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_TTL",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_TTL**: $.context.ttl must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_TTL**
+
+- $.context.ttl must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -825,7 +849,9 @@ function selectValidations(input: validationInput): validationOutput {
                                                 "VALID_CONTEXT_LOCATION_COUNTRY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]`,
+                                            description: `#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
+
+- At least one of $.context.location.country.code must be in ["IND2"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -884,7 +910,9 @@ function selectValidations(input: validationInput): validationOutput {
                                             testName: "VALID_CONTEXT_DOMAIN",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]`,
+                                            description: `#### **VALID_CONTEXT_DOMAIN**
+
+- All elements of $.context.domain must be in ["ONDC:TRV14"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -982,7 +1010,9 @@ function selectValidations(input: validationInput): validationOutput {
                                                 "REGEX_CONTEXT_LOCATION_CITY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REGEX_CONTEXT_LOCATION_CITY_CODE**: all elements of $.context.location.city.code must follow every regex in ["^std:\\d{3,5}$"]`,
+                                            description: `#### **REGEX_CONTEXT_LOCATION_CITY_CODE**
+
+- All elements of $.context.location.city.code must follow every regex in ["^std:\\d{3,5}$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -1043,7 +1073,9 @@ function selectValidations(input: validationInput): validationOutput {
                                             testName: "REGEX_CONTEXT_TIMESTAMP",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REGEX_CONTEXT_TIMESTAMP**: all elements of $.context.timestamp must follow every regex in ["^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\.\\d{3}Z$"]`,
+                                            description: `#### **REGEX_CONTEXT_TIMESTAMP**
+
+- All elements of $.context.timestamp must follow every regex in ["^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\.\\d{3}Z$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -1101,7 +1133,9 @@ function selectValidations(input: validationInput): validationOutput {
                                             testName: "REGEX_CONTEXT_BAP_URI",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REGEX_CONTEXT_BAP_URI**: all elements of $.context.bap_uri must follow every regex in ["^https:\/\/"]`,
+                                            description: `#### **REGEX_CONTEXT_BAP_URI**
+
+- All elements of $.context.bap_uri must follow every regex in ["^https:\/\/"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -1161,7 +1195,9 @@ function selectValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_TTL",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_TTL**: all elements of $.context.ttl must follow every regex in ["^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+D)?(T(\\d+H)?(\\d+M)?(\\d+S)?)?$"]`,
+                                            description: `#### **REQUIRED_CONTEXT_TTL**
+
+- All elements of $.context.ttl must follow every regex in ["^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+D)?(T(\\d+H)?(\\d+M)?(\\d+S)?)?$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["select"],"domain":["ONDC:TRV19"],"version":["2.0.21"]}
@@ -1284,7 +1320,9 @@ function selectValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_123",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_123**: every element of $.context.domain must be in ["ONDC:123"]`,
+                                    description: `#### **REQUIRED_123**
+
+- All elements of $.context.domain must be in ["ONDC:123"]`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_123","domain":["ONDC:123"],"attr":"$.context.domain","_RETURN_":"attr all in domain","action":["select"]}
@@ -1333,7 +1371,9 @@ function selectValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_ORDER_ITEM",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_ORDER_ITEM**: $.message.order.items[*].id must be present in the payload`,
+                                    description: `#### **REQUIRED_ORDER_ITEM**
+
+- $.message.order.items[*].id must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_ITEM","attr":"$.message.order.items[*].id","_RETURN_":"attr are present","action":["select"]}
@@ -1382,7 +1422,9 @@ function selectValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_ORDER_ITEM_PARENT",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_ORDER_ITEM_PARENT**: $.message.order.items[*].parent_item_id must be present in the payload`,
+                                    description: `#### **REQUIRED_ORDER_ITEM_PARENT**
+
+- $.message.order.items[*].parent_item_id must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_ITEM_PARENT","attr":"$.message.order.items[*].parent_item_id","_RETURN_":"attr are present","action":["select"]}
@@ -1431,7 +1473,9 @@ function selectValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_ORDER_ITEM_QUANTITY",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_ORDER_ITEM_QUANTITY**: $.message.order.items[*].quantity.selected.count must be present in the payload`,
+                                    description: `#### **REQUIRED_ORDER_ITEM_QUANTITY**
+
+- $.message.order.items[*].quantity.selected.count must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_ITEM_QUANTITY","attr":"$.message.order.items[*].quantity.selected.count","_RETURN_":"attr are present","action":["select"]}
@@ -1533,7 +1577,9 @@ function selectValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_ORDER_ITEM",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_ORDER_ITEM**: $.message.order.items[*].id must be present in the payload`,
+                                    description: `#### **REQUIRED_ORDER_ITEM**
+
+- $.message.order.items[*].id must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_ITEM","attr":"$.message.order.items[*].id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]}
@@ -1586,7 +1632,9 @@ function selectValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_ORDER_ITEM_PARENT",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_ORDER_ITEM_PARENT**: $.message.order.items[*].parent_item_id must be present in the payload`,
+                                    description: `#### **REQUIRED_ORDER_ITEM_PARENT**
+
+- $.message.order.items[*].parent_item_id must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_ITEM_PARENT","attr":"$.message.order.items[*].parent_item_id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]}
@@ -1639,7 +1687,9 @@ function selectValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_ORDER_ITEM_QUANTITY",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_ORDER_ITEM_QUANTITY**: $.message.order.items[*].quantity.selected.count must be present in the payload`,
+                                    description: `#### **REQUIRED_ORDER_ITEM_QUANTITY**
+
+- $.message.order.items[*].quantity.selected.count must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_ITEM_QUANTITY","attr":"$.message.order.items[*].quantity.selected.count","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]}
@@ -1692,7 +1742,9 @@ function selectValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_ORDER_ITEM_XINPUT_FORM",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_ORDER_ITEM_XINPUT_FORM**: $.message.order.items[*].xinput.form.id must be present in the payload`,
+                                    description: `#### **REQUIRED_ORDER_ITEM_XINPUT_FORM**
+
+- $.message.order.items[*].xinput.form.id must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_ITEM_XINPUT_FORM","attr":"$.message.order.items[*].xinput.form.id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]}
@@ -1746,7 +1798,9 @@ function selectValidations(input: validationInput): validationOutput {
                                         "REQUIRED_ORDER_ITEM_XINPUT_FORM_RESPONSE",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_ORDER_ITEM_XINPUT_FORM_RESPONSE**: $.message.order.items[*].xinput.form_response.status must be present in the payload`,
+                                    description: `#### **REQUIRED_ORDER_ITEM_XINPUT_FORM_RESPONSE**
+
+- $.message.order.items[*].xinput.form_response.status must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_ITEM_XINPUT_FORM_RESPONSE","attr":"$.message.order.items[*].xinput.form_response.status","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]}
@@ -1801,7 +1855,9 @@ function selectValidations(input: validationInput): validationOutput {
                                         "REQUIRED_ORDER_ITEM_XINPUT_FORM_RESPONSE_SUBMISSION",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_ORDER_ITEM_XINPUT_FORM_RESPONSE_SUBMISSION**: $.message.order.items[*].xinput.form_response.submission_id must be present in the payload`,
+                                    description: `#### **REQUIRED_ORDER_ITEM_XINPUT_FORM_RESPONSE_SUBMISSION**
+
+- $.message.order.items[*].xinput.form_response.submission_id must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_ITEM_XINPUT_FORM_RESPONSE_SUBMISSION","attr":"$.message.order.items[*].xinput.form_response.submission_id","_RETURN_":"attr are present","usecasepath":"$._EXTERNAL._SELF.message.order.items[*].xinput.form.id","action":["select"]}
@@ -1908,7 +1964,9 @@ function selectValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_ORDER_FULFILLMENT_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_ORDER_FULFILLMENT_ID**: $.message.order.fulfillments[*].id must be present in the payload`,
+                                            description: `#### **REQUIRED_ORDER_FULFILLMENT_ID**
+
+- $.message.order.fulfillments[*].id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_FULFILLMENT_ID","attr":"$.message.order.fulfillments[*].id","_RETURN_":"attr are present","action":["select"]}
@@ -1961,7 +2019,9 @@ function selectValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_ORDER_FULFILLMENT_STOPS",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_ORDER_FULFILLMENT_STOPS**: $.message.order.fulfillments[*].stops[*].type must be present in the payload`,
+                                            description: `#### **REQUIRED_ORDER_FULFILLMENT_STOPS**
+
+- $.message.order.fulfillments[*].stops[*].type must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_FULFILLMENT_STOPS","attr":"$.message.order.fulfillments[*].stops[*].type","_RETURN_":"attr are present","action":["select"]}
@@ -2015,7 +2075,9 @@ function selectValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_ORDER_FULFILLMENT_TIME",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_ORDER_FULFILLMENT_TIME**: $.message.order.fulfillments[*].stops[*].time.timestamp must be present in the payload`,
+                                            description: `#### **REQUIRED_ORDER_FULFILLMENT_TIME**
+
+- $.message.order.fulfillments[*].stops[*].time.timestamp must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_FULFILLMENT_TIME","attr":"$.message.order.fulfillments[*].stops[*].time.timestamp","_RETURN_":"attr are present","action":["select"]}
@@ -2112,7 +2174,9 @@ function selectValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_ORDER_FULFILLMENT_STOPS",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_ORDER_FULFILLMENT_STOPS**: every element of $.message.order.fulfillments[*].stops[*].type must be in ["START"]`,
+                                            description: `#### **REQUIRED_ORDER_FULFILLMENT_STOPS**
+
+- All elements of $.message.order.fulfillments[*].stops[*].type must be in ["START"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_FULFILLMENT_STOPS","attr":"$.message.order.fulfillments[*].stops[*].type","enumList":["START"],"_RETURN_":"attr all in enumList","action":["select"]}
@@ -2172,7 +2236,9 @@ function selectValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_ORDER_FULFILLMENT_TIME",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_ORDER_FULFILLMENT_TIME**: all elements of $.message.order.fulfillments[*].stops[*].time.timestamp must follow every regex in ["^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\.\\d{3}Z$"]`,
+                                            description: `#### **REQUIRED_ORDER_FULFILLMENT_TIME**
+
+- All elements of $.message.order.fulfillments[*].stops[*].time.timestamp must follow every regex in ["^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\.\\d{3}Z$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_FULFILLMENT_TIME","attr":"$.message.order.fulfillments[*].stops[*].time.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["select"]}
@@ -2289,7 +2355,9 @@ function selectValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_ORDER_PROVIDER",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_ORDER_PROVIDER**: $.message.order.provider.id must be present in the payload`,
+                                    description: `#### **REQUIRED_ORDER_PROVIDER**
+
+- $.message.order.provider.id must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_ORDER_PROVIDER","attr":"$.message.order.provider.id","_RETURN_":"attr are present","action":["select"]}

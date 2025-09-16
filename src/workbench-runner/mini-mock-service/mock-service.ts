@@ -96,6 +96,8 @@ export async function runMock(
 	}
 	payload.context.bap_uri = "https://workbench-auto-runner.com";
 	payload.context.bpp_uri = "https://workbench-auto-runner.com";
+	payload.context.bpp_id = "workbench-auto-runner.com";
+	payload.context.bap_id = "workbench-auto-runner.com";
 	const mockAction = getMockActionObject(current.key);
 	reporter.flowPayload(flowId, current.key, payload);
 	reporter.flowSessionData(flowId, current.key, mockSessionData);

@@ -92,7 +92,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE**: $.context.location.country.code must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE**
+
+- $.context.location.country.code must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -148,7 +150,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_LOCATION_CITY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_LOCATION_CITY_CODE**: $.context.location.city.code must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_LOCATION_CITY_CODE**
+
+- $.context.location.city.code must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -203,7 +207,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_DOMAIN",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_DOMAIN**: $.context.domain must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_DOMAIN**
+
+- $.context.domain must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -258,7 +264,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_TIMESTAMP",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_TIMESTAMP**: $.context.timestamp must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_TIMESTAMP**
+
+- $.context.timestamp must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -312,7 +320,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_BAP_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_BAP_ID**: $.context.bap_id must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_BAP_ID**
+
+- $.context.bap_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -367,7 +377,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_BAP_URI",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_BAP_URI**: $.context.bap_uri must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_BAP_URI**
+
+- $.context.bap_uri must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -428,11 +440,13 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_BPP_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_BPP_ID**: $.context.bpp_id must be present in the payload
+                                            description: `#### **REQUIRED_CONTEXT_BPP_ID**
 
-	> Note: **Condition REQUIRED_CONTEXT_BPP_ID** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: ["on_rating"] must be equal to ["search"]`,
+- $.context.bpp_id must be present in the payload
+
+> **Skip if:**
+>
+>     - ["on_rating"] equals ["search"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -494,11 +508,13 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_BPP_URI",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_BPP_URI**: $.context.bpp_uri must be present in the payload
+                                            description: `#### **REQUIRED_CONTEXT_BPP_URI**
 
-	> Note: **Condition REQUIRED_CONTEXT_BPP_URI** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: ["on_rating"] must be equal to ["search"]`,
+- $.context.bpp_uri must be present in the payload
+
+> **Skip if:**
+>
+>     - ["on_rating"] equals ["search"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -553,7 +569,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_TRANSACTION_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_TRANSACTION_ID**: $.context.transaction_id must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_TRANSACTION_ID**
+
+- $.context.transaction_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -608,7 +626,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_MESSAGE_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_MESSAGE_ID**: $.context.message_id must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_MESSAGE_ID**
+
+- $.context.message_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -663,7 +683,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_VERSION",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_VERSION**: $.context.version must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_VERSION**
+
+- $.context.version must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -717,7 +739,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_TTL",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_TTL**: $.context.ttl must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_TTL**
+
+- $.context.ttl must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -825,7 +849,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                                 "VALID_CONTEXT_LOCATION_COUNTRY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]`,
+                                            description: `#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
+
+- At least one of $.context.location.country.code must be in ["IND2"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -884,7 +910,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                             testName: "VALID_CONTEXT_DOMAIN",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]`,
+                                            description: `#### **VALID_CONTEXT_DOMAIN**
+
+- All elements of $.context.domain must be in ["ONDC:TRV14"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -982,7 +1010,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                                 "REGEX_CONTEXT_LOCATION_CITY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REGEX_CONTEXT_LOCATION_CITY_CODE**: all elements of $.context.location.city.code must follow every regex in ["^std:\\d{3,5}$"]`,
+                                            description: `#### **REGEX_CONTEXT_LOCATION_CITY_CODE**
+
+- All elements of $.context.location.city.code must follow every regex in ["^std:\\d{3,5}$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -1043,7 +1073,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                             testName: "REGEX_CONTEXT_TIMESTAMP",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REGEX_CONTEXT_TIMESTAMP**: all elements of $.context.timestamp must follow every regex in ["^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\.\\d{3}Z$"]`,
+                                            description: `#### **REGEX_CONTEXT_TIMESTAMP**
+
+- All elements of $.context.timestamp must follow every regex in ["^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\.\\d{3}Z$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -1101,7 +1133,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                             testName: "REGEX_CONTEXT_BAP_URI",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REGEX_CONTEXT_BAP_URI**: all elements of $.context.bap_uri must follow every regex in ["^https:\/\/"]`,
+                                            description: `#### **REGEX_CONTEXT_BAP_URI**
+
+- All elements of $.context.bap_uri must follow every regex in ["^https:\/\/"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -1161,7 +1195,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_TTL",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_TTL**: all elements of $.context.ttl must follow every regex in ["^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+D)?(T(\\d+H)?(\\d+M)?(\\d+S)?)?$"]`,
+                                            description: `#### **REQUIRED_CONTEXT_TTL**
+
+- All elements of $.context.ttl must follow every regex in ["^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+D)?(T(\\d+H)?(\\d+M)?(\\d+S)?)?$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
@@ -1277,7 +1313,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                     testName: "ERROR_CODE",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition ERROR_CODE**: $.error.code must be present in the payload`,
+                                    description: `#### **ERROR_CODE**
+
+- $.error.code must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"ERROR_CODE","attr":"$.error.code","_RETURN_":"attr are present"}
@@ -1325,7 +1363,9 @@ function on_ratingValidations(input: validationInput): validationOutput {
                                     testName: "ERROR_MESSAGE",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition ERROR_MESSAGE**: $.error.message must be present in the payload`,
+                                    description: `#### **ERROR_MESSAGE**
+
+- $.error.message must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"ERROR_MESSAGE","attr":"$.error.message","_RETURN_":"attr are present"}

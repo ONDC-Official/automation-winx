@@ -92,7 +92,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE**: $.context.location.country.code must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE**
+
+- $.context.location.country.code must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -148,7 +150,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_LOCATION_CITY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_LOCATION_CITY_CODE**: $.context.location.city.code must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_LOCATION_CITY_CODE**
+
+- $.context.location.city.code must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -203,7 +207,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_DOMAIN",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_DOMAIN**: $.context.domain must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_DOMAIN**
+
+- $.context.domain must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -258,7 +264,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_TIMESTAMP",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_TIMESTAMP**: $.context.timestamp must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_TIMESTAMP**
+
+- $.context.timestamp must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -312,7 +320,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_BAP_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_BAP_ID**: $.context.bap_id must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_BAP_ID**
+
+- $.context.bap_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -367,7 +377,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_BAP_URI",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_BAP_URI**: $.context.bap_uri must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_BAP_URI**
+
+- $.context.bap_uri must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -428,11 +440,13 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_BPP_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_BPP_ID**: $.context.bpp_id must be present in the payload
+                                            description: `#### **REQUIRED_CONTEXT_BPP_ID**
 
-	> Note: **Condition REQUIRED_CONTEXT_BPP_ID** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: ["on_search"] must be equal to ["search"]`,
+- $.context.bpp_id must be present in the payload
+
+> **Skip if:**
+>
+>     - ["on_search"] equals ["search"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -494,11 +508,13 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_BPP_URI",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_BPP_URI**: $.context.bpp_uri must be present in the payload
+                                            description: `#### **REQUIRED_CONTEXT_BPP_URI**
 
-	> Note: **Condition REQUIRED_CONTEXT_BPP_URI** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: ["on_search"] must be equal to ["search"]`,
+- $.context.bpp_uri must be present in the payload
+
+> **Skip if:**
+>
+>     - ["on_search"] equals ["search"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -553,7 +569,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_TRANSACTION_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_TRANSACTION_ID**: $.context.transaction_id must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_TRANSACTION_ID**
+
+- $.context.transaction_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -608,7 +626,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_MESSAGE_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_MESSAGE_ID**: $.context.message_id must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_MESSAGE_ID**
+
+- $.context.message_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -663,7 +683,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CONTEXT_VERSION",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_VERSION**: $.context.version must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_VERSION**
+
+- $.context.version must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -717,7 +739,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_TTL",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_TTL**: $.context.ttl must be present in the payload`,
+                                            description: `#### **REQUIRED_CONTEXT_TTL**
+
+- $.context.ttl must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -825,7 +849,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "VALID_CONTEXT_LOCATION_COUNTRY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition VALID_CONTEXT_LOCATION_COUNTRY_CODE**: at least one element of $.context.location.country.code must be in ["IND2"]`,
+                                            description: `#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
+
+- At least one of $.context.location.country.code must be in ["IND2"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -884,7 +910,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             testName: "VALID_CONTEXT_DOMAIN",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition VALID_CONTEXT_DOMAIN**: every element of $.context.domain must be in ["ONDC:TRV14"]`,
+                                            description: `#### **VALID_CONTEXT_DOMAIN**
+
+- All elements of $.context.domain must be in ["ONDC:TRV14"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -982,7 +1010,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REGEX_CONTEXT_LOCATION_CITY_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REGEX_CONTEXT_LOCATION_CITY_CODE**: all elements of $.context.location.city.code must follow every regex in ["^std:\\d{3,5}$"]`,
+                                            description: `#### **REGEX_CONTEXT_LOCATION_CITY_CODE**
+
+- All elements of $.context.location.city.code must follow every regex in ["^std:\\d{3,5}$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -1043,7 +1073,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             testName: "REGEX_CONTEXT_TIMESTAMP",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REGEX_CONTEXT_TIMESTAMP**: all elements of $.context.timestamp must follow every regex in ["^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\.\\d{3}Z$"]`,
+                                            description: `#### **REGEX_CONTEXT_TIMESTAMP**
+
+- All elements of $.context.timestamp must follow every regex in ["^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\.\\d{3}Z$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -1101,7 +1133,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             testName: "REGEX_CONTEXT_BAP_URI",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REGEX_CONTEXT_BAP_URI**: all elements of $.context.bap_uri must follow every regex in ["^https:\/\/"]`,
+                                            description: `#### **REGEX_CONTEXT_BAP_URI**
+
+- All elements of $.context.bap_uri must follow every regex in ["^https:\/\/"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -1161,7 +1195,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_CONTEXT_TTL",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CONTEXT_TTL**: all elements of $.context.ttl must follow every regex in ["^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+D)?(T(\\d+H)?(\\d+M)?(\\d+S)?)?$"]`,
+                                            description: `#### **REQUIRED_CONTEXT_TTL**
+
+- All elements of $.context.ttl must follow every regex in ["^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+D)?(T(\\d+H)?(\\d+M)?(\\d+S)?)?$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
@@ -1281,7 +1317,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_MESSAGE_CATALOG_NAME",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_MESSAGE_CATALOG_NAME**: $.message.catalog.descriptor.name must be present in the payload`,
+                                    description: `#### **REQUIRED_MESSAGE_CATALOG_NAME**
+
+- $.message.catalog.descriptor.name must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_CATALOG_NAME","attr":"$.message.catalog.descriptor.name","_RETURN_":"attr are present","action":["on_search"]}
@@ -1367,7 +1405,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_MESSAGE_PROVIDERS_ID",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_MESSAGE_PROVIDERS_ID**: $.message.catalog.providers[*].id must be present in the payload`,
+                                    description: `#### **REQUIRED_MESSAGE_PROVIDERS_ID**
+
+- $.message.catalog.providers[*].id must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ID","attr":"$.message.catalog.providers[*].id","_RETURN_":"attr are present","action":["on_search"]}
@@ -1417,7 +1457,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                         "REQUIRED_MESSAGE_PROVIDERS_DESCRIPTOR",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_MESSAGE_PROVIDERS_DESCRIPTOR**: $.message.catalog.providers[*].descriptor.name must be present in the payload`,
+                                    description: `#### **REQUIRED_MESSAGE_PROVIDERS_DESCRIPTOR**
+
+- $.message.catalog.providers[*].descriptor.name must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_DESCRIPTOR","attr":"$.message.catalog.providers[*].descriptor.name","_RETURN_":"attr are present","action":["on_search"]}
@@ -1467,7 +1509,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                         "REQUIRED_MESSAGE_PROVIDERS_CATRGORY_ID",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_MESSAGE_PROVIDERS_CATRGORY_ID**: $.message.catalog.providers[*].categories[*].id must be present in the payload`,
+                                    description: `#### **REQUIRED_MESSAGE_PROVIDERS_CATRGORY_ID**
+
+- $.message.catalog.providers[*].categories[*].id must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_CATRGORY_ID","attr":"$.message.catalog.providers[*].categories[*].id","_RETURN_":"attr are present","action":["on_search"]}
@@ -1517,7 +1561,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                         "REQUIRED_MESSAGE_PROVIDERS_CATRGORY",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_MESSAGE_PROVIDERS_CATRGORY**: $.message.catalog.providers[*].categories[*].descriptor.name must be present in the payload`,
+                                    description: `#### **REQUIRED_MESSAGE_PROVIDERS_CATRGORY**
+
+- $.message.catalog.providers[*].categories[*].descriptor.name must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_CATRGORY","attr":"$.message.catalog.providers[*].categories[*].descriptor.name","_RETURN_":"attr are present","action":["on_search"]}
@@ -1574,11 +1620,13 @@ function on_searchValidations(input: validationInput): validationOutput {
                                         "REQUIRED_MESSAGE_PROVIDERS_CATRGORY_CODE",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_MESSAGE_PROVIDERS_CATRGORY_CODE**: $.message.catalog.providers[*].categories[*].descriptor.code must be present in the payload
+                                    description: `#### **REQUIRED_MESSAGE_PROVIDERS_CATRGORY_CODE**
 
-	> Note: **Condition REQUIRED_MESSAGE_PROVIDERS_CATRGORY_CODE** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: $.message.catalog.providers[*].categories[*].parent_category_id must be present in the payload`,
+- $.message.catalog.providers[*].categories[*].descriptor.code must be present in the payload
+
+> **Skip if:**
+>
+>     - $.message.catalog.providers[*].categories[*].parent_category_id is in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_CATRGORY_CODE","attr":"$.message.catalog.providers[*].categories[*].descriptor.code","useCasePath":"$.message.catalog.providers[*].categories[*].parent_category_id","_CONTINUE_":"(useCasePath are present)","_RETURN_":"attr are present","action":["on_search"]}
@@ -1637,11 +1685,13 @@ function on_searchValidations(input: validationInput): validationOutput {
                                         "ENUM_MESSAGE_PROVIDERS_CATRGORY_CODE",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition ENUM_MESSAGE_PROVIDERS_CATRGORY_CODE**: every element of $.message.catalog.providers[*].categories[*].descriptor.code must be in ["CULTURE_HERITAGE"]
+                                    description: `#### **ENUM_MESSAGE_PROVIDERS_CATRGORY_CODE**
 
-	> Note: **Condition ENUM_MESSAGE_PROVIDERS_CATRGORY_CODE** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: $.message.catalog.providers[*].categories[*].parent_category_id must be present in the payload`,
+- All elements of $.message.catalog.providers[*].categories[*].descriptor.code must be in ["CULTURE_HERITAGE"]
+
+> **Skip if:**
+>
+>     - $.message.catalog.providers[*].categories[*].parent_category_id is in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"ENUM_MESSAGE_PROVIDERS_CATRGORY_CODE","attr":"$.message.catalog.providers[*].categories[*].descriptor.code","enumList":["CULTURE_HERITAGE"],"useCasePath":"$.message.catalog.providers[*].categories[*].parent_category_id","_CONTINUE_":"(useCasePath are present)","_RETURN_":"attr all in enumList","action":["on_search"]}
@@ -1704,14 +1754,15 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     testName: "CHECK_CATEGORY_ID_PARENT_ID",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition CHECK_CATEGORY_ID_PARENT_ID**: $.message.catalog.providers[*].categories[*].parent_category_id must be present in the payload
+                                    description: `#### **CHECK_CATEGORY_ID_PARENT_ID**
 
-	> Note: **Condition CHECK_CATEGORY_ID_PARENT_ID** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: all of the following sub conditions must**not** be met:
-	>
-	>   - **condition B.1**: $.message.catalog.providers[*].categories[*].descriptor.code must **not** be present in the payload
-	>   - **condition B.2**: $.message.catalog.providers[*].categories[*].id must **not** be equal to $.message.catalog.providers[*].categories[*].parent_category_id`,
+- $.message.catalog.providers[*].categories[*].parent_category_id must be present in the payload
+
+> **Skip if:**
+>
+>     - **All of the following must be true:**
+>       - $.message.catalog.providers[*].categories[*].descriptor.code is not in the payload
+>       - $.message.catalog.providers[*].categories[*].id is not equal to $.message.catalog.providers[*].categories[*].parent_category_id`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"CHECK_CATEGORY_ID_PARENT_ID","attr":"$.message.catalog.providers[*].categories[*].parent_category_id","useCasePath":"$.message.catalog.providers[*].categories[*].descriptor.code","var_category_id":"$.message.catalog.providers[*].categories[*].id","_CONTINUE_":"!(useCasePath are present && var_category_id equal to attr)","_RETURN_":"attr are present","action":["on_search"]}
@@ -1766,10 +1817,11 @@ function on_searchValidations(input: validationInput): validationOutput {
                                         "REQUIRED_MESSAGE_PROVIDERS_START_RANGE",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_MESSAGE_PROVIDERS_START_RANGE**: all of the following sub conditions must be met:
+                                    description: `#### **REQUIRED_MESSAGE_PROVIDERS_START_RANGE**
 
-  - **condition REQUIRED_MESSAGE_PROVIDERS_START_RANGE.1**: $.message.catalog.providers[*].time.range.start must be present in the payload
-  - **condition REQUIRED_MESSAGE_PROVIDERS_START_RANGE.2**: all elements of $.message.catalog.providers[*].time.range.start must follow every regex in ["^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\.\\d{3}Z$"]`,
+**All of the following must be true:**
+  - $.message.catalog.providers[*].time.range.start must be present in the payload
+  - All elements of $.message.catalog.providers[*].time.range.start must follow every regex in ["^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\.\\d{3}Z$"]`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_START_RANGE","attr":"$.message.catalog.providers[*].time.range.start","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr are present && attr follow regex reg","action":["on_search"]}
@@ -1824,10 +1876,11 @@ function on_searchValidations(input: validationInput): validationOutput {
                                         "REQUIRED_MESSAGE_PROVIDERS_END_RANGE",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_MESSAGE_PROVIDERS_END_RANGE**: all of the following sub conditions must be met:
+                                    description: `#### **REQUIRED_MESSAGE_PROVIDERS_END_RANGE**
 
-  - **condition REQUIRED_MESSAGE_PROVIDERS_END_RANGE.1**: $.message.catalog.providers[*].time.range.end must be present in the payload
-  - **condition REQUIRED_MESSAGE_PROVIDERS_END_RANGE.2**: all elements of $.message.catalog.providers[*].time.range.end must follow every regex in ["^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\.\\d{3}Z$"]`,
+**All of the following must be true:**
+  - $.message.catalog.providers[*].time.range.end must be present in the payload
+  - All elements of $.message.catalog.providers[*].time.range.end must follow every regex in ["^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\.\\d{3}Z$"]`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_END_RANGE","attr":"$.message.catalog.providers[*].time.range.end","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr are present && attr follow regex reg","action":["on_search"]}
@@ -1877,7 +1930,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                         "REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_ID",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_ID**: $.message.catalog.providers[*].locations[*].id must be present in the payload`,
+                                    description: `#### **REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_ID**
+
+- $.message.catalog.providers[*].locations[*].id must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_ID","attr":"$.message.catalog.providers[*].locations[*].id","_RETURN_":"attr are present","action":["on_search"]}
@@ -1927,7 +1982,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                         "REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_NAME",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_NAME**: $.message.catalog.providers[*].locations[*].descriptor.name must be present in the payload`,
+                                    description: `#### **REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_NAME**
+
+- $.message.catalog.providers[*].locations[*].descriptor.name must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_NAME","attr":"$.message.catalog.providers[*].locations[*].descriptor.name","_RETURN_":"attr are present","action":["on_search"]}
@@ -1978,7 +2035,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                         "REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_DESC",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_DESC**: $.message.catalog.providers[*].locations[*].descriptor.short_desc must be present in the payload`,
+                                    description: `#### **REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_DESC**
+
+- $.message.catalog.providers[*].locations[*].descriptor.short_desc must be present in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_LOCATIONS_DESC","attr":"$.message.catalog.providers[*].locations[*].descriptor.short_desc","_RETURN_":"attr are present","action":["on_search"]}
@@ -2107,7 +2166,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_ITEMS_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_ITEMS_ID**: $.message.catalog.providers[*].items[*].id must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_ITEMS_ID**
+
+- $.message.catalog.providers[*].items[*].id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_ID","attr":"$.message.catalog.providers[*].items[*].id","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -2166,7 +2227,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_ITEMS_NAME",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_ITEMS_NAME**: $.message.catalog.providers[*].items[*].descriptor.name must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_ITEMS_NAME**
+
+- $.message.catalog.providers[*].items[*].descriptor.name must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_NAME","attr":"$.message.catalog.providers[*].items[*].descriptor.name","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -2225,7 +2288,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_ITEMS_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_ITEMS_CODE**: $.message.catalog.providers[*].items[*].descriptor.code must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_ITEMS_CODE**
+
+- $.message.catalog.providers[*].items[*].descriptor.code must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_CODE","attr":"$.message.catalog.providers[*].items[*].descriptor.code","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -2284,7 +2349,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_ITEMS_LOCATIONS",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_ITEMS_LOCATIONS**: $.message.catalog.providers[*].items[*].location_ids[*] must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_ITEMS_LOCATIONS**
+
+- $.message.catalog.providers[*].items[*].location_ids[*] must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_LOCATIONS","attr":"$.message.catalog.providers[*].items[*].location_ids[*]","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -2350,7 +2417,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "VALID_MESSAGE_PROVIDERS_ITEMS_LOCATIONS_1",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition VALID_MESSAGE_PROVIDERS_ITEMS_LOCATIONS_1**: every element of $.message.catalog.providers[*].items[*].location_ids[*] must be in $.message.catalog.providers[*].locations[*].id`,
+                                            description: `#### **VALID_MESSAGE_PROVIDERS_ITEMS_LOCATIONS_1**
+
+- All elements of $.message.catalog.providers[*].items[*].location_ids[*] must be in $.message.catalog.providers[*].locations[*].id`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"VALID_MESSAGE_PROVIDERS_ITEMS_LOCATIONS_1","attr":"$.message.catalog.providers[*].items[*].location_ids[*]","usecasepath":"$.message.catalog.providers[*].locations[*].id","_RETURN_":"attr all in usecasepath","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -2416,7 +2485,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "VALID_MESSAGE_PROVIDERS_ITEMS_CATEGORIES",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition VALID_MESSAGE_PROVIDERS_ITEMS_CATEGORIES**: every element of $.message.catalog.providers[*].items[*].category_ids[*] must be in $.message.catalog.providers[*].categories[*].id`,
+                                            description: `#### **VALID_MESSAGE_PROVIDERS_ITEMS_CATEGORIES**
+
+- All elements of $.message.catalog.providers[*].items[*].category_ids[*] must be in $.message.catalog.providers[*].categories[*].id`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"VALID_MESSAGE_PROVIDERS_ITEMS_CATEGORIES","attr":"$.message.catalog.providers[*].items[*].category_ids[*]","usecasepath":"$.message.catalog.providers[*].categories[*].id","_RETURN_":"attr all in usecasepath","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -2475,7 +2546,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_ITEMS_CATEGORIES_1",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_ITEMS_CATEGORIES_1**: $.message.catalog.providers[*].items[*].category_ids[*] must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_ITEMS_CATEGORIES_1**
+
+- $.message.catalog.providers[*].items[*].category_ids[*] must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_CATEGORIES_1","attr":"$.message.catalog.providers[*].items[*].category_ids[*]","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -2534,7 +2607,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_ITEMS_FULFILMENTS",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_ITEMS_FULFILMENTS**: $.message.catalog.providers[*].items[*].fulfillment_ids[*] must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_ITEMS_FULFILMENTS**
+
+- $.message.catalog.providers[*].items[*].fulfillment_ids[*] must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_FULFILMENTS","attr":"$.message.catalog.providers[*].items[*].fulfillment_ids[*]","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -2600,7 +2675,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "VALID_MESSAGE_PROVIDERS_ITEMS_CATEGORIES_2",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition VALID_MESSAGE_PROVIDERS_ITEMS_CATEGORIES_2**: every element of $.message.catalog.providers[*].items[*].fulfillment_ids[*] must be in $.message.catalog.providers[*].fulfillments[*].id`,
+                                            description: `#### **VALID_MESSAGE_PROVIDERS_ITEMS_CATEGORIES_2**
+
+- All elements of $.message.catalog.providers[*].items[*].fulfillment_ids[*] must be in $.message.catalog.providers[*].fulfillments[*].id`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"VALID_MESSAGE_PROVIDERS_ITEMS_CATEGORIES_2","attr":"$.message.catalog.providers[*].items[*].fulfillment_ids[*]","usecasepath":"$.message.catalog.providers[*].fulfillments[*].id","_RETURN_":"attr all in usecasepath","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -2659,7 +2736,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL**: $.message.catalog.providers[*].items[*].descriptor.images[*].url must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL**
+
+- $.message.catalog.providers[*].items[*].descriptor.images[*].url must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL","attr":"$.message.catalog.providers[*].items[*].descriptor.images[*].url","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -2771,7 +2850,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "ENUM_MESSAGE_PROVIDERS_ITEMS_CODE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition ENUM_MESSAGE_PROVIDERS_ITEMS_CODE**: every element of $.message.catalog.providers[*].items[*].descriptor.code must be in ["ABSTRACT", "ENTRY_PASS", "ADD_ON"]`,
+                                            description: `#### **ENUM_MESSAGE_PROVIDERS_ITEMS_CODE**
+
+- All elements of $.message.catalog.providers[*].items[*].descriptor.code must be in ["ABSTRACT", "ENTRY_PASS", "ADD_ON"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"ENUM_MESSAGE_PROVIDERS_ITEMS_CODE","attr":"$.message.catalog.providers[*].items[*].descriptor.code","enumList":["ABSTRACT","ENTRY_PASS","ADD_ON"],"_RETURN_":"attr all in enumList","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -2859,7 +2940,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                         "REGEX_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REGEX_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL**: all elements of $.message.catalog.providers[*].items[*].descriptor.images[*].url must follow every regex in ["^https:\\/\\/[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}(\\/.*)?$"]`,
+                                    description: `#### **REGEX_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL**
+
+- All elements of $.message.catalog.providers[*].items[*].descriptor.images[*].url must follow every regex in ["^https:\\/\\/[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}(\\/.*)?$"]`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REGEX_MESSAGE_PROVIDERS_ITEMS_IMAGES_URL","attr":"$.message.catalog.providers[*].items[*].descriptor.images[*].url","reg":["^https:\\\\/\\\\/[a-zA-Z0-9.-]+\\\\.[a-zA-Z]{2,}(\\\\/.*)?$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -2943,7 +3026,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_CANCELLATION_TERMS_ELIGIBLE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_CANCELLATION_TERMS_ELIGIBLE**: $.message.catalog.providers[*].items[*].cancellation_terms[*].cancellation_eligible must be present in the payload`,
+                                            description: `#### **REQUIRED_CANCELLATION_TERMS_ELIGIBLE**
+
+- $.message.catalog.providers[*].items[*].cancellation_terms[*].cancellation_eligible must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_CANCELLATION_TERMS_ELIGIBLE","attr":"$.message.catalog.providers[*].items[*].cancellation_terms[*].cancellation_eligible","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -3007,7 +3092,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_MIME",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_MIME**: $.message.catalog.providers[*].items[*].replacement_terms[*].external_ref.mimetype must be present in the payload`,
+                                            description: `#### **REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_MIME**
+
+- $.message.catalog.providers[*].items[*].replacement_terms[*].external_ref.mimetype must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_MIME","attr":"$.message.catalog.providers[*].items[*].replacement_terms[*].external_ref.mimetype","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -3071,7 +3158,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_URL",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_URL**: $.message.catalog.providers[*].items[*].replacement_terms[*].external_ref.url must be present in the payload`,
+                                            description: `#### **REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_URL**
+
+- $.message.catalog.providers[*].items[*].replacement_terms[*].external_ref.url must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_REPLACEMENT_TERMS_ELIGIBLE_URL","attr":"$.message.catalog.providers[*].items[*].replacement_terms[*].external_ref.url","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -3141,7 +3230,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REGEX_REPLACEMENT_TERMS_ELIGIBLE_URL",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REGEX_REPLACEMENT_TERMS_ELIGIBLE_URL**: all elements of $.message.catalog.providers[*].items[*].replacement_terms[*].external_ref.url must follow every regex in ["^https?:\\/\\/[a-zA-Z0-9.-]+(?:\\.[a-zA-Z]{2,})?(:\\d+)?(\\/[^\\s?#]*)?(\\?[^\\s#]*)?(#[^\\s]*)?$"]`,
+                                            description: `#### **REGEX_REPLACEMENT_TERMS_ELIGIBLE_URL**
+
+- All elements of $.message.catalog.providers[*].items[*].replacement_terms[*].external_ref.url must follow every regex in ["^https?:\\/\\/[a-zA-Z0-9.-]+(?:\\.[a-zA-Z]{2,})?(:\\d+)?(\\/[^\\s?#]*)?(\\?[^\\s#]*)?(#[^\\s]*)?$"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REGEX_REPLACEMENT_TERMS_ELIGIBLE_URL","attr":"$.message.catalog.providers[*].items[*].replacement_terms[*].external_ref.url","reg":["^https?:\\\\/\\\\/[a-zA-Z0-9.-]+(?:\\\\.[a-zA-Z]{2,})?(:\\\\d+)?(\\\\/[^\\\\s?#]*)?(\\\\?[^\\\\s#]*)?(#[^\\\\s]*)?$"],"_RETURN_":"attr follow regex reg","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -3256,7 +3347,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             testName: "REQUIRED_PARENT_ITEM_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_PARENT_ITEM_ID**: $.message.catalog.providers[*].items[*].parent_item_id must be present in the payload`,
+                                            description: `#### **REQUIRED_PARENT_ITEM_ID**
+
+- $.message.catalog.providers[*].items[*].parent_item_id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_PARENT_ITEM_ID","attr":"$.message.catalog.providers[*].items[*].parent_item_id","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -3319,7 +3412,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_ITEMS_PRICE_VAL",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_ITEMS_PRICE_VAL**: $.message.catalog.providers[*].items[*].price.value must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_ITEMS_PRICE_VAL**
+
+- $.message.catalog.providers[*].items[*].price.value must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_PRICE_VAL","attr":"$.message.catalog.providers[*].items[*].price.value","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -3383,7 +3478,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_ITEMS_PRICE_CURRENCY",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_ITEMS_PRICE_CURRENCY**: $.message.catalog.providers[*].items[*].price.currency must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_ITEMS_PRICE_CURRENCY**
+
+- $.message.catalog.providers[*].items[*].price.currency must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_PRICE_CURRENCY","attr":"$.message.catalog.providers[*].items[*].price.currency","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -3447,7 +3544,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_ITEMS_QUANTITY_MAX",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_ITEMS_QUANTITY_MAX**: $.message.catalog.providers[*].items[*].quantity.maximum.count must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_ITEMS_QUANTITY_MAX**
+
+- $.message.catalog.providers[*].items[*].quantity.maximum.count must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_QUANTITY_MAX","attr":"$.message.catalog.providers[*].items[*].quantity.maximum.count","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -3511,7 +3610,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_ITEMS_QUANTITY_MIN",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_ITEMS_QUANTITY_MIN**: $.message.catalog.providers[*].items[*].quantity.minimum.count must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_ITEMS_QUANTITY_MIN**
+
+- $.message.catalog.providers[*].items[*].quantity.minimum.count must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_ITEMS_QUANTITY_MIN","attr":"$.message.catalog.providers[*].items[*].quantity.minimum.count","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -3578,7 +3679,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                             testName: "ITEM_TAGS",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition ITEM_TAGS**: every element of $.message.catalog.tags[*].descriptor.code must be in ["FARE_POLICY"]`,
+                                            description: `#### **ITEM_TAGS**
+
+- All elements of $.message.catalog.tags[*].descriptor.code must be in ["FARE_POLICY"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"ITEM_TAGS","validTags":["FARE_POLICY"],"tagPath":"$.message.catalog.tags[*].descriptor.code","_RETURN_":"tagPath all in validTags","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -3650,11 +3753,13 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_ITEM_TAG_FARE_POLICY",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_ITEM_TAG_FARE_POLICY**: every element of $.message.catalog.providers[*].items[*].tags[?(@.descriptor.code=='FARE_POLICY')]._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code must be in ["MIN_AGE", "MAX_AGE", "GENDER", "NATIONALITY"]
+                                            description: `#### **REQUIRED_ITEM_TAG_FARE_POLICY**
 
-	> Note: **Condition REQUIRED_ITEM_TAG_FARE_POLICY** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: $.message.catalog.providers[*].items[*].tags[?(@.descriptor.code=='FARE_POLICY')]._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code must **not** be present in the payload`,
+- All elements of $.message.catalog.providers[*].items[*].tags[?(@.descriptor.code=='FARE_POLICY')]._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code must be in ["MIN_AGE", "MAX_AGE", "GENDER", "NATIONALITY"]
+
+> **Skip if:**
+>
+>     - $.message.catalog.providers[*].items[*].tags[?(@.descriptor.code=='FARE_POLICY')]._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code is not in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_ITEM_TAG_FARE_POLICY","_SCOPE_":"$.message.catalog.providers[*].items[*].tags[?(@.descriptor.code=='FARE_POLICY')]","subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","validValues":["MIN_AGE","MAX_AGE","GENDER","NATIONALITY"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues","action":["on_search"],"var_page":["CURRENT_PAGE_NUMBER"],"usecasepath":"$._EXTERNAL._SELF.message.catalog.providers[*].items[*].descriptor.code","var_code":["ABSTRACT"]}
@@ -3810,7 +3915,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_ID",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_ID**: $.message.catalog.providers[*].fulfillments[*].id must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_ID**
+
+- $.message.catalog.providers[*].fulfillments[*].id must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_ID","attr":"$.message.catalog.providers[*].fulfillments[*].id","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -3869,7 +3976,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE**: $.message.catalog.providers[*].fulfillments[*].type must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE**
+
+- $.message.catalog.providers[*].fulfillments[*].type must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE","attr":"$.message.catalog.providers[*].fulfillments[*].type","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -3928,7 +4037,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_STOPS_TYPE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_STOPS_TYPE**: $.message.catalog.providers[*].fulfillments[*].stops[*].type must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_STOPS_TYPE**
+
+- $.message.catalog.providers[*].fulfillments[*].stops[*].type must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_STOPS_TYPE","attr":"$.message.catalog.providers[*].fulfillments[*].stops[*].type","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -3987,7 +4098,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_CATEGORY",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_CATEGORY**: $.message.catalog.providers[*].fulfillments[*].vehicle.category must be present in the payload`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_CATEGORY**
+
+- $.message.catalog.providers[*].fulfillments[*].vehicle.category must be present in the payload`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_CATEGORY","attr":"$.message.catalog.providers[*].fulfillments[*].vehicle.category","_RETURN_":"attr are present","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -4091,7 +4204,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE**: every element of $.message.catalog.providers[*].fulfillments[*].type must be in ["VISIT"]`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE**
+
+- All elements of $.message.catalog.providers[*].fulfillments[*].type must be in ["VISIT"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_TYPE","attr":"$.message.catalog.providers[*].fulfillments[*].type","enumList":["VISIT"],"_RETURN_":"attr all in enumList","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -4154,7 +4269,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_STOPS_TYPE",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_STOPS_TYPE**: every element of $.message.catalog.providers[*].fulfillments[*].stops[*].type must be in ["START"]`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_STOPS_TYPE**
+
+- All elements of $.message.catalog.providers[*].fulfillments[*].stops[*].type must be in ["START"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_STOPS_TYPE","attr":"$.message.catalog.providers[*].fulfillments[*].stops[*].type","enumList":["START"],"_RETURN_":"attr all in enumList","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -4217,7 +4334,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                                 "REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_CATEGORY",
                                             valid: false,
                                             code: 30000,
-                                            description: `- **condition REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_CATEGORY**: every element of $.message.catalog.providers[*].fulfillments[*].vehicle.category must be in ["VISIT"]`,
+                                            description: `#### **REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_CATEGORY**
+
+- All elements of $.message.catalog.providers[*].fulfillments[*].vehicle.category must be in ["VISIT"]`,
                                             _debugInfo: {
                                                 fedConfig: `
 {"_NAME_":"REQUIRED_MESSAGE_PROVIDERS_FULFILLMENTS_CATEGORY","attr":"$.message.catalog.providers[*].fulfillments[*].vehicle.category","enumList":["VISIT"],"_RETURN_":"attr all in enumList","action":["on_search"],"subTags":"$._EXTERNAL._SELF.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code","var_page":["CURRENT_PAGE_NUMBER"]}
@@ -4337,7 +4456,9 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     testName: "PAYMENT_TAG_GROUP",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition PAYMENT_TAG_GROUP**: every element of $.message.catalog.tags[*].descriptor.code must be in ["BPP_TERMS", "PAGINATION"]`,
+                                    description: `#### **PAYMENT_TAG_GROUP**
+
+- All elements of $.message.catalog.tags[*].descriptor.code must be in ["BPP_TERMS", "PAGINATION"]`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"PAYMENT_TAG_GROUP","validTags":["BPP_TERMS","PAGINATION"],"tagPath":"$.message.catalog.tags[*].descriptor.code","_RETURN_":"tagPath all in validTags","action":["on_search"]}
@@ -4403,11 +4524,13 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_PAYMENT_TAG_BPP_TERMS",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_PAYMENT_TAG_BPP_TERMS**: every element of $.message.catalog.tags[?(@.descriptor.code=='BPP_TERMS')].list[*].descriptor.code must be in ["BUYER_FINDER_FEES_PERCENTAGE", "BUYER_FINDER_FEES_TYPE", "STATIC_TERMS", "MANDATORY_ARBITRATION", "COURT_JURISDICTION", "DELAY_INTEREST"]
+                                    description: `#### **REQUIRED_PAYMENT_TAG_BPP_TERMS**
 
-	> Note: **Condition REQUIRED_PAYMENT_TAG_BPP_TERMS** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: $.message.catalog.tags[?(@.descriptor.code=='BPP_TERMS')].list[*].descriptor.code must **not** be present in the payload`,
+- All elements of $.message.catalog.tags[?(@.descriptor.code=='BPP_TERMS')].list[*].descriptor.code must be in ["BUYER_FINDER_FEES_PERCENTAGE", "BUYER_FINDER_FEES_TYPE", "STATIC_TERMS", "MANDATORY_ARBITRATION", "COURT_JURISDICTION", "DELAY_INTEREST"]
+
+> **Skip if:**
+>
+>     - $.message.catalog.tags[?(@.descriptor.code=='BPP_TERMS')].list[*].descriptor.code is not in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_PAYMENT_TAG_BPP_TERMS","_SCOPE_":"$.message.catalog.tags[?(@.descriptor.code=='BPP_TERMS')]","subTags":"$.list[*].descriptor.code","validValues":["BUYER_FINDER_FEES_PERCENTAGE","BUYER_FINDER_FEES_TYPE","STATIC_TERMS","MANDATORY_ARBITRATION","COURT_JURISDICTION","DELAY_INTEREST"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues","action":["on_search"]}
@@ -4470,11 +4593,13 @@ function on_searchValidations(input: validationInput): validationOutput {
                                     testName: "REQUIRED_PAYMENT_TAG_PAGINATION",
                                     valid: false,
                                     code: 30000,
-                                    description: `- **condition REQUIRED_PAYMENT_TAG_PAGINATION**: every element of $.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code must be in ["PAGINATION_ID", "CURRENT_PAGE_NUMBER", "MAX_PAGE_NUMBER"]
+                                    description: `#### **REQUIRED_PAYMENT_TAG_PAGINATION**
 
-	> Note: **Condition REQUIRED_PAYMENT_TAG_PAGINATION** can be skipped if the following conditions are met:
-	>
-	> - **condition B**: $.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code must **not** be present in the payload`,
+- All elements of $.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code must be in ["PAGINATION_ID", "CURRENT_PAGE_NUMBER", "MAX_PAGE_NUMBER"]
+
+> **Skip if:**
+>
+>     - $.message.catalog.tags[?(@.descriptor.code=='PAGINATION')].list[*].descriptor.code is not in the payload`,
                                     _debugInfo: {
                                         fedConfig: `
 {"_NAME_":"REQUIRED_PAYMENT_TAG_PAGINATION","_SCOPE_":"$.message.catalog.tags[?(@.descriptor.code=='PAGINATION')]","subTags":"$.list[*].descriptor.code","validValues":["PAGINATION_ID","CURRENT_PAGE_NUMBER","MAX_PAGE_NUMBER"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues","action":["on_search"]}
