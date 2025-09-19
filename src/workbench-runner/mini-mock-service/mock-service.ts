@@ -79,7 +79,8 @@ export async function runMock(
 						`No mock input found for field ${config.name} in action ${current.key} in flow ${flowId}`
 					);
 				}
-				input.json_path_changes[config.name] = saved.input_data[config.name];
+				input.json_path_changes[config.payloadField] =
+					saved.input_data[config.name];
 			}
 		}
 		input.input_data = saved.input_data;
