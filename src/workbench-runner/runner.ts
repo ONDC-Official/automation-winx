@@ -100,6 +100,7 @@ export async function runProtocolFlows() {
 						run = await runMock(i, sessionId, flowId, meta);
 
 						if (run.continue) {
+							meta.actionId = run.actionId ? run.actionId : "N/A";
 							await runApiService(run.payload, fakeSession.subscriberUrl, meta);
 						}
 
