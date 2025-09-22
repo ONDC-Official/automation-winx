@@ -23,7 +23,7 @@ export async function runApiService(
 		);
 		return;
 	}
-
+	payload = JSON.parse(JSON.stringify(payload)); // Deep clone to avoid mutation
 	await runPayloadValidations(payload, subscriber_url, meta);
 	await contextValidations(payload, subscriber_url, meta);
 }
