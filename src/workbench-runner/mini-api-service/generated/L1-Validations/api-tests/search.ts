@@ -42,6 +42,7 @@ function searchValidations(input: validationInput): validationOutput {
     let subResults: validationOutput = [];
     let valid = true;
     for (const testObj of scope) {
+        if (!testObj || typeof testObj !== "object") continue;
         testObj._EXTERNAL = input.externalData;
 
         function SEARCH_CONTEXT(input: validationInput): validationOutput {
@@ -49,6 +50,7 @@ function searchValidations(input: validationInput): validationOutput {
             let subResults: validationOutput = [];
             let valid = true;
             for (const testObj of scope) {
+                if (!testObj || typeof testObj !== "object") continue;
                 testObj._EXTERNAL = input.externalData;
                 const action = ["search"];
                 const domain = ["ONDC:TRV15"];
@@ -61,6 +63,7 @@ function searchValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
 
                         function REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE(
@@ -73,10 +76,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.location.country.code",
+                                    true,
                                 );
                                 const action = ["search"];
                                 const domain = ["ONDC:TRV15"];
@@ -85,7 +91,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -104,7 +110,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -131,10 +137,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.location.city.code",
+                                    true,
                                 );
                                 const action = ["search"];
                                 const domain = ["ONDC:TRV15"];
@@ -143,7 +152,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -162,7 +171,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -189,10 +198,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.domain",
+                                    true,
                                 );
                                 const action = ["search"];
                                 const domain = ["ONDC:TRV15"];
@@ -201,7 +213,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName: "REQUIRED_CONTEXT_DOMAIN",
@@ -219,7 +231,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -245,10 +257,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.timestamp",
+                                    true,
                                 );
                                 const action = ["search"];
                                 const domain = ["ONDC:TRV15"];
@@ -257,7 +272,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -276,7 +291,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -302,10 +317,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.bap_id",
+                                    true,
                                 );
                                 const action = ["search"];
                                 const domain = ["ONDC:TRV15"];
@@ -314,7 +332,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName: "REQUIRED_CONTEXT_BAP_ID",
@@ -332,7 +350,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -358,10 +376,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.bap_uri",
+                                    true,
                                 );
                                 const action = ["search"];
                                 const domain = ["ONDC:TRV15"];
@@ -370,7 +391,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -389,7 +410,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -415,10 +436,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.bpp_id",
+                                    true,
                                 );
                                 const var_search = ["search"];
                                 const action = ["search"];
@@ -434,7 +458,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName: "REQUIRED_CONTEXT_BPP_ID",
@@ -456,7 +480,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -482,10 +506,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.bpp_uri",
+                                    true,
                                 );
                                 const var_search = ["search"];
                                 const action = ["search"];
@@ -501,7 +528,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -524,7 +551,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -550,10 +577,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.transaction_id",
+                                    true,
                                 );
                                 const action = ["search"];
                                 const domain = ["ONDC:TRV15"];
@@ -562,7 +592,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -581,7 +611,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -607,10 +637,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.message_id",
+                                    true,
                                 );
                                 const action = ["search"];
                                 const domain = ["ONDC:TRV15"];
@@ -619,7 +652,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -638,7 +671,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -664,10 +697,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.version",
+                                    true,
                                 );
                                 const action = ["search"];
                                 const domain = ["ONDC:TRV15"];
@@ -676,7 +712,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -695,7 +731,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -721,10 +757,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.ttl",
+                                    true,
                                 );
                                 const action = ["search"];
                                 const domain = ["ONDC:TRV15"];
@@ -733,7 +772,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName: "REQUIRED_CONTEXT_TTL",
@@ -751,7 +790,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -791,7 +830,7 @@ function searchValidations(input: validationInput): validationOutput {
                         subResults = allResults;
                         valid = subResults.every((r) => r.valid);
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -814,6 +853,7 @@ function searchValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
 
                         function VALID_CONTEXT_LOCATION_COUNTRY_CODE(
@@ -826,12 +866,15 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.location.country.code",
+                                    true,
                                 );
-                                const enumList = ["IND2"];
+                                const enumList = ["IND"];
                                 const action = ["search"];
                                 const domain = ["ONDC:TRV15"];
                                 const version = ["2.0.0"];
@@ -842,7 +885,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 );
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -851,17 +894,17 @@ function searchValidations(input: validationInput): validationOutput {
                                             code: 30000,
                                             description: `#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 
-- At least one of $.context.location.country.code must be in ["IND2"]`,
+- At least one of $.context.location.country.code must be in ["IND"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
+{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                             },
                                         },
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -871,7 +914,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
+{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -888,10 +931,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.domain",
+                                    true,
                                 );
                                 const enumList = ["ONDC:TRV14"];
                                 const action = ["search"];
@@ -904,7 +950,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 );
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName: "VALID_CONTEXT_DOMAIN",
@@ -922,7 +968,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -952,7 +998,7 @@ function searchValidations(input: validationInput): validationOutput {
                         subResults = allResults;
                         valid = subResults.every((r) => r.valid);
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -961,7 +1007,7 @@ function searchValidations(input: validationInput): validationOutput {
                             code: valid ? 200 : 30000,
                             _debugInfo: {
                                 fedConfig: `
-{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]}
+{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]}
 `,
                             },
                         },
@@ -975,6 +1021,7 @@ function searchValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
 
                         function REGEX_CONTEXT_LOCATION_CITY_CODE(
@@ -987,10 +1034,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.location.city.code",
+                                    true,
                                 );
                                 const reg = ["^std:\\d{3,5}$"];
                                 const action = ["search"];
@@ -1003,7 +1053,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 );
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -1022,7 +1072,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -1049,10 +1099,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.timestamp",
+                                    true,
                                 );
                                 const reg = [
                                     "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$",
@@ -1067,7 +1120,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 );
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName: "REGEX_CONTEXT_TIMESTAMP",
@@ -1085,7 +1138,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -1111,10 +1164,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.bap_uri",
+                                    true,
                                 );
                                 const reg = ["^https:\\/\\/"];
                                 const action = ["search"];
@@ -1127,7 +1183,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 );
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName: "REGEX_CONTEXT_BAP_URI",
@@ -1145,7 +1201,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -1171,10 +1227,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.ttl",
+                                    true,
                                 );
                                 const reg = [
                                     "^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+D)?(T(\\d+H)?(\\d+M)?(\\d+S)?)?$",
@@ -1189,7 +1248,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 );
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName: "REQUIRED_CONTEXT_TTL",
@@ -1207,7 +1266,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -1239,7 +1298,7 @@ function searchValidations(input: validationInput): validationOutput {
                         subResults = allResults;
                         valid = subResults.every((r) => r.valid);
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -1270,7 +1329,7 @@ function searchValidations(input: validationInput): validationOutput {
                 subResults = allResults;
                 valid = subResults.every((r) => r.valid);
 
-                delete testObj._EXTERNAL;
+                // delete testObj._EXTERNAL;
             }
             return [
                 {
@@ -1279,7 +1338,7 @@ function searchValidations(input: validationInput): validationOutput {
                     code: valid ? 200 : 30000,
                     _debugInfo: {
                         fedConfig: `
-{"_NAME_":"SEARCH_CONTEXT","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]}]}
+{"_NAME_":"SEARCH_CONTEXT","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]}]}
 `,
                     },
                 },
@@ -1291,6 +1350,7 @@ function searchValidations(input: validationInput): validationOutput {
             let subResults: validationOutput = [];
             let valid = true;
             for (const testObj of scope) {
+                if (!testObj || typeof testObj !== "object") continue;
                 testObj._EXTERNAL = input.externalData;
                 const action = ["search"];
 
@@ -1301,17 +1361,19 @@ function searchValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
                         const attr = payloadUtils.getJsonPath(
                             testObj,
                             "$.message.intent.category.descriptor.code",
+                            true,
                         );
                         const action = ["search"];
 
                         const validate = validations.arePresent(attr);
 
                         if (!validate) {
-                            delete testObj._EXTERNAL;
+                            // delete testObj._EXTERNAL;
                             return [
                                 {
                                     testName: "REQUIRED_CATEGORY_CODE",
@@ -1329,7 +1391,7 @@ function searchValidations(input: validationInput): validationOutput {
                             ];
                         }
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -1352,10 +1414,12 @@ function searchValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
                         const attr = payloadUtils.getJsonPath(
                             testObj,
                             "$.message.intent.category.descriptor.code",
+                            true,
                         );
                         const enumList = ["CULTURE_HERITAGE"];
                         const action = ["search"];
@@ -1363,7 +1427,7 @@ function searchValidations(input: validationInput): validationOutput {
                         const validate = validations.allIn(attr, enumList);
 
                         if (!validate) {
-                            delete testObj._EXTERNAL;
+                            // delete testObj._EXTERNAL;
                             return [
                                 {
                                     testName: "VALID_ENUM_CATEGORY_CODE",
@@ -1381,7 +1445,7 @@ function searchValidations(input: validationInput): validationOutput {
                             ];
                         }
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -1411,7 +1475,7 @@ function searchValidations(input: validationInput): validationOutput {
                 subResults = allResults;
                 valid = subResults.every((r) => r.valid);
 
-                delete testObj._EXTERNAL;
+                // delete testObj._EXTERNAL;
             }
             return [
                 {
@@ -1432,6 +1496,7 @@ function searchValidations(input: validationInput): validationOutput {
             let subResults: validationOutput = [];
             let valid = true;
             for (const testObj of scope) {
+                if (!testObj || typeof testObj !== "object") continue;
                 testObj._EXTERNAL = input.externalData;
                 const action = ["search"];
 
@@ -1442,6 +1507,7 @@ function searchValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
 
                         function REQUIRED_FULFILMENT_CATEGORY(
@@ -1454,17 +1520,20 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.message.intent.fulfillment.vehicle.category",
+                                    true,
                                 );
                                 const action = ["search"];
 
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -1483,7 +1552,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -1512,7 +1581,7 @@ function searchValidations(input: validationInput): validationOutput {
                         subResults = allResults;
                         valid = subResults.every((r) => r.valid);
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -1535,6 +1604,7 @@ function searchValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
 
                         function VALID_ENUM_CATEGORY(
@@ -1547,10 +1617,13 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.message.intent.fulfillment.vehicle.category",
+                                    true,
                                 );
                                 const enumList = ["SITE"];
                                 const action = ["search"];
@@ -1561,7 +1634,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 );
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName: "VALID_ENUM_CATEGORY",
@@ -1579,7 +1652,7 @@ function searchValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -1608,7 +1681,7 @@ function searchValidations(input: validationInput): validationOutput {
                         subResults = allResults;
                         valid = subResults.every((r) => r.valid);
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -1631,10 +1704,12 @@ function searchValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
                         const attr = payloadUtils.getJsonPath(
                             testObj,
                             "$.message.intent.fulfillment.stops[*].type",
+                            true,
                         );
                         const var_type = ["START"];
 
@@ -1651,6 +1726,8 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
 
                                 function REQUIRED_FULFILMENT_STOP_TYPE(
@@ -1663,10 +1740,16 @@ function searchValidations(input: validationInput): validationOutput {
                                     let subResults: validationOutput = [];
                                     let valid = true;
                                     for (const testObj of scope) {
+                                        if (
+                                            !testObj ||
+                                            typeof testObj !== "object"
+                                        )
+                                            continue;
                                         testObj._EXTERNAL = input.externalData;
                                         const attr = payloadUtils.getJsonPath(
                                             testObj,
                                             "$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type",
+                                            true,
                                         );
                                         const action = ["search"];
                                         const var_type = ["START"];
@@ -1675,7 +1758,7 @@ function searchValidations(input: validationInput): validationOutput {
                                             validations.arePresent(attr);
 
                                         if (!validate) {
-                                            delete testObj._EXTERNAL;
+                                            // delete testObj._EXTERNAL;
                                             return [
                                                 {
                                                     testName:
@@ -1694,7 +1777,7 @@ function searchValidations(input: validationInput): validationOutput {
                                             ];
                                         }
 
-                                        delete testObj._EXTERNAL;
+                                        // delete testObj._EXTERNAL;
                                     }
                                     return [
                                         {
@@ -1721,10 +1804,16 @@ function searchValidations(input: validationInput): validationOutput {
                                     let subResults: validationOutput = [];
                                     let valid = true;
                                     for (const testObj of scope) {
+                                        if (
+                                            !testObj ||
+                                            typeof testObj !== "object"
+                                        )
+                                            continue;
                                         testObj._EXTERNAL = input.externalData;
                                         const attr = payloadUtils.getJsonPath(
                                             testObj,
                                             "$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type",
+                                            true,
                                         );
                                         const action = ["search"];
                                         const var_type = ["START"];
@@ -1733,7 +1822,7 @@ function searchValidations(input: validationInput): validationOutput {
                                             validations.arePresent(attr);
 
                                         if (!validate) {
-                                            delete testObj._EXTERNAL;
+                                            // delete testObj._EXTERNAL;
                                             return [
                                                 {
                                                     testName:
@@ -1752,7 +1841,7 @@ function searchValidations(input: validationInput): validationOutput {
                                             ];
                                         }
 
-                                        delete testObj._EXTERNAL;
+                                        // delete testObj._EXTERNAL;
                                     }
                                     return [
                                         {
@@ -1779,10 +1868,16 @@ function searchValidations(input: validationInput): validationOutput {
                                     let subResults: validationOutput = [];
                                     let valid = true;
                                     for (const testObj of scope) {
+                                        if (
+                                            !testObj ||
+                                            typeof testObj !== "object"
+                                        )
+                                            continue;
                                         testObj._EXTERNAL = input.externalData;
                                         const attr = payloadUtils.getJsonPath(
                                             testObj,
                                             "$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type",
+                                            true,
                                         );
                                         const action = ["search"];
                                         const var_type = ["START"];
@@ -1791,7 +1886,7 @@ function searchValidations(input: validationInput): validationOutput {
                                             validations.arePresent(attr);
 
                                         if (!validate) {
-                                            delete testObj._EXTERNAL;
+                                            // delete testObj._EXTERNAL;
                                             return [
                                                 {
                                                     testName:
@@ -1810,7 +1905,7 @@ function searchValidations(input: validationInput): validationOutput {
                                             ];
                                         }
 
-                                        delete testObj._EXTERNAL;
+                                        // delete testObj._EXTERNAL;
                                     }
                                     return [
                                         {
@@ -1837,10 +1932,16 @@ function searchValidations(input: validationInput): validationOutput {
                                     let subResults: validationOutput = [];
                                     let valid = true;
                                     for (const testObj of scope) {
+                                        if (
+                                            !testObj ||
+                                            typeof testObj !== "object"
+                                        )
+                                            continue;
                                         testObj._EXTERNAL = input.externalData;
                                         const attr = payloadUtils.getJsonPath(
                                             testObj,
                                             "$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type",
+                                            true,
                                         );
                                         const action = ["search"];
                                         const var_type = ["START"];
@@ -1849,7 +1950,7 @@ function searchValidations(input: validationInput): validationOutput {
                                             validations.arePresent(attr);
 
                                         if (!validate) {
-                                            delete testObj._EXTERNAL;
+                                            // delete testObj._EXTERNAL;
                                             return [
                                                 {
                                                     testName:
@@ -1868,7 +1969,7 @@ function searchValidations(input: validationInput): validationOutput {
                                             ];
                                         }
 
-                                        delete testObj._EXTERNAL;
+                                        // delete testObj._EXTERNAL;
                                     }
                                     return [
                                         {
@@ -1901,7 +2002,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 subResults = allResults;
                                 valid = subResults.every((r) => r.valid);
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -1927,6 +2028,8 @@ function searchValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
 
                                 function ENUM_STOP_TYPE(
@@ -1939,16 +2042,23 @@ function searchValidations(input: validationInput): validationOutput {
                                     let subResults: validationOutput = [];
                                     let valid = true;
                                     for (const testObj of scope) {
+                                        if (
+                                            !testObj ||
+                                            typeof testObj !== "object"
+                                        )
+                                            continue;
                                         testObj._EXTERNAL = input.externalData;
                                         const attr1 = payloadUtils.getJsonPath(
                                             testObj,
                                             "$.message.intent.fulfillment.stops[*].type",
+                                            true,
                                         );
                                         const enumList = ["START"];
                                         const action = ["search"];
                                         const attr = payloadUtils.getJsonPath(
                                             testObj,
                                             "$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type",
+                                            true,
                                         );
                                         const var_type = ["START"];
 
@@ -1958,7 +2068,7 @@ function searchValidations(input: validationInput): validationOutput {
                                         );
 
                                         if (!validate) {
-                                            delete testObj._EXTERNAL;
+                                            // delete testObj._EXTERNAL;
                                             return [
                                                 {
                                                     testName: "ENUM_STOP_TYPE",
@@ -1976,7 +2086,7 @@ function searchValidations(input: validationInput): validationOutput {
                                             ];
                                         }
 
-                                        delete testObj._EXTERNAL;
+                                        // delete testObj._EXTERNAL;
                                     }
                                     return [
                                         {
@@ -2002,16 +2112,23 @@ function searchValidations(input: validationInput): validationOutput {
                                     let subResults: validationOutput = [];
                                     let valid = true;
                                     for (const testObj of scope) {
+                                        if (
+                                            !testObj ||
+                                            typeof testObj !== "object"
+                                        )
+                                            continue;
                                         testObj._EXTERNAL = input.externalData;
                                         const attr2 = payloadUtils.getJsonPath(
                                             testObj,
                                             "$.message.intent.fulfillment.stops[*].location.city.code",
+                                            true,
                                         );
                                         const reg = ["^std:\\d{3,5}$"];
                                         const action = ["search"];
                                         const attr = payloadUtils.getJsonPath(
                                             testObj,
                                             "$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type",
+                                            true,
                                         );
                                         const var_type = ["START"];
 
@@ -2023,7 +2140,7 @@ function searchValidations(input: validationInput): validationOutput {
                                             validations.followRegex(attr2, reg);
 
                                         if (!validate) {
-                                            delete testObj._EXTERNAL;
+                                            // delete testObj._EXTERNAL;
                                             return [
                                                 {
                                                     testName:
@@ -2046,7 +2163,7 @@ function searchValidations(input: validationInput): validationOutput {
                                             ];
                                         }
 
-                                        delete testObj._EXTERNAL;
+                                        // delete testObj._EXTERNAL;
                                     }
                                     return [
                                         {
@@ -2073,10 +2190,16 @@ function searchValidations(input: validationInput): validationOutput {
                                     let subResults: validationOutput = [];
                                     let valid = true;
                                     for (const testObj of scope) {
+                                        if (
+                                            !testObj ||
+                                            typeof testObj !== "object"
+                                        )
+                                            continue;
                                         testObj._EXTERNAL = input.externalData;
                                         const attr3 = payloadUtils.getJsonPath(
                                             testObj,
                                             "$.message.intent.fulfillment.stops[*].time.range.start",
+                                            true,
                                         );
                                         const reg = [
                                             "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$",
@@ -2085,6 +2208,7 @@ function searchValidations(input: validationInput): validationOutput {
                                         const attr = payloadUtils.getJsonPath(
                                             testObj,
                                             "$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type",
+                                            true,
                                         );
                                         const var_type = ["START"];
 
@@ -2096,7 +2220,7 @@ function searchValidations(input: validationInput): validationOutput {
                                             validations.followRegex(attr3, reg);
 
                                         if (!validate) {
-                                            delete testObj._EXTERNAL;
+                                            // delete testObj._EXTERNAL;
                                             return [
                                                 {
                                                     testName:
@@ -2119,7 +2243,7 @@ function searchValidations(input: validationInput): validationOutput {
                                             ];
                                         }
 
-                                        delete testObj._EXTERNAL;
+                                        // delete testObj._EXTERNAL;
                                     }
                                     return [
                                         {
@@ -2146,10 +2270,16 @@ function searchValidations(input: validationInput): validationOutput {
                                     let subResults: validationOutput = [];
                                     let valid = true;
                                     for (const testObj of scope) {
+                                        if (
+                                            !testObj ||
+                                            typeof testObj !== "object"
+                                        )
+                                            continue;
                                         testObj._EXTERNAL = input.externalData;
                                         const attr4 = payloadUtils.getJsonPath(
                                             testObj,
                                             "$.message.intent.fulfillment.stops[*].time.range.end",
+                                            true,
                                         );
                                         const reg = [
                                             "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$",
@@ -2158,6 +2288,7 @@ function searchValidations(input: validationInput): validationOutput {
                                         const attr = payloadUtils.getJsonPath(
                                             testObj,
                                             "$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type",
+                                            true,
                                         );
                                         const var_type = ["START"];
 
@@ -2169,7 +2300,7 @@ function searchValidations(input: validationInput): validationOutput {
                                             validations.followRegex(attr4, reg);
 
                                         if (!validate) {
-                                            delete testObj._EXTERNAL;
+                                            // delete testObj._EXTERNAL;
                                             return [
                                                 {
                                                     testName:
@@ -2192,7 +2323,7 @@ function searchValidations(input: validationInput): validationOutput {
                                             ];
                                         }
 
-                                        delete testObj._EXTERNAL;
+                                        // delete testObj._EXTERNAL;
                                     }
                                     return [
                                         {
@@ -2225,7 +2356,7 @@ function searchValidations(input: validationInput): validationOutput {
                                 subResults = allResults;
                                 valid = subResults.every((r) => r.valid);
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -2255,7 +2386,7 @@ function searchValidations(input: validationInput): validationOutput {
                         subResults = allResults;
                         valid = subResults.every((r) => r.valid);
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -2286,7 +2417,7 @@ function searchValidations(input: validationInput): validationOutput {
                 subResults = allResults;
                 valid = subResults.every((r) => r.valid);
 
-                delete testObj._EXTERNAL;
+                // delete testObj._EXTERNAL;
             }
             return [
                 {
@@ -2307,6 +2438,7 @@ function searchValidations(input: validationInput): validationOutput {
             let subResults: validationOutput = [];
             let valid = true;
             for (const testObj of scope) {
+                if (!testObj || typeof testObj !== "object") continue;
                 testObj._EXTERNAL = input.externalData;
                 const action = ["search"];
 
@@ -2317,17 +2449,19 @@ function searchValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
                         const attr = payloadUtils.getJsonPath(
                             testObj,
                             "$.message.intent.payment.collected_by",
+                            true,
                         );
                         const action = ["search"];
 
                         const validate = validations.arePresent(attr);
 
                         if (!validate) {
-                            delete testObj._EXTERNAL;
+                            // delete testObj._EXTERNAL;
                             return [
                                 {
                                     testName: "REQUIRED_PAYMENT_COLLECTED_BY",
@@ -2345,7 +2479,7 @@ function searchValidations(input: validationInput): validationOutput {
                             ];
                         }
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -2368,10 +2502,12 @@ function searchValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
                         const attr = payloadUtils.getJsonPath(
                             testObj,
                             "$.message.intent.payment.collected_by",
+                            true,
                         );
                         const enumList = ["BPP", "BAP"];
                         const action = ["search"];
@@ -2379,7 +2515,7 @@ function searchValidations(input: validationInput): validationOutput {
                         const validate = validations.anyIn(attr, enumList);
 
                         if (!validate) {
-                            delete testObj._EXTERNAL;
+                            // delete testObj._EXTERNAL;
                             return [
                                 {
                                     testName: "ENUM_PAYMENT_COLLECTED_BY",
@@ -2397,7 +2533,7 @@ function searchValidations(input: validationInput): validationOutput {
                             ];
                         }
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -2427,7 +2563,7 @@ function searchValidations(input: validationInput): validationOutput {
                 subResults = allResults;
                 valid = subResults.every((r) => r.valid);
 
-                delete testObj._EXTERNAL;
+                // delete testObj._EXTERNAL;
             }
             return [
                 {
@@ -2448,6 +2584,7 @@ function searchValidations(input: validationInput): validationOutput {
             let subResults: validationOutput = [];
             let valid = true;
             for (const testObj of scope) {
+                if (!testObj || typeof testObj !== "object") continue;
                 testObj._EXTERNAL = input.externalData;
 
                 function PAYMENT_TAG_GROUP(
@@ -2457,17 +2594,19 @@ function searchValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
                         const validTags = ["BAP_TERMS", "INCREMENTAL_PULL"];
                         const tagPath = payloadUtils.getJsonPath(
                             testObj,
                             "$.message.intent.tags[*].descriptor.code",
+                            true,
                         );
 
                         const validate = validations.allIn(tagPath, validTags);
 
                         if (!validate) {
-                            delete testObj._EXTERNAL;
+                            // delete testObj._EXTERNAL;
                             return [
                                 {
                                     testName: "PAYMENT_TAG_GROUP",
@@ -2485,7 +2624,7 @@ function searchValidations(input: validationInput): validationOutput {
                             ];
                         }
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -2511,10 +2650,12 @@ function searchValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
                         const subTags = payloadUtils.getJsonPath(
                             testObj,
                             "$.list[*].descriptor.code",
+                            true,
                         );
                         const validValues = [
                             "BUYER_FINDER_FEES_PERCENTAGE",
@@ -2533,7 +2674,7 @@ function searchValidations(input: validationInput): validationOutput {
                         );
 
                         if (!validate) {
-                            delete testObj._EXTERNAL;
+                            // delete testObj._EXTERNAL;
                             return [
                                 {
                                     testName: "REQUIRED_PAYMENT_TAG_BAP_TERMS",
@@ -2555,7 +2696,7 @@ function searchValidations(input: validationInput): validationOutput {
                             ];
                         }
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -2581,10 +2722,12 @@ function searchValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
                         const subTags = payloadUtils.getJsonPath(
                             testObj,
                             "$.list[*].descriptor.code",
+                            true,
                         );
                         const validValues = ["REGISTER"];
 
@@ -2597,7 +2740,7 @@ function searchValidations(input: validationInput): validationOutput {
                         );
 
                         if (!validate) {
-                            delete testObj._EXTERNAL;
+                            // delete testObj._EXTERNAL;
                             return [
                                 {
                                     testName: "PAYMENT_TAG_INCREMENTAL_PULL",
@@ -2619,7 +2762,7 @@ function searchValidations(input: validationInput): validationOutput {
                             ];
                         }
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -2650,7 +2793,7 @@ function searchValidations(input: validationInput): validationOutput {
                 subResults = allResults;
                 valid = subResults.every((r) => r.valid);
 
-                delete testObj._EXTERNAL;
+                // delete testObj._EXTERNAL;
             }
             return [
                 {
@@ -2683,7 +2826,7 @@ function searchValidations(input: validationInput): validationOutput {
         subResults = allResults;
         valid = subResults.every((r) => r.valid);
 
-        delete testObj._EXTERNAL;
+        // delete testObj._EXTERNAL;
     }
     return [
         {
@@ -2692,7 +2835,7 @@ function searchValidations(input: validationInput): validationOutput {
             code: valid ? 200 : 30000,
             _debugInfo: {
                 fedConfig: `
-{"_NAME_":"searchValidations","_RETURN_":[{"_NAME_":"SEARCH_CONTEXT","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]}]},{"_NAME_":"SEARCH_INTENT","action":["search"],"_RETURN_":[{"_NAME_":"REQUIRED_CATEGORY_CODE","attr":"$.message.intent.category.descriptor.code","_RETURN_":"attr are present","action":["search"]},{"_NAME_":"VALID_ENUM_CATEGORY_CODE","attr":"$.message.intent.category.descriptor.code","enumList":["CULTURE_HERITAGE"],"_RETURN_":"attr all in enumList","action":["search"]}]},{"_NAME_":"SEARCH_FULFILMENT","action":["search"],"_RETURN_":[{"_NAME_":"FULFILMENT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_FULFILMENT_CATEGORY","attr":"$.message.intent.fulfillment.vehicle.category","_RETURN_":"attr are present","action":["search"]}]},{"_NAME_":"FULFILMENT_ENUM","_RETURN_":[{"_NAME_":"VALID_ENUM_CATEGORY","attr":"$.message.intent.fulfillment.vehicle.category","enumList":["SITE"],"_RETURN_":"attr all in enumList","action":["search"]}]},{"_NAME_":"REQUIRED_STOPS_START","attr":"$.message.intent.fulfillment.stops[*].type","var_type":["START"],"_CONTINUE_":"!(var_type equal to attr)","_RETURN_":[{"_NAME_":"REQUIRED_STOPS_TYPE","_RETURN_":[{"_NAME_":"REQUIRED_FULFILMENT_STOP_TYPE","attr":"$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type","_RETURN_":"attr are present","action":["search"],"var_type":["START"]},{"_NAME_":"REQUIRED_FULFILMENT_LOCATION_CODE","attr":"$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type","_RETURN_":"attr are present","action":["search"],"var_type":["START"]},{"_NAME_":"REQUIRED_FULFILMENT_START_RANGE","attr":"$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type","_RETURN_":"attr are present","action":["search"],"var_type":["START"]},{"_NAME_":"REQUIRED_FULFILMENT_END_RANGE","attr":"$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type","_RETURN_":"attr are present","action":["search"],"var_type":["START"]}]},{"_NAME_":"ENUMS_STOPS","_RETURN_":[{"_NAME_":"ENUM_STOP_TYPE","attr1":"$.message.intent.fulfillment.stops[*].type","enumList":["START"],"_RETURN_":"attr all in enumList","action":["search"],"attr":"$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type","var_type":["START"]},{"_NAME_":"REGEX_FULFILMENT_LOCATION_CODE","attr2":"$.message.intent.fulfillment.stops[*].location.city.code","reg":["^std:\\\\d{3,5}$"],"_CONTINUE_":"!(attr2 are present)","_RETURN_":"attr2 follow regex reg","action":["search"],"attr":"$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type","var_type":["START"]},{"_NAME_":"REGEX_FULFILMENT_START_RANGE","attr3":"$.message.intent.fulfillment.stops[*].time.range.start","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_CONTINUE_":"!(attr3 are present)","_RETURN_":"attr3 follow regex reg","action":["search"],"attr":"$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type","var_type":["START"]},{"_NAME_":"REGEX_FULFILMENT_END_RANGE","attr4":"$.message.intent.fulfillment.stops[*].time.range.end","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_CONTINUE_":"!(attr4 are present)","_RETURN_":"attr4 follow regex reg","action":["search"],"attr":"$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type","var_type":["START"]}]}]}]},{"_NAME_":"SEARCH_PAYMENT","action":["search"],"_RETURN_":[{"_NAME_":"REQUIRED_PAYMENT_COLLECTED_BY","attr":"$.message.intent.payment.collected_by","_RETURN_":"attr are present","action":["search"]},{"_NAME_":"ENUM_PAYMENT_COLLECTED_BY","attr":"$.message.intent.payment.collected_by","enumList":["BPP","BAP"],"_RETURN_":"attr any in enumList","action":["search"]}]},{"_NAME_":"SEARCH_INTENT_TAGS","_RETURN_":[{"_NAME_":"PAYMENT_TAG_GROUP","validTags":["BAP_TERMS","INCREMENTAL_PULL"],"tagPath":"$.message.intent.tags[*].descriptor.code","_RETURN_":"tagPath all in validTags"},{"_NAME_":"REQUIRED_PAYMENT_TAG_BAP_TERMS","_SCOPE_":"$.message.intent.tags[?(@.descriptor.code=='BAP_TERMS')]","subTags":"$.list[*].descriptor.code","validValues":["BUYER_FINDER_FEES_PERCENTAGE","BUYER_FINDER_FEES_TYPE","STATIC_TERMS","SETTLEMENT_BASIS","SETTLEMENT_WINDOW"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues"},{"_NAME_":"PAYMENT_TAG_INCREMENTAL_PULL","_SCOPE_":"$.message.intent.tags[?(@.descriptor.code=='INCREMENTAL_PULL')]","subTags":"$.list[*].descriptor.code","validValues":["REGISTER"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues"}]}]}
+{"_NAME_":"searchValidations","_RETURN_":[{"_NAME_":"SEARCH_CONTEXT","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["search"],"domain":["ONDC:TRV15"],"version":["2.0.0"]}]}]},{"_NAME_":"SEARCH_INTENT","action":["search"],"_RETURN_":[{"_NAME_":"REQUIRED_CATEGORY_CODE","attr":"$.message.intent.category.descriptor.code","_RETURN_":"attr are present","action":["search"]},{"_NAME_":"VALID_ENUM_CATEGORY_CODE","attr":"$.message.intent.category.descriptor.code","enumList":["CULTURE_HERITAGE"],"_RETURN_":"attr all in enumList","action":["search"]}]},{"_NAME_":"SEARCH_FULFILMENT","action":["search"],"_RETURN_":[{"_NAME_":"FULFILMENT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_FULFILMENT_CATEGORY","attr":"$.message.intent.fulfillment.vehicle.category","_RETURN_":"attr are present","action":["search"]}]},{"_NAME_":"FULFILMENT_ENUM","_RETURN_":[{"_NAME_":"VALID_ENUM_CATEGORY","attr":"$.message.intent.fulfillment.vehicle.category","enumList":["SITE"],"_RETURN_":"attr all in enumList","action":["search"]}]},{"_NAME_":"REQUIRED_STOPS_START","attr":"$.message.intent.fulfillment.stops[*].type","var_type":["START"],"_CONTINUE_":"!(var_type equal to attr)","_RETURN_":[{"_NAME_":"REQUIRED_STOPS_TYPE","_RETURN_":[{"_NAME_":"REQUIRED_FULFILMENT_STOP_TYPE","attr":"$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type","_RETURN_":"attr are present","action":["search"],"var_type":["START"]},{"_NAME_":"REQUIRED_FULFILMENT_LOCATION_CODE","attr":"$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type","_RETURN_":"attr are present","action":["search"],"var_type":["START"]},{"_NAME_":"REQUIRED_FULFILMENT_START_RANGE","attr":"$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type","_RETURN_":"attr are present","action":["search"],"var_type":["START"]},{"_NAME_":"REQUIRED_FULFILMENT_END_RANGE","attr":"$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type","_RETURN_":"attr are present","action":["search"],"var_type":["START"]}]},{"_NAME_":"ENUMS_STOPS","_RETURN_":[{"_NAME_":"ENUM_STOP_TYPE","attr1":"$.message.intent.fulfillment.stops[*].type","enumList":["START"],"_RETURN_":"attr all in enumList","action":["search"],"attr":"$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type","var_type":["START"]},{"_NAME_":"REGEX_FULFILMENT_LOCATION_CODE","attr2":"$.message.intent.fulfillment.stops[*].location.city.code","reg":["^std:\\\\d{3,5}$"],"_CONTINUE_":"!(attr2 are present)","_RETURN_":"attr2 follow regex reg","action":["search"],"attr":"$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type","var_type":["START"]},{"_NAME_":"REGEX_FULFILMENT_START_RANGE","attr3":"$.message.intent.fulfillment.stops[*].time.range.start","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_CONTINUE_":"!(attr3 are present)","_RETURN_":"attr3 follow regex reg","action":["search"],"attr":"$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type","var_type":["START"]},{"_NAME_":"REGEX_FULFILMENT_END_RANGE","attr4":"$.message.intent.fulfillment.stops[*].time.range.end","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_CONTINUE_":"!(attr4 are present)","_RETURN_":"attr4 follow regex reg","action":["search"],"attr":"$._EXTERNAL._SELF.message.intent.fulfillment.stops[*].type","var_type":["START"]}]}]}]},{"_NAME_":"SEARCH_PAYMENT","action":["search"],"_RETURN_":[{"_NAME_":"REQUIRED_PAYMENT_COLLECTED_BY","attr":"$.message.intent.payment.collected_by","_RETURN_":"attr are present","action":["search"]},{"_NAME_":"ENUM_PAYMENT_COLLECTED_BY","attr":"$.message.intent.payment.collected_by","enumList":["BPP","BAP"],"_RETURN_":"attr any in enumList","action":["search"]}]},{"_NAME_":"SEARCH_INTENT_TAGS","_RETURN_":[{"_NAME_":"PAYMENT_TAG_GROUP","validTags":["BAP_TERMS","INCREMENTAL_PULL"],"tagPath":"$.message.intent.tags[*].descriptor.code","_RETURN_":"tagPath all in validTags"},{"_NAME_":"REQUIRED_PAYMENT_TAG_BAP_TERMS","_SCOPE_":"$.message.intent.tags[?(@.descriptor.code=='BAP_TERMS')]","subTags":"$.list[*].descriptor.code","validValues":["BUYER_FINDER_FEES_PERCENTAGE","BUYER_FINDER_FEES_TYPE","STATIC_TERMS","SETTLEMENT_BASIS","SETTLEMENT_WINDOW"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues"},{"_NAME_":"PAYMENT_TAG_INCREMENTAL_PULL","_SCOPE_":"$.message.intent.tags[?(@.descriptor.code=='INCREMENTAL_PULL')]","subTags":"$.list[*].descriptor.code","validValues":["REGISTER"],"_CONTINUE_":"!(subTags are present)","_RETURN_":"subTags all in validValues"}]}]}
 `,
             },
         },

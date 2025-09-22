@@ -16,6 +16,11 @@ import rating from "./api-tests/rating";
 import on_rating from "./api-tests/on_rating";
 import { ValidationConfig, validationOutput } from "./types/test-config";
 import normalizeKeys from "./utils/json-normalizer";
+import {
+    performL1ValidationsSave,
+    performL1ValidationsLoad,
+} from "./storage-actions";
+import StorageInterface from "./interfaces/storage-interface";
 
 /**
  * Perform Level-1 validations against a payload for a given action.
@@ -37,18 +42,18 @@ import normalizeKeys from "./utils/json-normalizer";
  * @param payload - The JSON payload to validate.
  * @param config - Partial {@link ValidationConfig}. Merged with defaults.
  * @param externalData - Extra data accessible to rules (we set `_SELF` to the normalized payload).
- * @returns {@link validationOutput}
+ * @returns {@link Promise<validationOutput>}
  *
  * @example
  * ```ts
  * import { performL1_validations } from "@your/pkg";
  *
- * const out = performL1_validations("search", payload, { onlyInvalid: false });
+ * const out = await performL1_validations("search", payload, { onlyInvalid: false });
  * // e.g. out[0] => { testName, valid, code, description?, _debugInfo? }
  * ```
  */
 
-export function performL1Validations(
+export async function performL1Validations(
     action: string,
     payload: any,
     config?: Partial<ValidationConfig>,
@@ -59,14 +64,36 @@ export function performL1Validations(
             onlyInvalid: true,
             standardLogs: false,
             hideParentErrors: true,
+            stateFullValidations: false,
             _debug: false,
         },
         ...config,
     };
+
+    if (completeConfig.stateFullValidations && !completeConfig.store) {
+        throw new Error(
+            "State Full validations require a storage interface to be provided in the config.",
+        );
+    }
+    if (completeConfig.stateFullValidations && !completeConfig.uniqueKey) {
+        throw new Error(
+            "State Full validations require a uniqueKey to be provided in the config.",
+        );
+    }
     const normalizedPayload = normalizeKeys(
         JSON.parse(JSON.stringify(payload)),
     );
     externalData._SELF = normalizedPayload;
+    if (completeConfig.stateFullValidations) {
+        externalData = {
+            ...(await performL1ValidationsLoad(
+                action,
+                completeConfig.uniqueKey!,
+                completeConfig.store!,
+            )),
+            ...externalData,
+        };
+    }
     switch (action) {
         case "search":
             return search({
@@ -168,3 +195,5 @@ export function performL1Validations(
             throw new Error("Action not found");
     }
 }
+
+export { performL1ValidationsSave, performL1ValidationsLoad, StorageInterface };

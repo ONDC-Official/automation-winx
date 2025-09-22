@@ -18079,7 +18079,7 @@ x-validations:
               - _NAME_: VALID_CONTEXT_LOCATION_COUNTRY_CODE
                 attr: $.context.location.country.code
                 enumList:
-                  - IND2
+                  - IND
                 _RETURN_: attr any in enumList
               - _NAME_: VALID_CONTEXT_DOMAIN
                 attr: $.context.domain

@@ -42,6 +42,7 @@ function ratingValidations(input: validationInput): validationOutput {
     let subResults: validationOutput = [];
     let valid = true;
     for (const testObj of scope) {
+        if (!testObj || typeof testObj !== "object") continue;
         testObj._EXTERNAL = input.externalData;
 
         function RATING_CONTEXT(input: validationInput): validationOutput {
@@ -49,6 +50,7 @@ function ratingValidations(input: validationInput): validationOutput {
             let subResults: validationOutput = [];
             let valid = true;
             for (const testObj of scope) {
+                if (!testObj || typeof testObj !== "object") continue;
                 testObj._EXTERNAL = input.externalData;
                 const action = ["rating"];
                 const domain = ["ONDC:TRV14"];
@@ -61,6 +63,7 @@ function ratingValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
 
                         function REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE(
@@ -73,10 +76,13 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.location.country.code",
+                                    true,
                                 );
                                 const action = ["rating"];
                                 const domain = ["ONDC:TRV14"];
@@ -85,7 +91,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -104,7 +110,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -131,10 +137,13 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.location.city.code",
+                                    true,
                                 );
                                 const action = ["rating"];
                                 const domain = ["ONDC:TRV14"];
@@ -143,7 +152,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -162,7 +171,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -189,10 +198,13 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.domain",
+                                    true,
                                 );
                                 const action = ["rating"];
                                 const domain = ["ONDC:TRV14"];
@@ -201,7 +213,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName: "REQUIRED_CONTEXT_DOMAIN",
@@ -219,7 +231,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -245,10 +257,13 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.timestamp",
+                                    true,
                                 );
                                 const action = ["rating"];
                                 const domain = ["ONDC:TRV14"];
@@ -257,7 +272,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -276,7 +291,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -302,10 +317,13 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.bap_id",
+                                    true,
                                 );
                                 const action = ["rating"];
                                 const domain = ["ONDC:TRV14"];
@@ -314,7 +332,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName: "REQUIRED_CONTEXT_BAP_ID",
@@ -332,7 +350,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -358,10 +376,13 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.bap_uri",
+                                    true,
                                 );
                                 const action = ["rating"];
                                 const domain = ["ONDC:TRV14"];
@@ -370,7 +391,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -389,7 +410,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -415,10 +436,13 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.bpp_id",
+                                    true,
                                 );
                                 const var_search = ["search"];
                                 const action = ["rating"];
@@ -434,7 +458,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName: "REQUIRED_CONTEXT_BPP_ID",
@@ -456,7 +480,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -482,10 +506,13 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.bpp_uri",
+                                    true,
                                 );
                                 const var_search = ["search"];
                                 const action = ["rating"];
@@ -501,7 +528,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -524,7 +551,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -550,10 +577,13 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.transaction_id",
+                                    true,
                                 );
                                 const action = ["rating"];
                                 const domain = ["ONDC:TRV14"];
@@ -562,7 +592,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -581,7 +611,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -607,10 +637,13 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.message_id",
+                                    true,
                                 );
                                 const action = ["rating"];
                                 const domain = ["ONDC:TRV14"];
@@ -619,7 +652,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -638,7 +671,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -664,10 +697,13 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.version",
+                                    true,
                                 );
                                 const action = ["rating"];
                                 const domain = ["ONDC:TRV14"];
@@ -676,7 +712,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -695,7 +731,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -721,10 +757,13 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.ttl",
+                                    true,
                                 );
                                 const action = ["rating"];
                                 const domain = ["ONDC:TRV14"];
@@ -733,7 +772,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 const validate = validations.arePresent(attr);
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName: "REQUIRED_CONTEXT_TTL",
@@ -751,7 +790,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -791,7 +830,7 @@ function ratingValidations(input: validationInput): validationOutput {
                         subResults = allResults;
                         valid = subResults.every((r) => r.valid);
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -814,6 +853,7 @@ function ratingValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
 
                         function VALID_CONTEXT_LOCATION_COUNTRY_CODE(
@@ -826,12 +866,15 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.location.country.code",
+                                    true,
                                 );
-                                const enumList = ["IND2"];
+                                const enumList = ["IND"];
                                 const action = ["rating"];
                                 const domain = ["ONDC:TRV14"];
                                 const version = ["2.0.0"];
@@ -842,7 +885,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 );
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -851,17 +894,17 @@ function ratingValidations(input: validationInput): validationOutput {
                                             code: 30000,
                                             description: `#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 
-- At least one of $.context.location.country.code must be in ["IND2"]`,
+- At least one of $.context.location.country.code must be in ["IND"]`,
                                             _debugInfo: {
                                                 fedConfig: `
-{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
 `,
                                             },
                                         },
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -871,7 +914,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     code: valid ? 200 : 30000,
                                     _debugInfo: {
                                         fedConfig: `
-{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
+{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}
 `,
                                     },
                                 },
@@ -888,10 +931,13 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.domain",
+                                    true,
                                 );
                                 const enumList = ["ONDC:TRV14"];
                                 const action = ["rating"];
@@ -904,7 +950,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 );
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName: "VALID_CONTEXT_DOMAIN",
@@ -922,7 +968,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -952,7 +998,7 @@ function ratingValidations(input: validationInput): validationOutput {
                         subResults = allResults;
                         valid = subResults.every((r) => r.valid);
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -961,7 +1007,7 @@ function ratingValidations(input: validationInput): validationOutput {
                             code: valid ? 200 : 30000,
                             _debugInfo: {
                                 fedConfig: `
-{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}
+{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}
 `,
                             },
                         },
@@ -975,6 +1021,7 @@ function ratingValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
 
                         function REGEX_CONTEXT_LOCATION_CITY_CODE(
@@ -987,10 +1034,13 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.location.city.code",
+                                    true,
                                 );
                                 const reg = ["^std:\\d{3,5}$"];
                                 const action = ["rating"];
@@ -1003,7 +1053,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 );
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName:
@@ -1022,7 +1072,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -1049,10 +1099,13 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.timestamp",
+                                    true,
                                 );
                                 const reg = [
                                     "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$",
@@ -1067,7 +1120,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 );
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName: "REGEX_CONTEXT_TIMESTAMP",
@@ -1085,7 +1138,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -1111,10 +1164,13 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.bap_uri",
+                                    true,
                                 );
                                 const reg = ["^https:\\/\\/"];
                                 const action = ["rating"];
@@ -1127,7 +1183,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 );
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName: "REGEX_CONTEXT_BAP_URI",
@@ -1145,7 +1201,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -1171,10 +1227,13 @@ function ratingValidations(input: validationInput): validationOutput {
                             let subResults: validationOutput = [];
                             let valid = true;
                             for (const testObj of scope) {
+                                if (!testObj || typeof testObj !== "object")
+                                    continue;
                                 testObj._EXTERNAL = input.externalData;
                                 const attr = payloadUtils.getJsonPath(
                                     testObj,
                                     "$.context.ttl",
+                                    true,
                                 );
                                 const reg = [
                                     "^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+D)?(T(\\d+H)?(\\d+M)?(\\d+S)?)?$",
@@ -1189,7 +1248,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                 );
 
                                 if (!validate) {
-                                    delete testObj._EXTERNAL;
+                                    // delete testObj._EXTERNAL;
                                     return [
                                         {
                                             testName: "REQUIRED_CONTEXT_TTL",
@@ -1207,7 +1266,7 @@ function ratingValidations(input: validationInput): validationOutput {
                                     ];
                                 }
 
-                                delete testObj._EXTERNAL;
+                                // delete testObj._EXTERNAL;
                             }
                             return [
                                 {
@@ -1239,7 +1298,7 @@ function ratingValidations(input: validationInput): validationOutput {
                         subResults = allResults;
                         valid = subResults.every((r) => r.valid);
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -1270,7 +1329,7 @@ function ratingValidations(input: validationInput): validationOutput {
                 subResults = allResults;
                 valid = subResults.every((r) => r.valid);
 
-                delete testObj._EXTERNAL;
+                // delete testObj._EXTERNAL;
             }
             return [
                 {
@@ -1279,7 +1338,7 @@ function ratingValidations(input: validationInput): validationOutput {
                     code: valid ? 200 : 30000,
                     _debugInfo: {
                         fedConfig: `
-{"_NAME_":"RATING_CONTEXT","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}]}
+{"_NAME_":"RATING_CONTEXT","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}]}
 `,
                     },
                 },
@@ -1291,6 +1350,7 @@ function ratingValidations(input: validationInput): validationOutput {
             let subResults: validationOutput = [];
             let valid = true;
             for (const testObj of scope) {
+                if (!testObj || typeof testObj !== "object") continue;
                 testObj._EXTERNAL = input.externalData;
 
                 function RATING_CATEGORY(
@@ -1300,16 +1360,18 @@ function ratingValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
                         const attr = payloadUtils.getJsonPath(
                             testObj,
                             "$.message.ratings[*].rating_category",
+                            true,
                         );
 
                         const validate = validations.arePresent(attr);
 
                         if (!validate) {
-                            delete testObj._EXTERNAL;
+                            // delete testObj._EXTERNAL;
                             return [
                                 {
                                     testName: "RATING_CATEGORY",
@@ -1327,7 +1389,7 @@ function ratingValidations(input: validationInput): validationOutput {
                             ];
                         }
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -1348,16 +1410,18 @@ function ratingValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
                         const attr = payloadUtils.getJsonPath(
                             testObj,
                             "$.message.ratings[*].id",
+                            true,
                         );
 
                         const validate = validations.arePresent(attr);
 
                         if (!validate) {
-                            delete testObj._EXTERNAL;
+                            // delete testObj._EXTERNAL;
                             return [
                                 {
                                     testName: "RATING_ID",
@@ -1375,7 +1439,7 @@ function ratingValidations(input: validationInput): validationOutput {
                             ];
                         }
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -1398,16 +1462,18 @@ function ratingValidations(input: validationInput): validationOutput {
                     let subResults: validationOutput = [];
                     let valid = true;
                     for (const testObj of scope) {
+                        if (!testObj || typeof testObj !== "object") continue;
                         testObj._EXTERNAL = input.externalData;
                         const attr = payloadUtils.getJsonPath(
                             testObj,
                             "$.message.ratings[*].value",
+                            true,
                         );
 
                         const validate = validations.arePresent(attr);
 
                         if (!validate) {
-                            delete testObj._EXTERNAL;
+                            // delete testObj._EXTERNAL;
                             return [
                                 {
                                     testName: "RATING_VALUE",
@@ -1425,7 +1491,7 @@ function ratingValidations(input: validationInput): validationOutput {
                             ];
                         }
 
-                        delete testObj._EXTERNAL;
+                        // delete testObj._EXTERNAL;
                     }
                     return [
                         {
@@ -1456,7 +1522,7 @@ function ratingValidations(input: validationInput): validationOutput {
                 subResults = allResults;
                 valid = subResults.every((r) => r.valid);
 
-                delete testObj._EXTERNAL;
+                // delete testObj._EXTERNAL;
             }
             return [
                 {
@@ -1486,7 +1552,7 @@ function ratingValidations(input: validationInput): validationOutput {
         subResults = allResults;
         valid = subResults.every((r) => r.valid);
 
-        delete testObj._EXTERNAL;
+        // delete testObj._EXTERNAL;
     }
     return [
         {
@@ -1495,7 +1561,7 @@ function ratingValidations(input: validationInput): validationOutput {
             code: valid ? 200 : 30000,
             _debugInfo: {
                 fedConfig: `
-{"_NAME_":"ratingValidations","_RETURN_":[{"_NAME_":"RATING_CONTEXT","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND2"],"_RETURN_":"attr any in enumList","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}]},{"_NAME_":"MESSAGE_RATINGS","_RETURN_":[{"_NAME_":"RATING_CATEGORY","attr":"$.message.ratings[*].rating_category","_RETURN_":"attr are present"},{"_NAME_":"RATING_ID","attr":"$.message.ratings[*].id","_RETURN_":"attr are present"},{"_NAME_":"RATING_VALUE","attr":"$.message.ratings[*].value","_RETURN_":"attr are present"}]}]}
+{"_NAME_":"ratingValidations","_RETURN_":[{"_NAME_":"RATING_CONTEXT","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"],"_RETURN_":[{"_NAME_":"CONTEXT_REQUIRED","_RETURN_":[{"_NAME_":"REQUIRED_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_DOMAIN","attr":"$.context.domain","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_ID","attr":"$.context.bap_id","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BAP_URI","attr":"$.context.bap_uri","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_ID","attr":"$.context.bpp_id","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_BPP_URI","attr":"$.context.bpp_uri","var_search":["search"],"_CONTINUE_":"(action equal to var_search)","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TRANSACTION_ID","attr":"$.context.transaction_id","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_MESSAGE_ID","attr":"$.context.message_id","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_VERSION","attr":"$.context.version","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","_RETURN_":"attr are present","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_ENUM","_RETURN_":[{"_NAME_":"VALID_CONTEXT_LOCATION_COUNTRY_CODE","attr":"$.context.location.country.code","enumList":["IND"],"_RETURN_":"attr any in enumList","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"VALID_CONTEXT_DOMAIN","attr":"$.context.domain","enumList":["ONDC:TRV14"],"_RETURN_":"attr all in enumList","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]},{"_NAME_":"CONTEXT_REGEX","_RETURN_":[{"_NAME_":"REGEX_CONTEXT_LOCATION_CITY_CODE","attr":"$.context.location.city.code","reg":["^std:\\\\d{3,5}$"],"_RETURN_":"attr follow regex reg","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_TIMESTAMP","attr":"$.context.timestamp","reg":["^\\\\d{4}-\\\\d{2}-\\\\d{2}T\\\\d{2}:\\\\d{2}:\\\\d{2}\\.\\\\d{3}Z$"],"_RETURN_":"attr follow regex reg","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REGEX_CONTEXT_BAP_URI","attr":"$.context.bap_uri","reg":["^https:\\/\\/"],"_RETURN_":"attr follow regex reg","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]},{"_NAME_":"REQUIRED_CONTEXT_TTL","attr":"$.context.ttl","reg":["^P(?=\\\\d|T\\\\d)(\\\\d+Y)?(\\\\d+M)?(\\\\d+D)?(T(\\\\d+H)?(\\\\d+M)?(\\\\d+S)?)?$"],"_RETURN_":"attr follow regex reg","action":["rating"],"domain":["ONDC:TRV14"],"version":["2.0.0"]}]}]},{"_NAME_":"MESSAGE_RATINGS","_RETURN_":[{"_NAME_":"RATING_CATEGORY","attr":"$.message.ratings[*].rating_category","_RETURN_":"attr are present"},{"_NAME_":"RATING_ID","attr":"$.message.ratings[*].id","_RETURN_":"attr are present"},{"_NAME_":"RATING_VALUE","attr":"$.message.ratings[*].value","_RETURN_":"attr are present"}]}]}
 `,
             },
         },

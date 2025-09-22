@@ -66,7 +66,7 @@
 		
 			#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 			
-			- At least one of $.context.location.country.code must be in ["IND2"]
+			- At least one of $.context.location.country.code must be in ["IND"]
 			
 			#### **VALID_CONTEXT_DOMAIN**
 			
@@ -262,7 +262,7 @@
 		
 			#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 			
-			- At least one of $.context.location.country.code must be in ["IND2"]
+			- At least one of $.context.location.country.code must be in ["IND"]
 			
 			#### **VALID_CONTEXT_DOMAIN**
 			
@@ -588,7 +588,7 @@
 		
 			#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 			
-			- At least one of $.context.location.country.code must be in ["IND2"]
+			- At least one of $.context.location.country.code must be in ["IND"]
 			
 			#### **VALID_CONTEXT_DOMAIN**
 			
@@ -754,7 +754,7 @@
 		
 			#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 			
-			- At least one of $.context.location.country.code must be in ["IND2"]
+			- At least one of $.context.location.country.code must be in ["IND"]
 			
 			#### **VALID_CONTEXT_DOMAIN**
 			
@@ -1208,7 +1208,7 @@
 		
 			#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 			
-			- At least one of $.context.location.country.code must be in ["IND2"]
+			- At least one of $.context.location.country.code must be in ["IND"]
 			
 			#### **VALID_CONTEXT_DOMAIN**
 			
@@ -1390,7 +1390,7 @@
 		
 			#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 			
-			- At least one of $.context.location.country.code must be in ["IND2"]
+			- At least one of $.context.location.country.code must be in ["IND"]
 			
 			#### **VALID_CONTEXT_DOMAIN**
 			
@@ -1740,7 +1740,7 @@
 		
 			#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 			
-			- At least one of $.context.location.country.code must be in ["IND2"]
+			- At least one of $.context.location.country.code must be in ["IND"]
 			
 			#### **VALID_CONTEXT_DOMAIN**
 			
@@ -1950,7 +1950,7 @@
 		
 			#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 			
-			- At least one of $.context.location.country.code must be in ["IND2"]
+			- At least one of $.context.location.country.code must be in ["IND"]
 			
 			#### **VALID_CONTEXT_DOMAIN**
 			
@@ -2386,7 +2386,7 @@
 		
 			#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 			
-			- At least one of $.context.location.country.code must be in ["IND2"]
+			- At least one of $.context.location.country.code must be in ["IND"]
 			
 			#### **VALID_CONTEXT_DOMAIN**
 			
@@ -2480,7 +2480,7 @@
 		
 			#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 			
-			- At least one of $.context.location.country.code must be in ["IND2"]
+			- At least one of $.context.location.country.code must be in ["IND"]
 			
 			#### **VALID_CONTEXT_DOMAIN**
 			
@@ -2916,7 +2916,7 @@
 		
 			#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 			
-			- At least one of $.context.location.country.code must be in ["IND2"]
+			- At least one of $.context.location.country.code must be in ["IND"]
 			
 			#### **VALID_CONTEXT_DOMAIN**
 			
@@ -3032,7 +3032,7 @@
 		
 			#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 			
-			- At least one of $.context.location.country.code must be in ["IND2"]
+			- At least one of $.context.location.country.code must be in ["IND"]
 			
 			#### **VALID_CONTEXT_DOMAIN**
 			
@@ -3496,7 +3496,7 @@
 		
 			#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 			
-			- At least one of $.context.location.country.code must be in ["IND2"]
+			- At least one of $.context.location.country.code must be in ["IND"]
 			
 			#### **VALID_CONTEXT_DOMAIN**
 			
@@ -3612,7 +3612,7 @@
 		
 			#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 			
-			- At least one of $.context.location.country.code must be in ["IND2"]
+			- At least one of $.context.location.country.code must be in ["IND"]
 			
 			#### **VALID_CONTEXT_DOMAIN**
 			
@@ -4062,7 +4062,7 @@
 		
 			#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 			
-			- At least one of $.context.location.country.code must be in ["IND2"]
+			- At least one of $.context.location.country.code must be in ["IND"]
 			
 			#### **VALID_CONTEXT_DOMAIN**
 			
@@ -4166,7 +4166,7 @@
 		
 			#### **VALID_CONTEXT_LOCATION_COUNTRY_CODE**
 			
-			- At least one of $.context.location.country.code must be in ["IND2"]
+			- At least one of $.context.location.country.code must be in ["IND"]
 			
 			#### **VALID_CONTEXT_DOMAIN**
 			

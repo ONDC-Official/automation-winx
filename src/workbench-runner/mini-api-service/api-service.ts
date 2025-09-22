@@ -5,6 +5,7 @@ import { TransactionCacheService } from "workbench-runner/mini-api-service/conte
 import { randomUUID } from "crypto";
 import { getRunnerConfig } from "runner-config-manager";
 import { FlowMeta } from "workbench-runner/runner";
+import { l1ValidationsStore } from "./models/session-imple";
 
 interface ValidationResult {
 	valid: boolean;
@@ -94,10 +95,14 @@ async function runL1Validations(
 	meta: FlowMeta
 ): Promise<void> {
 	try {
-		const { performL1Validations } = await import(
+		const { performL1Validations, performL1ValidationsSave } = await import(
 			"./generated/L1-Validations/index"
 		);
-		const results = await performL1Validations(action, payload);
+		const results = await performL1Validations(action, payload, {
+			stateFullValidations: true,
+			store: l1ValidationsStore,
+			uniqueKey: getUniquePrefix(payload),
+		});
 		const invalidResults = results.filter((r: ValidationResult) => !r.valid);
 
 		if (invalidResults.length > 0) {
@@ -106,6 +111,12 @@ async function runL1Validations(
 				meta: { ...meta, operation: "l1-validation" },
 			});
 		}
+		await performL1ValidationsSave(
+			action,
+			getUniquePrefix(payload),
+			payload,
+			l1ValidationsStore
+		);
 	} catch (error) {
 		throw new Error(
 			"L1 validations module not found. Please ensure the module is properly generated."
@@ -202,4 +213,8 @@ async function contextValidations(
 			},
 		});
 	}
+}
+
+function getUniquePrefix(payload: any) {
+	return `${payload.context.transaction_id}`;
 }
