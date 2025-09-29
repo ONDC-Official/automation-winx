@@ -104,6 +104,16 @@ export async function runMock(
 	reporter.flowSessionData(flowId, current.key, mockSessionData);
 	const saveConfig = mockAction.saveData;
 	await saveDataForConfig(saveConfig, payload);
+	const result = await mockAction.validate(payload, mockSessionData);
+	if (result.valid == false) {
+		reporter.error(
+			`Validation failed for action ${current.key} in flow ${flowId}`,
+			{
+				meta: { ...meta, operation: "mock-validation" },
+				data: result,
+			}
+		);
+	}
 	return {
 		continue: true,
 		payload: payload,
